@@ -1,13 +1,9 @@
 # sat_gpt_generator
 
-POST `/sat/problem`
-request body
-```
-{
+GET `/sat/problem?problem_type=type&subject=art`
+
   "problem_type": "blank" | "find_subject" | "grammar" | "conjunction",
   "subject": can be any string
-}
-```
 
 `poetry install` 로 python package들을 설치해주세요
 
