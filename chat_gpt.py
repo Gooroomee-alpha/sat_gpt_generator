@@ -17,7 +17,6 @@ def generate_response(type: str, subject: str):
     passage_response = openai.ChatCompletion.create(
         model="gpt-4", messages=[{"role": "user", "content": passage_prompt}]
     )
-    print(passage_response)
     passage = passage_response["choices"][0]["message"]["content"]
     passage_json = json.loads(passage)
     passage = passage_json["passage"]

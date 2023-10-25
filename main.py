@@ -17,9 +17,9 @@ async def say_hello(name: str):
     return {"message": f"Hello {name}"}
 
 
-@app.post("/sat/problem")
-async def sat_problem(data: GenerateSatModel):
-    response = chat_gpt.generate_response(data.problem_type, data.subject)
+@app.get("/sat/problem")
+async def sat_problem(subject: str, problem_type: str):
+    response = chat_gpt.generate_response(problem_type, subject)
     response_json = json.loads(
         response,
     )
