@@ -22,7 +22,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: eldpswp99
+          username: ${{ github.actor }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build image
@@ -43,7 +43,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: eldpswp99
+          username: ${{ github.actor }}
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: Docker compose up
         run: SHA=${GITHUB_SHA} docker compose -f ~/docker-compose.yml up -d generate-sat-backend
