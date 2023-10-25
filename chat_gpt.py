@@ -1,3 +1,4 @@
+import json
 import os
 import openai
 
@@ -12,350 +13,330 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 
 def generate_response(type: str, subject: str):
-    prompt = ""
+    passage_prompt = prompt_generate_passage(subject)
+    passage_response = openai.ChatCompletion.create(
+        model="gpt-4", messages=[{"role": "user", "content": passage_prompt}]
+    )
+    print(passage_response)
+    passage = passage_response["choices"][0]["message"]["content"]
+    passage_json = json.loads(passage)
+    passage = passage_json["passage"]
 
-    if type == "blank":
-        prompt = prompt_blank(subject)
-    if type == "find_subject":
-        prompt = prompt_find_subject(subject)
-    if type == "grammar":
-        prompt = prompt_grammar(subject)
-    if type == "conjunction":
-        prompt = prompt_conjunction(subject)
-
+    prompt = prompt_generate_question(type, passage)
     sat_response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=[
-            {
-                "role": "system",
-                "content": "You will be provided with subjects, and your task is to generate SAT passage and problems.",
-            },
             {"role": "user", "content": prompt},
         ],
     )
-
     return sat_response["choices"][0]["message"]["content"]
 
 
-def prompt_blank(subject: str):
+def prompt_generate_question(type: str, passage: str):
+    prompt = ""
+    if type == "blank":
+        prompt = prompt_blank(passage)
+    if type == "find_subject":
+        prompt = prompt_find_subject(passage)
+    if type == "grammar":
+        prompt = prompt_grammar(passage)
+    if type == "conjunction":
+        prompt = prompt_conjunction(passage)
+
+    return prompt
+
+
+def prompt_generate_passage(subject: str):
     return f"""
-⌨️ You will be provided with subjects, and your task is to generate SAT passage and problems.
-
-Step 0.
-Topic : {subject}
-
-Step 1.
-Please Generate new passage about subject from journals, research papers, etc
-The paragraph length must be about 50 words
-
-Step 2.
-Generate a "Fill in the blank word finding exercise" problem from the passage.
-Choose a keyword verb, noun, adverb, or adjective from the passage, and exchange with blank.
-And print the whole passage with blank.
-The blank word should be one word.
-The answer must be inferable from the context.
-The format of problem should be same as Example.
-
-Step 3.
-Show what is the answer.
+    You will be provided with a topic, and your task is to generate SAT paragraph.
+Show the result in the form of json format
+Please Generate a new passage about the topic in 50~ 70 words from journals, research papers, etc..
 
 - Example 1.
 
-When Mexican-American archaeologist Zelia Maria
-Magdalena Nuttall published her 1886 research
-paper on sculptures found at the ancient Indigenous
-city of Teotihuacan in present-day Mexico, other
-researchers readily _______ her work as ground
-breaking; this recognition stemmed from her
-convincing demonstration that the sculptures were
-much older than had previously been thought.
+{
+    json.dumps({
+        "passage": '"In ancient Greece, an Epicurean was a follower of Epicurus, a philosopher whose beliefs revolved around the pursuit of pleasure. Epicurus defined pleasure as "the absence of pain in the body and of trouble in the seoul," positing that all life’s virtues derived from this absence."'   
+    })
+}
 
-Which choice completes the text with the most
-logical and precise word or phrase?
+- Example 2.
+{
+    json.dumps({"passage": "The following text is from Maggie Pogue Johnson’s 1910 poem “Poet of Our Race.” In this poem, the speaker is addressing Paul Laurence Dunbar, a Black author. Thou, with stroke of mighty pen, Hast told of joy and mirth, And read the hearts and souls of men. As cradled from their birth. The language of the flowers, Thou hast read them all, And e’en the little brook Responded to thy call."})        
+}
 
-A) acknowledged
-B) ensured
-C) denied
-D) underestimated
+
+- Example 3.
+{
+    json.dumps({"passage": "Like other tribal nations, the Muscogee (Creek) Nation is self-governing; its National Council generates laws regulating aspects of community life such as land use and healthcare, while the principal chief and cabinet officials implement those laws by devising policies and administering services in accordance with them."})
+}
+
+
+Topic: {subject}"""
+
+
+def prompt_blank(passage):
+    return f"""
+You will be provided with a passage, and your task is to generate SAT "fill in the blank" problem.
+Just show the result of step3 and step4 in the form of json format
+Step 1. Choose a keyword from the given passage.
+Step 2. Find different words from the keyword, but the words must not be replacable with the keyword.
+Step 3. Print the whole passage with the keyword replaced with blank.
+Step 4. Show four answer options, one of them is exactly the keyword.
+
+Note:
+- The keyword should not be exposed to the passage.
+- The answer must be inferable from the context.
+- The format of output should be same as Example.
+
+{
+json.dumps({
+  "passage":"When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily _______ her work as ground breaking; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought.",
+  "problem":"Which choice completes the text with the most logical and precise word or phrase?",
+  "choices":[
+     "A) acknowledged",
+     "B) ensured",
+     "C) denied",
+     "D) underestimated",
+  ],
+  "answer":"B) ensured"  
+})
+}
 
 - Example 2.
 
-In the early 1800s, the Cherokee scholar Sequoyah
-created the first script, or writing system, for an
-Indigenous language in the United States. Because it
-represented the sounds of spoken Cherokee so
-accurately, his script was easy to learn and thus
-quickly achieved _______ use: by 1830, over
-90 percent of the Cherokee people could read and
-write it.
-
-Which choice completes the text with the most
-logical and precise word or phrase?
-
-A) widespread
-B) careful
-C) unintended
-D) infrequent
+{
+json.dumps({
+    "passage":"In the early 1800s, the Cherokee scholar Sequoyah created the first script, or writing system, for an Indigenous language in the United States. Because it represented the sounds of spoken Cherokee so accurately, his script was easy to learn and thus quickly achieved _______ use: by 1830, over 90 percent of the Cherokee people could read and write it.",
+    "question":"Which choice completes the text with the most logical and precise word or phrase?",
+    "choices":[
+        "A) widespread",
+        "B) careful",
+        "C) unintended",
+        "D) infrequent"
+    ],
+    "answer":"A) widespread"
+})
+}
 
 - Example 3.
 
-Like other tribal nations, the Muscogee (Creek)
-Nation is self-governing; its National Council
-generates laws regulating aspects of community life
-such as land use and healthcare, while the principal
-chief and cabinet officials _______ those laws by
-devising policies and administering services in
-accordance with them.
-Which choice completes the text with the most
-logical and precise word or phrase?
-A) implement
-B) presume
-C) improvise
-D) mimic
+{
+json.dumps({
+    "passage":"Like other tribal nations, the Muscogee (Creek) Nation is self-governing; its National Council generates laws regulating aspects of community life such as land use and healthcare, while the principal chief and cabinet officials _______ those laws by devising policies and administering services in accordance with them.",
+    "question":"Which choice completes the text with the most logical and precise word or phrase?",
+    "choices":[
+        "A) implement",
+        "B) presume",
+        "C) improvise",
+        "D) mimic"
+    ],
+    "answer":"A) implement"
+})
+}
+
+input :
+{passage}
 """
 
 
-def prompt_find_subject(subject: str):
+def prompt_find_subject(passage: str):
     return f"""
-⌨️ You will be provided with subjects, and your task is to generate SAT passage and problems.
+You will be provided with a passage, and your task is to generate SAT "find the subject" problem.
+Just show the result of step3 and step4 in the form of json format
+Step 1. Find the subject of the given paragraph.
+Step 2. Find different subjects from the paragraph's subject. The subjects are also about the paragraph but not the major subject.
+Step 3. Print the whole passage.
+Step 4. Show four answer options from Step2, one of them is exactly the subject.
 
-Topic : `Ancient earth`
+Note:
 
-Step 1.
-Please Generate new passage about subject from journals, research papers, etc
-The paragraph length must be about 100 words
-
-Step 2.
-Generate a problem from the passage.
-Problem type must be similar with examples.
-The answer must be inferable from the context.
-The format of problem should be same as Example.
-
-Step 3.
-Show what is the answer.
-
+- The answer must be inferable from the context.
+- The format of output should be same as Example.
 - Example 1.
 
-In 2007, computer scientist Luis von Ahn was
-working on converting printed books into a digital
-format. He found that some words were distorted
-enough that digital scanners couldn’t recognize
-them, but most humans could easily read them.
-Based on that finding, von Ahn invented a simple
-security test to keep automated “bots” out of
-websites. The first version of the reCAPTCHA test
-asked users to type one known word and one of the
-many words scanners couldn’t recognize. Correct
-answers proved the users were humans and added
-data to the book-digitizing project.
-Which choice best states the main purpose of the
-text?
-A) To discuss von Ahn’s invention of reCAPTCHA
-B) To explain how digital scanners work
-C) To call attention to von Ahn’s book-digitizing
-project
-D) To indicate how popular reCAPTCHA is
+{
+    json.dumps({
+        "passage":"In 2007, computer scientist Luis von Ahn was working on converting printed books into a digital format. He found that some words were distorted enough that digital scanners couldn’t recognize them, but most humans could easily read them. Based on that finding, von Ahn invented a simple security test to keep automated “bots” out of websites. The first version of the reCAPTCHA test asked users to type one known word and one of the many words scanners couldn’t recognize. Correct answers proved the users were humans and added data to the book-digitizing project.",
+        "question":"Which choice best states the main purpose of the text?",
+        "choices":[
+            "A) To discuss von Ahn’s invention of reCAPTCHA",
+            "B) To explain how digital scanners work",
+            "C) To call attention to von Ahn’s book-digitizing project",
+            "D) To indicate how popular reCAPTCHA is"
+        ],
+        "answer":"A) To discuss von Ahn’s invention of reCAPTCHA"  
+    })
+}
+
 
 - Example 2.
 
-The following text is from Edith Wharton’s 1905
-novel The House of Mirth. Lily Bart and a companion
-are walking through a park.
-Lily had no real intimacy with nature, but she
-had a passion for the appropriate and could be
-keenly sensitive to a scene which was the fitting
-background of her own sensations. (underlined sentence) The
-landscape outspread below her seemed an
-enlargement of her present mood, and she found
-something of herself in its calmness, its breadth,
-its long free reaches. On the nearer slopes the
-sugar-maples wavered like pyres of light; lower
-down was a massing of grey orchards, and here
-and there the lingering green of an oak-grove.
-Which choice best describes the function of the
-underlined sentence in the text as a whole?
-A) It creates a detailed image of the physical setting
-of the scene.
-B) It establishes that a character is experiencing an
-internal conflict.
-C) It makes an assertion that the next sentence then
-expands on.
-D) It illustrates an idea that is introduced in the
-previous sentence.
+{
+    json.dumps({
+        "passage":"The following text is from Edith Wharton’s 1905 novel The House of Mirth. Lily Bart and a companion are walking through a park. Lily had no real intimacy with nature, but she had a passion for the appropriate and could be keenly sensitive to a scene which was the fitting background of her own sensations. (underlined sentence) The landscape outspread below her seemed an enlargement of her present mood, and she found something of herself in its calmness, its breadth, its long free reaches. On the nearer slopes the sugar-maples wavered like pyres of light; lower down was a massing of grey orchards, and here and there the lingering green of an oak-grove.",
+        "question":"Which choice best describes the function of the underlined sentence in the text as a whole?",
+        "choices":[
+            "A) It creates a detailed image of the physical setting of the scene.",
+            "B) It establishes that a character is experiencing an internal conflict.",
+            "C) It makes an assertion that the next sentence then expands on.",
+            "D) It illustrates an idea that is introduced in the previous sentence."
+        ],
+        "answer":"D) It illustrates an idea that is introduced in the previous sentence."
+    })
+}
 
 - Example 3.
 
-The following text is from Maggie Pogue Johnson’s
-1910 poem “Poet of Our Race.” In this poem, the
-speaker is addressing Paul Laurence Dunbar, a Black
-author.
-Thou, with stroke of mighty pen,
-Hast told of joy and mirth,
-And read the hearts and souls of men
-As cradled from their birth.
-The language of the flowers,
-Thou hast read them all,
-And e’en the little brook
-Responded to thy call.
-Which choice best states the main purpose of the
-text?
-A) To praise a certain writer for being especially
-perceptive regarding people and nature
-B) To establish that a certain writer has read
-extensively about a variety of topics
-C) To call attention to a certain writer’s careful and
-elaborately detailed writing process
-D) To recount fond memories of an afternoon spent
-in nature with a certain write
+{
+    json.dumps({
+        "passage": "The following text is from Maggie Pogue Johnson’s 1910 poem “Poet of Our Race.” In this poem, the speaker is addressing Paul Laurence Dunbar, a Black author. Thou, with stroke of mighty pen, Hast told of joy and mirth, And read the hearts and souls of men As cradled from their birth. The language of the flowers, Thou hast read them all, And e’en the little brook Responded to thy call.",
+        "question": "Which choice best states the main purpose of the text?",
+        "choices": [
+            "A) To praise a certain writer for being especially perceptive regarding people and nature",
+            "B) To establish that a certain writer has read extensively about a variety of topics",
+            "C) To call attention to a certain writer’s careful and elaborately detailed writing process",
+            "D) To recount fond memories of an afternoon spent in nature with a certain writer"
+        ],
+
+        "answer": "A) To praise a certain writer for being especially perceptive regarding people and nature"
+    })
+}
+
+input : {passage}
 """
 
 
-def prompt_grammar(subject: str):
+def prompt_grammar(passage: str):
     return f"""
-⌨️ You will be provided with subjects, and your task is to generate SAT passage and problems.
+You will be provided with a paragraph, and your task is to generate SAT grammar problem.
+Just show the result of step3, step 4, and step5 in the form of json format
 
-Topic : {subject}
+Step 1. Select a grammatically important keyword, for example, to-infinitive, plural, tense... etc
+Step 2. Find some different words or different form of the keyword such as the past tense of the keyword.
+Step 3. Print the whole passage with the chosen keyword replaced with blank.
+Step 4. Show four answer options from Step2, one of them is exactly the subject.
+Step 5.  Show the answer.
 
-Step 1.
-Please Generate new passage about subject from journals, research papers, etc
-The paragraph length must be about 50 words
+Note:
 
-Step 2.
-Generate a grammar exercise from the passage.
-First, choose a verb from the passage and make options with the verb's other tense and form so that there exists only one grammatically correct answer.
-Second, Replace the chosen verb with blank.
-Last, Print the whole passage with blank.
-
-The chosen verb tense should not be trivial.
-Problem type must be similar with examples.
-The answer must be inferable from the context.
-The format of problem should be same as Example.
-
-Step 3.
-Show what is the answer.
-
+- The answer must be inferable from the context.
+- The format of output should be same as Example.
 - Example 1.
 
-In ancient Greece, an Epicurean was a follower of
-Epicurus, a philosopher whose beliefs revolved
-around the pursuit of pleasure. Epicurus defined
-pleasure as “the absence of pain in the body and of
-trouble in the _______ that all life’s virtues derived
-from this absence.
-Which choice completes the text so that it conforms
-to the conventions of Standard English?
-A) soul,” positing
-B) soul”: positing
-C) soul”; positing
-D) soul.” Positing
+{
+json.dumps({
+    "passage":"In ancient Greece, an Epicurean was a follower of Epicurus, a philosopher whose beliefs revolved around the pursuit of pleasure. Epicurus defined pleasure as “the absence of pain in the body and of trouble in the _______ that all life’s virtues derived from this absence.",
+    "question":"Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices":[
+        "A) soul,” positing",
+        "B) soul”: positing",
+        "C) soul”; positing",
+        "D) soul.” Positing",
+    ],
+    "answer":"A) soul,” positing"
+})
+}
 
 - Example 2.
+{
+json.dumps({
+    "passage":"British scientists James Watson and Francis Crick won the Nobel Prize in part for their 1953 paper announcing the double helix structure of DNA, but it is misleading to say that Watson and Crick discovered the double helix. _______ findings were based on a famous X-ray image of DNA fibers, “Photo 51,” developed by X-ray crystallographer Rosalind Franklin and her graduate student Raymond Gosling.",
+    "question":"Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices":[
+        "A) They’re",
+        "B) It’s",
+        "C) Their",
+        "D) Its",
+    ],
+    "answer":"C) Their"
 
-British scientists James Watson and Francis Crick
-won the Nobel Prize in part for their 1953 paper
-announcing the double helix structure of DNA, but it
-is misleading to say that Watson and Crick
-discovered the double helix. _______ findings were
-based on a famous X-ray image of DNA fibers,
-“Photo 51,” developed by X-ray crystallographer
-Rosalind Franklin and her graduate student
-Raymond Gosling.
-Which choice completes the text so that it conforms
-to the conventions of Standard English?
-A) They’re
-B) It’s
-C) Their
-D) Its
+})
+}
 
 - Example 3.
 
-In 1637, the price of tulips skyrocketed in
-Amsterdam, with single bulbs of rare varieties
-selling for up to the equivalent of $200,000 in today’s
-US dollars. Some historians _______ that this “tulip
-mania” was the first historical instance of an asset
-bubble, which occurs when investors drive prices to
-highs not supported by actual demand.
-Which choice completes the text so that it conforms
-to the conventions of Standard English?
-A) claiming
-B) claim
-C) having claimed
-D) to claim
+{
+json.dumps({
+    "passage":"In 1637, the price of tulips skyrocketed in Amsterdam, with single bulbs of rare varieties selling for up to the equivalent of $200,000 in today’s US dollars. Some historians _______ that this “tulip mania” was the first historical instance of an asset bubble, which occurs when investors drive prices to highs not supported by actual demand.",
+    "question":"Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices":[
+        "A) claim",
+        "B) claiming",
+        "C) having claimed",
+        "D) to claim",
+    ],
+    "answer":"B) claim"
+})
+}
+
+input : {passage}
 """
 
 
-def prompt_conjunction(subject: str):
+def prompt_conjunction(passage: str):
     return f"""
-⌨️ You will be provided with subjects, and your task is to generate SAT passage and problems.
+You will be provided with a passage, and your task is to generate SAT "find the conjunction" problem.
+Just show the result of step3, step 4, and step5 in the form of json format
 
-Topic : {subject}
+Step 1. Select a conjunction from the given paragraph.
+Step 2. Find different conjunctions from the chosen conjunction. The conjunctions are not the synonym from the chosen conjunction.
+Step 3. Print the whole passage with the chosen conjunction replaced with blank.
+Step 4. Show four answer options from Step2, one of them is exactly the subject.
+Step 5. Show the answer.
 
-Step 1.
-Please Generate new passage about subject from journals, research papers, etc
-The paragraph length must be about 50 words
-Show the whole paragraph
+Note:
 
-Step 2.
-Generate a "Find the correct conjunctions" exercise from the passage.
-First, choose a conjunction from the passage and make options with other conjunctions so that there exists only one correct answer.
-Second, Replace the chosen conjunction with blank.
-Last, Print the whole passage with blank.
-
-Problem type must be similar with examples.
-The answer must be inferable from the context.
-The format of problem should be same as Example.
-
-Step 3.
-Show what is the answer.
-
+- The answer must be inferable from the context.
+- The format of output should be same as Example.
 - Example 1.
 
-Although novels and poems are considered distinct
-literary forms, many authors have created hybrid
-works that incorporate elements of both. Bernardine
-Evaristo’s The Emperor's Babe, _______ is a verse
-novel, a book-length narrative complete with
-characters and a plot but conveyed in short, crisp
-lines of poetry rather than prose.
-Which choice completes the text with the most
-logical transition?
-A) by contrast,
-B) consequently,
-C) secondly,
-D) for example,
+{
+json.dumps({
+    "passage":"Although novels and poems are considered distinct literary forms, many authors have created hybrid works that incorporate elements of both. Bernardine Evaristo’s The Emperor's Babe, _______ is a verse novel, a book-length narrative complete with characters and a plot but conveyed in short, crisp lines of poetry rather than prose.",
+    "question":"Which choice completes the text with the most logical transition?",
+    "choices":[
+        "A) by contrast,",
+        "B) consequently,",
+        "C) secondly,",
+        "D) for example,",
+    ],
+    "answer":"D) for example,"
+})
+}
+
 
 - Example 2.
 
-At two weeks old, the time their critical socialization
-period begins, wolves can smell but cannot yet see or
-hear. Domesticated dogs, _______ can see, hear, and
-smell by the end of two weeks. This relative lack of
-sensory input may help explain why wolves behave
-so differently around humans than dogs do: from a
-very young age, wolves are more wary and less
-exploratory.
-Which choice completes the text with the most
-logical transition?
-A) in other words,
-B) for instance,
-C) by contrast,
-D) accordingly
+{
+json.dumps({
+    "passage":"At two weeks old, the time their critical socialization period begins, wolves can smell but cannot yet see or hear. Domesticated dogs, _______ can see, hear, and smell by the end of two weeks. This relative lack of sensory input may help explain why wolves behave so differently around humans than dogs do: from a very young age, wolves are more wary and less exploratory.",
+    "question":"Which choice completes the text with the most logical transition?",
+    "choices":[
+        "A) in other words,",
+        "B) for instance,",
+        "C) by contrast,",
+        "D) accordingly",
+    ],
+    "answer":"C) by contrast,"
+})
+}
 
 - Example 3.
 
-Researchers Helena Mihaljević-Brandt, Lucía
-Santamaría, and Marco Tullney report that while
-mathematicians may have traditionally worked
-alone, evidence points to a shift in the opposite
-direction. _______ mathematicians are choosing to
-collaborate with their peers—a trend illustrated by a
-rise in the number of mathematics publications
-credited to multiple authors.
-Which choice completes the text with the most
-logical transition?
-A) Similarly,
-B) For this reason,
-C) Furthermore,
-D) Increasingly,
+{
+json.dumps({
+    "passage":"Researchers Helena Mihaljević-Brandt, Lucía Santamaría, and Marco Tullney report that while mathematicians may have traditionally worked alone, evidence points to a shift in the opposite direction. Increasingly mathematicians are choosing to collaborate with their peers—a trend illustrated by a rise in the number of mathematics publications credited to multiple authors.",
+    "question":"Which choice completes the text with the most logical transition?",
+    "choices":[
+        "A) Similarly,",
+        "B) For this reason,",
+        "C) Furthermore,",
+        "D) Increasingly,",
+    ],
+    "answer":"D) Increasingly,"
+})
+}
+
+input:{passage}
 """

@@ -1,3 +1,5 @@
+import json
+
 from fastapi import FastAPI
 import chat_gpt
 from generate_sat_model import GenerateSatModel
@@ -17,4 +19,8 @@ async def say_hello(name: str):
 
 @app.post("/sat/problem")
 async def sat_problem(data: GenerateSatModel):
-    return chat_gpt.generate_response(data.problem_type, data.subject)
+    response = chat_gpt.generate_response(data.problem_type, data.subject)
+    response_json = json.loads(
+        response,
+    )
+    return response_json
