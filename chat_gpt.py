@@ -81,9 +81,9 @@ def prompt_generate_question(problem_type: str, passage: str):
     return prompt
 
 
-def prompt_generate_passage(subject: str):
+def prompt_generate_passage(category: str):
     return f"""
-    You will be provided with a topic, and your task is to generate SAT paragraph.
+    You will be provided with a category, and your task is to generate SAT paragraph.
 Show the result in the form of json format
 Please Generate a new passage about the topic in 50~ 70 words from journals, research papers, etc..
 
@@ -107,7 +107,7 @@ Please Generate a new passage about the topic in 50~ 70 words from journals, res
 }
 
 
-Topic: {subject}"""
+Topic: {category}"""
 
 
 def prompt_blank(passage):
