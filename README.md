@@ -18,6 +18,7 @@ request body
 }
 ```
 
+
 `pip install` 로 python package들을 설치해주세요
 
 .env 파일을 project root에 만들고 OPENAI_API_KEY={OPEN_API_KEY}를 세팅해주세요
