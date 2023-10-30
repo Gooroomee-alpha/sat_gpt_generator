@@ -1,7 +1,16 @@
 import json
 import os
+import random
+
 import openai
 
+from category_const import (
+    science_categories,
+    art_categories,
+    history_categories,
+    literature_categories,
+    social_sciences_categories,
+)
 
 dotenv_file = os.path.join(os.path.dirname(__file__), ".env")
 if os.path.isfile(dotenv_file):
@@ -12,16 +21,43 @@ if os.path.isfile(dotenv_file):
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 
-def generate_response(type: str, subject: str):
-    passage_prompt = prompt_generate_passage(subject)
+def generate_passage(subject: str):
+    category = generate_category(subject)
+
+    passage_prompt = prompt_generate_passage(category)
     passage_response = openai.ChatCompletion.create(
         model="gpt-4", messages=[{"role": "user", "content": passage_prompt}]
     )
     passage = passage_response["choices"][0]["message"]["content"]
-    passage_json = json.loads(passage)
-    passage = passage_json["passage"]
 
-    prompt = prompt_generate_question(type, passage)
+    return passage
+
+
+def generate_category(subject: str):
+    categories = []
+    if subject == "science":
+        categories = science_categories
+    elif subject == "art":
+        categories = art_categories
+    elif subject == "history":
+        categories = history_categories
+    elif subject == "literature":
+        categories = literature_categories
+    elif subject == "social_science":
+        categories = social_sciences_categories
+    else:
+        categories = (
+            science_categories
+            + art_categories
+            + history_categories
+            + literature_categories
+            + social_sciences_categories
+        )
+    return random.choice(categories)
+
+
+def generate_problem(problem_type: str, passage: str):
+    prompt = prompt_generate_question(problem_type, passage)
     sat_response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=[
@@ -31,15 +67,15 @@ def generate_response(type: str, subject: str):
     return sat_response["choices"][0]["message"]["content"]
 
 
-def prompt_generate_question(type: str, passage: str):
+def prompt_generate_question(problem_type: str, passage: str):
     prompt = ""
-    if type == "blank":
+    if problem_type == "blank":
         prompt = prompt_blank(passage)
-    if type == "find_subject":
+    if problem_type == "find_subject":
         prompt = prompt_find_subject(passage)
-    if type == "grammar":
+    if problem_type == "grammar":
         prompt = prompt_grammar(passage)
-    if type == "conjunction":
+    if problem_type == "conjunction":
         prompt = prompt_conjunction(passage)
 
     return prompt

@@ -1,6 +1,10 @@
 from pydantic import BaseModel
 
 
-class GenerateSatModel(BaseModel):
+class GeneratePassageModel(BaseModel):
     subject: str
+
+
+class GenerateProblemModel(BaseModel):
+    passage: str
     problem_type: str

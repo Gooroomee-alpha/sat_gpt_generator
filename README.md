@@ -1,15 +1,24 @@
 # sat_gpt_generator
 
+POST `/sat/passage`
+request body
+```
+{
+    // 여기에 없으면 random으로
+  "subject": "science" | "art" | "history" | "literature" | "social_science"  
+}
+```
+
 POST `/sat/problem`
 request body
 ```
 {
   "problem_type": "blank" | "find_subject" | "grammar" | "conjunction",
-  "subject": can be any string
+  "passage": string
 }
 ```
 
-`poetry install` 로 python package들을 설치해주세요
+`pip install` 로 python package들을 설치해주세요
 
 .env 파일을 project root에 만들고 OPENAI_API_KEY={OPEN_API_KEY}를 세팅해주세요
 
