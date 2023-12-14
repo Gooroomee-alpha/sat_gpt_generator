@@ -57,7 +57,7 @@ def generate_category(subject: str):
 
 
 def generate_problem(problem_type: str, passage: str):
-    prompt = prompt_generate_question(problem_type, passage)
+    prompt = prompt_generate_problem(problem_type, passage)
     sat_response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=[
@@ -67,7 +67,7 @@ def generate_problem(problem_type: str, passage: str):
     return sat_response["choices"][0]["message"]["content"]
 
 
-def prompt_generate_question(problem_type: str, passage: str):
+def prompt_generate_problem(problem_type: str, passage: str):
     prompt = ""
     if problem_type == "blank":
         prompt = prompt_blank(passage)
