@@ -1,6 +1,4 @@
 # 임베딩을 생성하는 함수 수정
-import random
-
 from transformers import AutoTokenizer, AutoModel
 import torch
 from sklearn.metrics.pairwise import cosine_similarity
@@ -10,6 +8,9 @@ model_path = "roberta-base"
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModel.from_pretrained(model_path)
+print(type(model))
+
+print(tokenizer.vocab_size)
 
 
 # 임베딩을 생성하는 함수 수정
@@ -19,16 +20,10 @@ def get_embedding(input):
     return outputs.last_hidden_state.mean(dim=1).detach().numpy()[0].tolist()  # 리스트로 변환
 
 
-# client = chromadb.PersistentClient(path="./conjunctions.db")
-# db = client.get_or_create_collection(
-#     name="conjunctions", embedding_function=get_embedding
-# )
-
-
-# # 각 접속사에 대한 임베딩 생성 및 저장
-# for conj in conjunction_list:
-#     embedding = get_embedding(conj)
-#     db.add(documents=[conj], ids=[conj], embeddings=[embedding])  # 임베딩을 명시적으로 제공
+client = chromadb.PersistentClient(path="./conjunctions.db")
+db = client.get_or_create_collection(
+    name="conjunctions", embedding_function=get_embedding
+)
 
 
 # 접속사 목록
@@ -75,18 +70,23 @@ conjunction_list = [
 ]
 
 
+# # 각 접속사에 대한 임베딩 생성 및 저장
+# for conj in conjunction_list:
+#     embedding = get_embedding(conj)
+#     db.add(documents=[conj], ids=[conj], embeddings=[embedding])  # 임베딩을 명시적으로 제공
+
 # 주어진 단어에 대해 가장 유사한 접속사 찾기
 def find_similar_conjunctions(word):
-    # query_embedding = get_embedding(word)
-    # results = db.query(query_embeddings=query_embedding, n_results=10)
-    # return results["documents"][0] if results["documents"] else "No similar word found"
-    random.shuffle(conjunction_list)
-    return conjunction_list
+    query_embedding = get_embedding(word)
+    results = db.query(query_embeddings=query_embedding, n_results=20)
+    return (
+        results["documents"][0] if results["documents"] else "No similar word found"
+    )
 
 
 # 주어진 단어
-word = "for example"
+word = "In contrast"
 
 # 가장 유사한 접속사 찾기
-# most_similar_conj = find_similar_conjunctions(word)
-# print("Most similar conjunction to", word, ":", most_similar_conj)
+most_similar_conj = find_similar_conjunctions(word)
+print("Most similar conjunction to", word, ":", most_similar_conj)

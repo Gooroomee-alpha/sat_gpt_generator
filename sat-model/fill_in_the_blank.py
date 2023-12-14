@@ -1,9 +1,14 @@
 import difflib
 import json
+import os
 import random
 import re
 
+from dotenv import load_dotenv
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
+
+print(os.getenv('HF_TOKEN'))
 
 
 # {
@@ -67,11 +72,13 @@ def get_blanked_phrase(original_passage: str, blanked_passage: str):
 
 
 def generate_blank_raw_problem(passage: str):
-    model_path = "nyanxyz/fill-in-the-blank-lr-2-e-5-0"
+    model_path = "nyanxyz/fill-in-the-blank-p7-l20-e10-0"
 
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForCausalLM.from_pretrained(
-        model_path, device_map="auto", torch_dtype="auto"
+        model_path,
+        device_map="auto",
+        torch_dtype='auto'
     ).eval()
 
     system = prompt_system_blank()
@@ -108,19 +115,20 @@ def generate_blank_raw_problem(passage: str):
 
 
 def prompt_system_blank():
-    prompt = """You will be provided with passage to use for creating 'fill in the blank' type question.
-Your task is to create 'fill in the blank' questions using the provided passage by following these steps:
+    prompt = prompt_fitb = """
+You will be provided with passage to use for creating 'fill in the blank' type question.
+Your task is to generate 'fill in the blank' SAT-style reading comprehension passage, question, and answer set using the provided passage by following these steps:
 
 Step 1 - Blank Setting: Carefully read the passage and select a key word or sentence that plays a significant role in the context. This word or sentence should be pivotal to the passage's meaning and its removal would significantly impact the flow of the text.
 Step 2 - Question Formation: Choose one of the following question formats to use:
 'Which choice completes the text with the most logical and precise word or phrase?'
 'Which choice most logically completes the text?'
-Step 3 - Creating Choices: Develop three incorrect choices that are contextually or semantically similar to the selected word or sentence from Step 1, but differ slightly. These choices should be plausible within the context yet not the correct answer. Ensure these choices vary in vocabulary complexity.
+Step 3 - Creating Distractors: Develop three distractors that are contextually or semantically similar to the selected word or sentence from Step 1, but differ slightly. These choices should be plausible within the context yet not the correct answer. Ensure these choices vary in vocabulary complexity.
 Step 4 - Output Format: Present the output in JSON format with the following structure:
 "passage": The original passage with the key word or sentence replaced by a blank indicated as ________.
 "question": The selected question format from step 2.
-"choices": The list of choices developed in step 3, formatted as "A) {choice1} B) {choice2} C) {choice3} D) {choice4}".
-"answer": The correct answer, corresponding to one of the choices A, B, C, or D, as identified in step 1.
+"answer": The correct answer identified in step 1.
+"distractors": The list of distractors developed in step 3, formatted as [{choice1}, {choice2}, {choice3}]. Each choice should not exceed 15 words.
 
 Example:
 
@@ -132,8 +140,8 @@ The response should be:
 {
   "passage": "In the early 1800s, the Cherokee scholar Sequoyah created the first script, or writing system, for an Indigenous language in the United States. Because it represented the sounds of spoken Cherokee so accurately, his script was easy to learn and thus quickly achieved ________ use: by 1830, over 90 percent of the Cherokee people could read and write it.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": "A) widespread B) careful C) unintended D) infrequent",
-  "answer": "widespread"
+  "answer": "widespread",
+  "distractors": ["careful", "unintended", "infrequent"]
 }
 """
 
@@ -145,7 +153,7 @@ def prompt_user_blank(passage):
 
 
 print(
-    generate_blank_problem(
-        "When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily acknowledged her work as ground breaking; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought."
+    generate_blank_raw_problem(
+        "Musician Joni Mitchell, who is also a painter, uses images she creates for her album covers to emphasize ideas expressed in her music. For the cover of her album <em>Turbulent Indigo</em> (1994), Mitchell painted a striking self-portrait that closely resembles Vincent van Gogh’s <em>Self-Portrait with Bandaged Ear</em> (1889). The image calls attention to the album’s title song, in which Mitchell sings about the legacy of the postimpressionist painter. In that song, Mitchell also hints that she feels a strong artistic connection to Van Gogh—an idea that is reinforced by her imagery on the cover."
     )
 )

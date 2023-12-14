@@ -91,8 +91,10 @@ def generate_conjunction(passage: str):
 
 
 print(
-    generate_conjunction(
-        "In 2019, researcher Patricia Jurado Gonzalez and food historian Nawal Nasrallah prepared a stew from a 4,000-year-old recipe found on a Mesopotamian clay tablet. When they tasted the dish, known as pašrūtum (“unwinding”), they found that it had a mild taste and inspired a sense of calm. Therefore, the researchers, knowing that dishes were sometimes named after their intended effects, theorized that the dish’s name, “unwinding,” referred to its function: to help ancient diners relax."
+    json.dumps(
+        generate_conjunction(
+            "In 2019, researcher Patricia Jurado Gonzalez and food historian Nawal Nasrallah prepared a stew from a 4,000-year-old recipe found on a Mesopotamian clay tablet. When they tasted the dish, known as pašrūtum (“unwinding”), they found that it had a mild taste and inspired a sense of calm. Therefore, the researchers, knowing that dishes were sometimes named after their intended effects, theorized that the dish’s name, “unwinding,” referred to its function: to help ancient diners relax."
+        )
     )
 )
 # conjunction_index = passage.lower().
