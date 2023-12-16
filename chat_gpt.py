@@ -25,12 +25,17 @@ def generate_passage(subject: str):
     category = generate_category(subject)
 
     passage_prompt = prompt_generate_passage(category)
-    passage_response = openai.ChatCompletion.create(
-        model="gpt-4", messages=[{"role": "user", "content": passage_prompt}]
+    passage_response = openai.chat.completions.create(
+        messages=[
+            {
+                "role": "user",
+                "content": passage_prompt,
+            }
+        ],
+        model="gpt-4",
     )
-    passage = passage_response["choices"][0]["message"]["content"]
 
-    return passage
+    return passage_response.choices[0].message.content
 
 
 def generate_category(subject: str):
@@ -58,13 +63,17 @@ def generate_category(subject: str):
 
 def generate_problem(problem_type: str, passage: str):
     prompt = prompt_generate_problem(problem_type, passage)
-    sat_response = openai.ChatCompletion.create(
-        model="gpt-4",
+    sat_response = openai.chat.completions.create(
         messages=[
-            {"role": "user", "content": prompt},
+            {
+                "role": "user",
+                "content": prompt,
+            }
         ],
+        model="gpt-4",
     )
-    return sat_response["choices"][0]["message"]["content"]
+
+    return sat_response.choices[0].message.content
 
 
 def prompt_generate_problem(problem_type: str, passage: str):
@@ -375,3 +384,5 @@ json.dumps({
 
 input:{passage}
 """
+
+# print(generate_problem("find_subject","Logo design is a critical aspect of marketing and branding strategy. It visually encapsulates a company’s identity and mission, providing a symbol easily recognized by consumers. For example, according to Paul Rand, a pioneering figure in American graphic design, 'a logo does not sell, it identifies'. The careful blend of color, typography, and imagery in a logo can create a lasting impression and significantly influence consumer perceptions."))

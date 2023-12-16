@@ -7,8 +7,9 @@ import re
 from dotenv import load_dotenv
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+load_dotenv()
 
-print(os.getenv('HF_TOKEN'))
+# print(os.getenv('HF_TOKEN'))
 
 
 # {
@@ -25,26 +26,19 @@ def generate_blank_problem(passage: str):
     original_passage = passage
     blanked_passage = raw_problem_json["passage"]
     question = raw_problem_json["question"]
-    choices = raw_problem_json["choices"]
+    distractors = raw_problem_json["distractors"]
 
     blanked_phrase = get_blanked_phrase(original_passage, blanked_passage)
 
     # 결과 리스트 초기화
     pattern = r"A\)(.+?)B\)(.+?)C\)(.+?)D\)(.+)"
 
-    # 정규식 검색
-    matches = re.search(pattern, choices)
-
-    # 결과 추출
-    if matches:
-        choices = list(map(lambda x: x.strip(), (matches.groups())))
-    else:
-        raise Exception("No matches")
-
-    if blanked_phrase not in choices:
+    if blanked_phrase in distractors:
         # random from 0 to 3
-        random_index = random.randint(0, 3)
-        choices[random_index] = blanked_phrase
+        raise ValueError("answer is already on distractors")
+
+    choices = [blanked_phrase] + distractors
+    random.shuffle(choices)
 
     return {
         "passage": blanked_passage,
@@ -102,7 +96,6 @@ def generate_blank_raw_problem(passage: str):
         output_ids[0][input_ids.shape[1] :], skip_special_tokens=True
     )
 
-    print(response)
     return response
 
 
@@ -153,7 +146,9 @@ def prompt_user_blank(passage):
 
 
 print(
-    generate_blank_raw_problem(
-        "Musician Joni Mitchell, who is also a painter, uses images she creates for her album covers to emphasize ideas expressed in her music. For the cover of her album <em>Turbulent Indigo</em> (1994), Mitchell painted a striking self-portrait that closely resembles Vincent van Gogh’s <em>Self-Portrait with Bandaged Ear</em> (1889). The image calls attention to the album’s title song, in which Mitchell sings about the legacy of the postimpressionist painter. In that song, Mitchell also hints that she feels a strong artistic connection to Van Gogh—an idea that is reinforced by her imagery on the cover."
+    json.dumps(
+        generate_blank_problem(
+            "Musician Joni Mitchell, who is also a painter, uses images she creates for her album covers to emphasize ideas expressed in her music. For the cover of her album <em>Turbulent Indigo</em> (1994), Mitchell painted a striking self-portrait that closely resembles Vincent van Gogh’s <em>Self-Portrait with Bandaged Ear</em> (1889). The image calls attention to the album’s title song, in which Mitchell sings about the legacy of the postimpressionist painter. In that song, Mitchell also hints that she feels a strong artistic connection to Van Gogh—an idea that is reinforced by her imagery on the cover."
+        )
     )
 )

@@ -1,4 +1,5 @@
 # 임베딩을 생성하는 함수 수정
+from pydantic_settings import BaseSettings
 from transformers import AutoTokenizer, AutoModel
 import torch
 from sklearn.metrics.pairwise import cosine_similarity
@@ -13,18 +14,30 @@ print(type(model))
 print(tokenizer.vocab_size)
 
 
-# 임베딩을 생성하는 함수 수정
-def get_embedding(input):
-    inputs = tokenizer(input, return_tensors="pt")
-    outputs = model(**inputs)
-    return outputs.last_hidden_state.mean(dim=1).detach().numpy()[0].tolist()  # 리스트로 변환
+# # 임베딩을 생성하는 함수 수정
+# def get_embedding(inputs):
+#     inputs = tokenizer(inputs, return_tensors="pt")
+#     outputs = model.forward(inputs)
+#     return outputs.last_hidden_state.mean(dim=1).detach().numpy()[0].tolist()  # 리스트로 변환
 
+class EmbeddingModel:
+    def __init__(self, model, tokenizer):
+        self.model = model
+        self.tokenizer = tokenizer
+
+    def __call__(self, input):
+        inputs = tokenizer(input, return_tensors="pt")
+        outputs = model(**inputs)
+        return outputs.last_hidden_state.mean(dim=1).detach().numpy()[0].tolist()
+
+
+# Initialize the embedding model
+embedding_model = EmbeddingModel(model, tokenizer)
 
 client = chromadb.PersistentClient(path="./conjunctions.db")
 db = client.get_or_create_collection(
-    name="conjunctions", embedding_function=get_embedding
+    name="conjunctions", embedding_function=embedding_model
 )
-
 
 # 접속사 목록
 conjunction_list = [
@@ -70,14 +83,14 @@ conjunction_list = [
 ]
 
 
-# # 각 접속사에 대한 임베딩 생성 및 저장
+# 각 접속사에 대한 임베딩 생성 및 저장
 # for conj in conjunction_list:
-#     embedding = get_embedding(conj)
+#     embedding = embedding_model(conj)
 #     db.add(documents=[conj], ids=[conj], embeddings=[embedding])  # 임베딩을 명시적으로 제공
 
 # 주어진 단어에 대해 가장 유사한 접속사 찾기
 def find_similar_conjunctions(word):
-    query_embedding = get_embedding(word)
+    query_embedding = embedding_model(word)
     results = db.query(query_embeddings=query_embedding, n_results=20)
     return (
         results["documents"][0] if results["documents"] else "No similar word found"

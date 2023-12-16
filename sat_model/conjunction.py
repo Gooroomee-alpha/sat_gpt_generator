@@ -1,7 +1,7 @@
 import json
 import random
 
-from conjunction_vectorize import find_similar_conjunctions
+from sat_model.conjunction_vectorize import find_similar_conjunctions
 
 
 conjunctions = [
