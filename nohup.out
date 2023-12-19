@@ -1824,3 +1824,72 @@ Traceback (most recent call last):
 json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 244 (char 245)
 Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+<class 'transformers.models.roberta.modeling_roberta.RobertaModel'>
+50265
+Most similar conjunction to In contrast : ['in contrast', 'by contrast', 'in comparison', 'in addition', 'in fact', 'alternatively', 'alternately', 'finally', 'similarly', 'to conclude', 'consequently', 'additionally', 'currently', 'secondly', 'subsequently', 'for instance', 'accordingly', 'instead', 'still', 'second']
+{"passage": "In their 2008 study, Nikiforakis and Normann conducted a comparative-statics analysis of punishment in public-good experiments, examining how varying the effectiveness of punishment impacts cooperation. Their findings revealed that as punishment effectiveness increased, contributions to the public good rose, leading to near-complete cooperation and welfare improvements. ______, when punishment effectiveness fell below a certain threshold, it failed to sustain cooperation, and the availability of punishment actually reduced overall welfare. This research underscores the significance of the punishment factor in experimental outcomes and suggests that the level of punishment effectiveness is crucial for fostering cooperation in public goods scenarios.", "question": "Which choice completes the text with the most logical transition?", "choices": ["However", "Additionally", "Accordingly", "Besides"], "answer": "However"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.00it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.08s/it]
+/home/seouluniv/.local/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:381: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/seouluniv/.local/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:386: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+{
+  "passage": "Funded by the National Science Foundation and the State of Florida, the National MagLab provides interactive demonstrations on electricity and magnetism, allowing visualization of these invisible forces. These educational tools aim to make complex scientific concepts accessible, offering insights into how _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "Maglev trains operate and the composition of comets.",
+  "distractors": ["lightning storms occur during thunderstorms.", "plants and animals are affected by magnetic fields.", "electricity and magnetism are the same force.]
+} 
+!!
+{
+  "passage": "Funded by the National Science Foundation and the State of Florida, the National MagLab provides interactive demonstrations on electricity and magnetism, allowing visualization of these invisible forces. These educational tools aim to make complex scientific concepts accessible, offering insights into how _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "Maglev trains operate and the composition of comets.",
+  "distractors": ["lightning storms occur during thunderstorms.", "plants and animals are affected by magnetic fields.", "electricity and magnetism are the same force.]
+}
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/main.py", line 578, in run
+    server.run()
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 6, in <module>
+    from sat_model import conjunction, fill_in_the_blank, find_subject
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 192, in <module>
+    generate_blank_problem(
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 19, in generate_blank_problem
+    raw_problem_json = json.loads(
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 5 column 169 (char 668)

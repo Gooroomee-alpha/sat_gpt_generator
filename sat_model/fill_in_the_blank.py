@@ -89,12 +89,6 @@ def get_blanked_phrase(original_passage: str, blanked_passage: str):
             end = i
             break
 
-        # if i > start:
-        #     print(original_passage[i : i + len(end_words)])
-        # if original_passage[i : i + len(end_words)] == end_words:
-        #     end = i
-        #     break
-
     # 빈칸으로 대체된 부분 반환
     return " ".join(original_passage[start:end])
 
@@ -190,7 +184,7 @@ def prompt_user_blank(passage):
 print(
     # json.dumps(
     generate_blank_problem(
-        "Funded by the National Science Foundation and the State of Florida, the National MagLab provides interactive demonstrations on electricity and magnetism, allowing visualization of these invisible forces. These educational tools aim to make complex scientific concepts accessible, offering insights into how Maglev trains operate and the composition of comets. The MagLab also delves into the history of electromagnetic discoveries, such as Heinrich Hertz's confirmation of James Clerk Maxwell's theory through the discovery of radio waves, which revolutionized communication technology."
+        "The telegraph, a revolutionary communication technology, emerged from the concept of transmitting electric signals across wires, an idea dating back to the early 1700s. Samuel Morse, a New York University professor, significantly advanced this technology by developing Morse Code in 1835 and securing political and financial support for his telegraph system. By 1844, Morse had successfully sent the first message from Washington, D.C., to Baltimore. The telegraph's impact was  profound, shrinking the world by allowing messages to be sent across continents in minutes, reshaping business, politics, and society. Despite initial skepticism and challenges, the telegraph paved the way for future communication innovations, ultimately being overshadowed by the telephone and radio."
     )
     # )
 )
