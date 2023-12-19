@@ -12,26 +12,26 @@ load_dotenv()
 # print(os.getenv('HF_TOKEN'))
 
 
-# {
-#   "passage": "When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily acknowledged her work as ground breaking; this recognition stemmed from her _______ demonstration that the sculptures were much older than had previously been thought.",
-#   "question": "Which choice completes the text with the most logical and precise word or phrase?",
-#   "choices": "A) compelling B) convincing C) thorough D) cautious",
-#   "answer": "convincing"
-# }
 def generate_blank_problem(passage: str):
     raw_problem = generate_blank_raw_problem(passage)
+    print(raw_problem)
+
     raw_problem_json = json.loads(
         raw_problem,
     )
+
     original_passage = passage
-    blanked_passage = raw_problem_json["passage"]
+    blanked_passage = raw_problem_json["passage"].replace("’", "'")
     question = raw_problem_json["question"]
     distractors = raw_problem_json["distractors"]
+    answer = raw_problem_json["answer"]
+    print(raw_problem_json)
 
     blanked_phrase = get_blanked_phrase(original_passage, blanked_passage)
-
-    # 결과 리스트 초기화
-    pattern = r"A\)(.+?)B\)(.+?)C\)(.+?)D\)(.+)"
+    if blanked_phrase is None:
+        blanked_phrase = answer
+        blanked_passage = blanked_passage.replace(answer, "_______", 1)
+    print(blanked_phrase)
 
     if blanked_phrase in distractors:
         # random from 0 to 3
@@ -39,6 +39,15 @@ def generate_blank_problem(passage: str):
 
     choices = [blanked_phrase] + distractors
     random.shuffle(choices)
+
+    print(
+        {
+            "passage": blanked_passage,
+            "question": question,
+            "choices": choices,
+            "answer": blanked_phrase,
+        }
+    )
 
     return {
         "passage": blanked_passage,
@@ -52,17 +61,42 @@ def get_blanked_phrase(original_passage: str, blanked_passage: str):
     original_passage = original_passage.split()
     blanked_passage = blanked_passage.split()
 
-    s = difflib.SequenceMatcher(None, original_passage, blanked_passage)
-    blocks = s.get_matching_blocks()
+    start = -1
+    end = -1
 
-    # 빈칸으로 대체된 부분 출력
-    for i in range(len(blocks) - 1):
-        a_start = blocks[i].a + blocks[i].size
-        a_end = blocks[i + 1].a
+    # 빈칸의 시작 위치 찾기
+    pattern = r"_{3,}"  # 3개 이상의 연속된 밑줄 찾기
+    for i, word in enumerate(blanked_passage):
+        if re.match(pattern, word):
+            start = i
+            break
 
-        if a_end > a_start:
-            missing = original_passage[a_start:a_end]
-            return " ".join(missing)
+    if start == -1:
+        return None
+
+    # 빈칸 다음에 오는 단어들 (end_word)
+    end_words = blanked_passage[start + 1 :]
+    print(end_words)
+    # 빈칸이 문장의 마지막에 있는 경우
+    if not end_words:
+        return " ".join(original_passage[start:])
+
+    # end_word와 일치하는 단어를 original_passage에서 찾기
+    for i in range(len(original_passage)):
+        if all(
+            original_passage[i + idx] == end_words[idx] for idx in range(len(end_words))
+        ):
+            end = i
+            break
+
+        # if i > start:
+        #     print(original_passage[i : i + len(end_words)])
+        # if original_passage[i : i + len(end_words)] == end_words:
+        #     end = i
+        #     break
+
+    # 빈칸으로 대체된 부분 반환
+    return " ".join(original_passage[start:end])
 
 
 def generate_blank_raw_problem(passage: str):
@@ -70,9 +104,7 @@ def generate_blank_raw_problem(passage: str):
 
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForCausalLM.from_pretrained(
-        model_path,
-        device_map="auto",
-        torch_dtype='auto'
+        model_path, device_map="auto", torch_dtype="auto"
     ).eval()
 
     system = prompt_system_blank()
@@ -90,13 +122,23 @@ def generate_blank_raw_problem(passage: str):
         return_tensors="pt",
     )
     output_ids = model.generate(
-        input_ids.to("cuda"), max_length=1024, temperature=0.0, do_sample=False
+        input_ids.to("cuda"), max_length=1300, temperature=0.0, do_sample=False
     )
     response = tokenizer.decode(
         output_ids[0][input_ids.shape[1] :], skip_special_tokens=True
     )
+    print(response)
+    print("!!")
+    pattern = r"\{.*\}"
+    match = re.search(pattern, response, re.DOTALL)
 
-    return response
+    if match:
+        json_data = match.group()
+        # 문자열을 JSON 객체로 변환
+    else:
+        raise ValueError("Wrong Output")
+
+    return json_data
 
 
 #     return """{
@@ -108,7 +150,7 @@ def generate_blank_raw_problem(passage: str):
 
 
 def prompt_system_blank():
-    prompt = prompt_fitb = """
+    prompt = """
 You will be provided with passage to use for creating 'fill in the blank' type question.
 Your task is to generate 'fill in the blank' SAT-style reading comprehension passage, question, and answer set using the provided passage by following these steps:
 
@@ -146,9 +188,9 @@ def prompt_user_blank(passage):
 
 
 print(
-    json.dumps(
-        generate_blank_problem(
-            "Musician Joni Mitchell, who is also a painter, uses images she creates for her album covers to emphasize ideas expressed in her music. For the cover of her album <em>Turbulent Indigo</em> (1994), Mitchell painted a striking self-portrait that closely resembles Vincent van Gogh’s <em>Self-Portrait with Bandaged Ear</em> (1889). The image calls attention to the album’s title song, in which Mitchell sings about the legacy of the postimpressionist painter. In that song, Mitchell also hints that she feels a strong artistic connection to Van Gogh—an idea that is reinforced by her imagery on the cover."
-        )
+    # json.dumps(
+    generate_blank_problem(
+        "Funded by the National Science Foundation and the State of Florida, the National MagLab provides interactive demonstrations on electricity and magnetism, allowing visualization of these invisible forces. These educational tools aim to make complex scientific concepts accessible, offering insights into how Maglev trains operate and the composition of comets. The MagLab also delves into the history of electromagnetic discoveries, such as Heinrich Hertz's confirmation of James Clerk Maxwell's theory through the discovery of radio waves, which revolutionized communication technology."
     )
+    # )
 )

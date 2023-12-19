@@ -51,7 +51,7 @@ def generate_conjunction(passage: str):
     conjunction_index = -1
     conjunction = ""
     for conjunction in conjunctions:
-        conjunction_index = passage.lower().find(conjunction)
+        conjunction_index = passage.lower().find(f"{conjunction},")
         if conjunction_index != -1:
             break
 
@@ -62,7 +62,7 @@ def generate_conjunction(passage: str):
     if is_original_uppercase:
         original_conjunction = conjunction.capitalize()
 
-    passage = passage.replace(original_conjunction, "______", 1)
+    passage = passage.replace(f"{original_conjunction},", "______,", 1)
     question = "Which choice completes the text with the most logical transition?"
     similar_conjunctions = find_similar_conjunctions(conjunction)
 
@@ -93,7 +93,7 @@ def generate_conjunction(passage: str):
 print(
     json.dumps(
         generate_conjunction(
-            "In 2019, researcher Patricia Jurado Gonzalez and food historian Nawal Nasrallah prepared a stew from a 4,000-year-old recipe found on a Mesopotamian clay tablet. When they tasted the dish, known as pašrūtum (“unwinding”), they found that it had a mild taste and inspired a sense of calm. Therefore, the researchers, knowing that dishes were sometimes named after their intended effects, theorized that the dish’s name, “unwinding,” referred to its function: to help ancient diners relax."
+            "In their 2008 study, Nikiforakis and Normann conducted a comparative-statics analysis of punishment in public-good experiments, examining how varying the effectiveness of punishment impacts cooperation. Their findings revealed that as punishment effectiveness increased, contributions to the public good rose, leading to near-complete cooperation and welfare improvements. However, when punishment effectiveness fell below a certain threshold, it failed to sustain cooperation, and the availability of punishment actually reduced overall welfare. This research underscores the significance of the punishment factor in experimental outcomes and suggests that the level of punishment effectiveness is crucial for fostering cooperation in public goods scenarios."
         )
     )
 )
