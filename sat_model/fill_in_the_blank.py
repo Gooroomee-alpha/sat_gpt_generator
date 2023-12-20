@@ -189,7 +189,7 @@ def prompt_user_blank(passage):
 print(
     # json.dumps(
     generate_blank_problem(
-        "The telegraph, a revolutionary communication technology, emerged from the concept of transmitting electric signals across wires, an idea dating back to the early 1700s. Samuel Morse, a New York University professor, significantly advanced this technology by developing Morse Code in 1835 and securing political and financial support for his telegraph system. By 1844, Morse had successfully sent the first message from Washington, D.C., to Baltimore. The telegraph's impact was  profound, shrinking the world by allowing messages to be sent across continents in minutes, reshaping business, politics, and society. Despite initial skepticism and challenges, the telegraph paved the way for future communication innovations, ultimately being overshadowed by the telephone and radio."
+        "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and realistic. García Márquez, who passed away in 2014, remains the most-translated Spanish-language author."
     )
     # )
 )

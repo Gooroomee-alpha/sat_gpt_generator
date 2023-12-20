@@ -1893,3 +1893,1102 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
     obj, end = self.scan_once(s, idx)
 json.decoder.JSONDecodeError: Invalid control character at: line 5 column 169 (char 668)
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+<class 'transformers.models.roberta.modeling_roberta.RobertaModel'>
+50265
+Most similar conjunction to In contrast : ['in contrast', 'by contrast', 'in comparison', 'in addition', 'in fact', 'alternatively', 'alternately', 'finally', 'similarly', 'to conclude', 'consequently', 'additionally', 'currently', 'secondly', 'subsequently', 'for instance', 'accordingly', 'instead', 'still', 'second']
+{"passage": "In their 2008 study, Nikiforakis and Normann conducted a comparative-statics analysis of punishment in public-good experiments, examining how varying the effectiveness of punishment impacts cooperation. Their findings revealed that as punishment effectiveness increased, contributions to the public good rose, leading to near-complete cooperation and welfare improvements. ______, when punishment effectiveness fell below a certain threshold, it failed to sustain cooperation, and the availability of punishment actually reduced overall welfare. This research underscores the significance of the punishment factor in experimental outcomes and suggests that the level of punishment effectiveness is crucial for fostering cooperation in public goods scenarios.", "question": "Which choice completes the text with the most logical transition?", "choices": ["By contrast", "Additionally", "However", "Regardless"], "answer": "However"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.53s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.07s/it]
+/home/seouluniv/.local/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:381: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/seouluniv/.local/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:386: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+{
+  "passage": "The telegraph, a revolutionary communication technology, emerged from the concept of transmitting electric signals across wires, an idea dating back to the early 1700s. Samuel Morse, a New York University professor, significantly advanced this technology by developing Morse Code in 1835 and securing political and financial support for his telegraph system. By 1844, Morse had successfully sent the first message from Washington, D.C., to Baltimore. The telegraph’s impact was _______, shrinking the world by allowing messages to be sent across continents in minutes, reshaping business, politics, and society.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "profound",
+  "distractors": ["pervasive", "beneficial", "insignificant"]
+} 
+!!
+{
+  "passage": "The telegraph, a revolutionary communication technology, emerged from the concept of transmitting electric signals across wires, an idea dating back to the early 1700s. Samuel Morse, a New York University professor, significantly advanced this technology by developing Morse Code in 1835 and securing political and financial support for his telegraph system. By 1844, Morse had successfully sent the first message from Washington, D.C., to Baltimore. The telegraph’s impact was _______, shrinking the world by allowing messages to be sent across continents in minutes, reshaping business, politics, and society.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "profound",
+  "distractors": ["pervasive", "beneficial", "insignificant"]
+}
+{'passage': 'The telegraph, a revolutionary communication technology, emerged from the concept of transmitting electric signals across wires, an idea dating back to the early 1700s. Samuel Morse, a New York University professor, significantly advanced this technology by developing Morse Code in 1835 and securing political and financial support for his telegraph system. By 1844, Morse had successfully sent the first message from Washington, D.C., to Baltimore. The telegraph’s impact was _______, shrinking the world by allowing messages to be sent across continents in minutes, reshaping business, politics, and society.', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'profound', 'distractors': ['pervasive', 'beneficial', 'insignificant']}
+['shrinking', 'the', 'world', 'by', 'allowing', 'messages', 'to', 'be', 'sent', 'across', 'continents', 'in', 'minutes,', 'reshaping', 'business,', 'politics,', 'and', 'society.']
+profound,
+{'passage': "The telegraph, a revolutionary communication technology, emerged from the concept of transmitting electric signals across wires, an idea dating back to the early 1700s. Samuel Morse, a New York University professor, significantly advanced this technology by developing Morse Code in 1835 and securing political and financial support for his telegraph system. By 1844, Morse had successfully sent the first message from Washington, D.C., to Baltimore. The telegraph's impact was _______, shrinking the world by allowing messages to be sent across continents in minutes, reshaping business, politics, and society.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['pervasive', 'beneficial', 'profound,', 'insignificant'], 'answer': 'profound,'}
+{'passage': "The telegraph, a revolutionary communication technology, emerged from the concept of transmitting electric signals across wires, an idea dating back to the early 1700s. Samuel Morse, a New York University professor, significantly advanced this technology by developing Morse Code in 1835 and securing political and financial support for his telegraph system. By 1844, Morse had successfully sent the first message from Washington, D.C., to Baltimore. The telegraph's impact was _______, shrinking the world by allowing messages to be sent across continents in minutes, reshaping business, politics, and society.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['pervasive', 'beneficial', 'profound,', 'insignificant'], 'answer': 'profound,'}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{"passage": "Musician Joni Mitchell, who is also a painter, uses images she creates for her album covers to emphasize ideas expressed in her music. For the cover of her album <em>Turbulent Indigo</em> (1994), Mitchell painted a striking self-portrait that closely resembles Vincent van Gogh\u2019s <em>Self-Portrait with Bandaged Ear</em> (1889). The image calls attention to the album\u2019s title song, in which Mitchell sings about the legacy of the postimpressionist painter. In that song, Mitchell also hints that she feels a strong artistic connection to Van Gogh\u2014an idea that is reinforced by her imagery on the cover.", "question": "Which choice best states the main purpose of the text?", "choices": ["To describe how Mitchell\u2019s music reflects her experiences as a painter", "To highlight the cultural significance of Van Gogh\u2019s work", "To illustrate how Mitchell\u2019s artistic expression is influenced by Van Gogh\u2019s legacy", "To contrast the style of Mitchell\u2019s painting with the style of Van Gogh\u2019s painting"], "answer": "To illustrate how Mitchell\u2019s artistic expression is influenced by Van Gogh\u2019s legacy"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+INFO:     Started server process [241569]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+{
+  "passage": "In 1908, the first edition of a now-classic novel was published, captivating readers with its rich narrative. This paperback, spanning 119 pages, _______ a treasured piece in literary collections. Over a century later, it remains a testament to the enduring power of storytelling, as acknowledged by Goodreads, Inc. in 2023.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "has since become",
+  "distractors": ["has been becoming", "has been to become", "has been in becoming"]
+}
+{"passage": "In 1908, the first edition of a now-classic novel was published, captivating readers with its rich narrative. This paperback, spanning 119 pages, has since become a treasured piece in literary collections. Over a century later, it remains a testament to the enduring power of storytelling, as acknowledged by Goodreads, Inc. in 2023.", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["has since become", "has been becoming", "has been in becoming", "has been to become"], "answer": "has since become"}
+INFO:     3.39.177.108:46774 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also laid the groundwork for modern aviation. The Flyer's maiden voyage lasted 12 seconds and covered 36 meters, with subsequent flights reaching up to 255.6 meters in 59 seconds. Despite a damaging gust of wind ending the day's trials, the Wrights' accomplishment marked the dawn of the aerial age." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "laid the groundwork for modern aviation.",
+  "distractors": ["replaced traditional methods of transportation.", "demonstrated the potential of powered flight without proper training.", "eliminated the need for additional experimentation."]
+} 
+!!
+{
+  "passage": "Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "laid the groundwork for modern aviation.",
+  "distractors": ["replaced traditional methods of transportation.", "demonstrated the potential of powered flight without proper training.", "eliminated the need for additional experimentation."]
+}
+{'passage': "Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also _______", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'laid the groundwork for modern aviation.', 'distractors': ['replaced traditional methods of transportation.', 'demonstrated the potential of powered flight without proper training.', 'eliminated the need for additional experimentation.']}
+[]
+laid the groundwork for modern aviation. The Flyer's maiden voyage lasted 12 seconds and covered 36 meters, with subsequent flights reaching up to 255.6 meters in 59 seconds. Despite a damaging gust of wind ending the day's trials, the Wrights' accomplishment marked the dawn of the aerial age.
+INFO:     3.39.177.108:49716 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+passage="Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also laid the groundwork for modern aviation. The Flyer's maiden voyage lasted 12 seconds and covered 36 meters, with subsequent flights reaching up to 255.6 meters in 59 seconds. Despite a damaging gust of wind ending the day's trials, the Wrights' accomplishment marked the dawn of the aerial age." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.15s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+{
+  "passage": "Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "laid the groundwork for modern aviation.",
+  "distractors": ["replaced traditional methods of transportation.", "demonstrated the potential of powered flight without proper training.", "eliminated the need for additional experimentation."]
+} 
+!!
+{
+  "passage": "Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "laid the groundwork for modern aviation.",
+  "distractors": ["replaced traditional methods of transportation.", "demonstrated the potential of powered flight without proper training.", "eliminated the need for additional experimentation."]
+}
+{'passage': "Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also _______", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'laid the groundwork for modern aviation.', 'distractors': ['replaced traditional methods of transportation.', 'demonstrated the potential of powered flight without proper training.', 'eliminated the need for additional experimentation.']}
+[]
+laid the groundwork for modern aviation. The Flyer's maiden voyage lasted 12 seconds and covered 36 meters, with subsequent flights reaching up to 255.6 meters in 59 seconds. Despite a damaging gust of wind ending the day's trials, the Wrights' accomplishment marked the dawn of the aerial age.
+INFO:     3.39.177.108:39018 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+passage="Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also laid the groundwork for modern aviation. The Flyer's maiden voyage lasted 12 seconds and covered 36 meters, with subsequent flights reaching up to 255.6 meters in 59 seconds. Despite a damaging gust of wind ending the day's trials, the Wrights' accomplishment marked the dawn of the aerial age." problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{"passage": "Wilbur and Orville Wright, through a rigorous process of research and development starting in 1899, achieved the first successful flight of a powered heavier-than-air aircraft on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, was a culmination of extensive glider experiments and innovative aeronautical engineering, including the use of a wind tunnel and flight testing. The brothers' breakthrough not only demonstrated controlled flight but also laid the groundwork for modern aviation. The Flyer's maiden voyage lasted 12 seconds and covered 36 meters, with subsequent flights reaching up to 255.6 meters in 59 seconds. Despite a damaging gust of wind ending the day's trials, the Wrights' accomplishment marked the dawn of the aerial age.", "question": "Which choice best states the main purpose of the text?", "choices": ["To explain how the Wright brothers\u2019 innovative design and engineering led to their success", "To contrast the Wright brothers\u2019 achievement with earlier attempts at powered flight", "To describe the Wright brothers\u2019 groundbreaking achievement in aviation", "To highlight the significance of the Wright Flyer\u2019s flight duration and distance"], "answer": "To describe the Wright brothers\u2019 groundbreaking achievement in aviation"}
+INFO:     3.39.177.108:45172 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.39.177.108:32916 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="In 1820, Hans Christian Ørsted discovered that an electric current generates a magnetic field, laying the foundation for the unified theory of electromagnetism. This revelation influenced André-Marie Ampère's work, leading to the mathematical formulation of electrodynamics. These findings were integral to James Clerk Maxwell's later development of Maxwell's equations, which describe classical electromagnetic fields and predict the existence of electromagnetic waves, including visible light. The understanding of electromagnetism evolved further with the advent of special relativity and quantum electrodynamics, which account for the speed of light and the discrete nature of electromagnetic interactions through photons. Despite these advancements, mysteries like magnetic monopoles and the Abraham–Minkowski controversy persist, challenging our comprehension of electromagnetic phenomena." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "In 1820, Hans Christian Ørsted discovered that an electric current generates a magnetic field, laying the foundation for the unified theory of electromagnetism. This revelation influenced André-Marie Ampère’s work, leading to the mathematical formulation of electrodynamics. These findings were integral to James Clerk Maxwell’s later development of Maxwell’s equations, which describe classical electromagnetic fields and predict the existence of electromagnetic waves, including visible light. The understanding of electromagnetism evolved further with the advent of special relativity and quantum electrodynamics, which account for the speed of light and the discrete nature of electromagnetic interactions through photons. Despite these advancements, mysteries like magnetic monopoles and the Abraham–Minkowski controversy persist, challenging our comprehension of _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "electromagnetic phenomena",
+  "distractors": ["electric currents", "magnetic fields", "classical electromagnetic equations"]
+} 
+!!
+{
+  "passage": "In 1820, Hans Christian Ørsted discovered that an electric current generates a magnetic field, laying the foundation for the unified theory of electromagnetism. This revelation influenced André-Marie Ampère’s work, leading to the mathematical formulation of electrodynamics. These findings were integral to James Clerk Maxwell’s later development of Maxwell’s equations, which describe classical electromagnetic fields and predict the existence of electromagnetic waves, including visible light. The understanding of electromagnetism evolved further with the advent of special relativity and quantum electrodynamics, which account for the speed of light and the discrete nature of electromagnetic interactions through photons. Despite these advancements, mysteries like magnetic monopoles and the Abraham–Minkowski controversy persist, challenging our comprehension of _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "electromagnetic phenomena",
+  "distractors": ["electric currents", "magnetic fields", "classical electromagnetic equations"]
+}
+{'passage': 'In 1820, Hans Christian Ørsted discovered that an electric current generates a magnetic field, laying the foundation for the unified theory of electromagnetism. This revelation influenced André-Marie Ampère’s work, leading to the mathematical formulation of electrodynamics. These findings were integral to James Clerk Maxwell’s later development of Maxwell’s equations, which describe classical electromagnetic fields and predict the existence of electromagnetic waves, including visible light. The understanding of electromagnetism evolved further with the advent of special relativity and quantum electrodynamics, which account for the speed of light and the discrete nature of electromagnetic interactions through photons. Despite these advancements, mysteries like magnetic monopoles and the Abraham–Minkowski controversy persist, challenging our comprehension of _______', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'electromagnetic phenomena', 'distractors': ['electric currents', 'magnetic fields', 'classical electromagnetic equations']}
+[]
+electromagnetic phenomena.
+{'passage': "In 1820, Hans Christian Ørsted discovered that an electric current generates a magnetic field, laying the foundation for the unified theory of electromagnetism. This revelation influenced André-Marie Ampère's work, leading to the mathematical formulation of electrodynamics. These findings were integral to James Clerk Maxwell's later development of Maxwell's equations, which describe classical electromagnetic fields and predict the existence of electromagnetic waves, including visible light. The understanding of electromagnetism evolved further with the advent of special relativity and quantum electrodynamics, which account for the speed of light and the discrete nature of electromagnetic interactions through photons. Despite these advancements, mysteries like magnetic monopoles and the Abraham–Minkowski controversy persist, challenging our comprehension of _______", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['magnetic fields', 'classical electromagnetic equations', 'electric currents', 'electromagnetic phenomena.'], 'answer': 'electromagnetic phenomena.'}
+{"passage": "In 1820, Hans Christian \u00d8rsted discovered that an electric current generates a magnetic field, laying the foundation for the unified theory of electromagnetism. This revelation influenced Andr\u00e9-Marie Amp\u00e8re's work, leading to the mathematical formulation of electrodynamics. These findings were integral to James Clerk Maxwell's later development of Maxwell's equations, which describe classical electromagnetic fields and predict the existence of electromagnetic waves, including visible light. The understanding of electromagnetism evolved further with the advent of special relativity and quantum electrodynamics, which account for the speed of light and the discrete nature of electromagnetic interactions through photons. Despite these advancements, mysteries like magnetic monopoles and the Abraham\u2013Minkowski controversy persist, challenging our comprehension of _______", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["magnetic fields", "classical electromagnetic equations", "electric currents", "electromagnetic phenomena."], "answer": "electromagnetic phenomena."}
+INFO:     3.39.177.108:51856 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     167.94.145.55:34004 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.145.55:39270 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.145.55:56622 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     3.39.177.108:50684 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and realistic. García Márquez, who passed away in 2014, remains the most-translated Spanish-language author.\r\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.29s/it]
+{
+  "passage": "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "realistic",
+  "distractors": ["imaginative", "interesting", "novel"]
+} 
+!!
+{
+  "passage": "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "realistic",
+  "distractors": ["imaginative", "interesting", "novel"]
+}
+{'passage': "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'realistic', 'distractors': ['imaginative', 'interesting', 'novel']}
+[]
+realistic. García Márquez, who passed away in 2014, remains the most-translated Spanish-language author.
+INFO:     3.39.177.108:52812 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+passage="Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and realistic. García Márquez, who passed away in 2014, remains the most-translated Spanish-language author.\r\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.97s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.29s/it]
+{
+  "passage": "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "realistic",
+  "distractors": ["imaginative", "interesting", "novel"]
+} 
+!!
+{
+  "passage": "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "realistic",
+  "distractors": ["imaginative", "interesting", "novel"]
+}
+{'passage': "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'realistic', 'distractors': ['imaginative', 'interesting', 'novel']}
+[]
+realistic. García Márquez, who passed away in 2014, remains the most-translated Spanish-language author.
+INFO:     3.39.177.108:38368 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+passage="Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and realistic. García Márquez, who passed away in 2014, remains the most-translated Spanish-language author.\r\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.15s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+{
+  "passage": "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "realistic",
+  "distractors": ["imaginative", "interesting", "novel"]
+} 
+!!
+{
+  "passage": "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "realistic",
+  "distractors": ["imaginative", "interesting", "novel"]
+}
+{'passage': "Gabriel García Márquez, known as Gabo, was a Colombian author who popularized magical realism through novels like 'One Hundred Years of Solitude' and 'Love in the Time of Cholera.' Born in 1927, he was raised by his grandparents, whose stories influenced his work. García Márquez began as a journalist, which shaped his narrative style. His works often explore solitude and reality, set in the fictional village of Macondo. He won the Nobel Prize in Literature in 1982 for his unique blend of the fantastic and _______.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'realistic', 'distractors': ['imaginative', 'interesting', 'novel']}
+[]
+realistic. García Márquez, who passed away in 2014, remains the most-translated Spanish-language author.
+INFO:     3.39.177.108:52634 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+INFO:     3.39.177.108:52334 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt's steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine's applications. Watt's legacy extends beyond his engineering feats; the unit of power, the watt (W), was named in his honor, recognizing his profound impact on technology and industry." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+{
+  "passage": "James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt’s steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine’s applications. Watt’s legacy extends _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "beyond",
+  "distractors": ["within", "among", "without"]
+} 
+!!
+{
+  "passage": "James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt’s steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine’s applications. Watt’s legacy extends _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "beyond",
+  "distractors": ["within", "among", "without"]
+}
+{'passage': 'James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt’s steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine’s applications. Watt’s legacy extends _______', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'beyond', 'distractors': ['within', 'among', 'without']}
+[]
+beyond his engineering feats; the unit of power, the watt (W), was named in his honor, recognizing his profound impact on technology and industry.
+INFO:     3.39.177.108:47900 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+passage="James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt's steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine's applications. Watt's legacy extends beyond his engineering feats; the unit of power, the watt (W), was named in his honor, recognizing his profound impact on technology and industry." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+{
+  "passage": "James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt’s steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine’s applications. Watt’s legacy extends _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "beyond",
+  "distractors": ["within", "among", "without"]
+} 
+!!
+{
+  "passage": "James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt’s steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine’s applications. Watt’s legacy extends _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "beyond",
+  "distractors": ["within", "among", "without"]
+}
+{'passage': 'James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt’s steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine’s applications. Watt’s legacy extends _______', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'beyond', 'distractors': ['within', 'among', 'without']}
+[]
+beyond his engineering feats; the unit of power, the watt (W), was named in his honor, recognizing his profound impact on technology and industry.
+INFO:     3.39.177.108:60550 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+INFO:     3.39.177.108:49172 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Gregor Mendel's 19th-century experiments with pea plants established the foundation of genetic inheritance. He discovered that traits are not blended but passed down in distinct patterns. His principle of uniformity emerged from observing that offspring exhibited traits of one parent. Further experiments revealed a 3:1 ratio of dominant to recessive traits, forming his principle of segregation. His dihybrid crosses demonstrated the principle of independent assortment, where different traits are inherited separately. Mendel's work is now fundamental to genetics, illustrating the basic rules of heredity.\r\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "Gregor Mendel's 19th-century experiments with pea plants established the foundation of genetic inheritance. He discovered that traits are not blended but passed down in distinct patterns. His principle of uniformity emerged from observing that offspring exhibited traits of one parent. Further experiments revealed a 3:1 ratio of dominant to recessive traits, forming his principle of segregation. His dihybrid crosses demonstrated the principle of _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "independent assortment",
+  "distractors": ["self-sustaining", "predetermined", "reciprocal"]
+} 
+!!
+{
+  "passage": "Gregor Mendel's 19th-century experiments with pea plants established the foundation of genetic inheritance. He discovered that traits are not blended but passed down in distinct patterns. His principle of uniformity emerged from observing that offspring exhibited traits of one parent. Further experiments revealed a 3:1 ratio of dominant to recessive traits, forming his principle of segregation. His dihybrid crosses demonstrated the principle of _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "independent assortment",
+  "distractors": ["self-sustaining", "predetermined", "reciprocal"]
+}
+{'passage': "Gregor Mendel's 19th-century experiments with pea plants established the foundation of genetic inheritance. He discovered that traits are not blended but passed down in distinct patterns. His principle of uniformity emerged from observing that offspring exhibited traits of one parent. Further experiments revealed a 3:1 ratio of dominant to recessive traits, forming his principle of segregation. His dihybrid crosses demonstrated the principle of _______", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'independent assortment', 'distractors': ['self-sustaining', 'predetermined', 'reciprocal']}
+[]
+independent assortment, where different traits are inherited separately. Mendel's work is now fundamental to genetics, illustrating the basic rules of heredity.
+INFO:     3.39.177.108:46478 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+passage="Gregor Mendel's 19th-century experiments with pea plants established the foundation of genetic inheritance. He discovered that traits are not blended but passed down in distinct patterns. His principle of uniformity emerged from observing that offspring exhibited traits of one parent. Further experiments revealed a 3:1 ratio of dominant to recessive traits, forming his principle of segregation. His dihybrid crosses demonstrated the principle of independent assortment, where different traits are inherited separately. Mendel's work is now fundamental to genetics, illustrating the basic rules of heredity.\r\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "Gregor Mendel's 19th-century experiments with pea plants established the foundation of genetic inheritance. He discovered that traits are not blended but passed down in distinct patterns. His principle of uniformity emerged from observing that offspring exhibited traits of one parent. Further experiments revealed a 3:1 ratio of dominant to recessive traits, forming his principle of segregation. His dihybrid crosses demonstrated the principle of _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "independent assortment",
+  "distractors": ["self-sustaining", "predetermined", "reciprocal"]
+} 
+!!
+{
+  "passage": "Gregor Mendel's 19th-century experiments with pea plants established the foundation of genetic inheritance. He discovered that traits are not blended but passed down in distinct patterns. His principle of uniformity emerged from observing that offspring exhibited traits of one parent. Further experiments revealed a 3:1 ratio of dominant to recessive traits, forming his principle of segregation. His dihybrid crosses demonstrated the principle of _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "independent assortment",
+  "distractors": ["self-sustaining", "predetermined", "reciprocal"]
+}
+{'passage': "Gregor Mendel's 19th-century experiments with pea plants established the foundation of genetic inheritance. He discovered that traits are not blended but passed down in distinct patterns. His principle of uniformity emerged from observing that offspring exhibited traits of one parent. Further experiments revealed a 3:1 ratio of dominant to recessive traits, forming his principle of segregation. His dihybrid crosses demonstrated the principle of _______", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'independent assortment', 'distractors': ['self-sustaining', 'predetermined', 'reciprocal']}
+[]
+independent assortment, where different traits are inherited separately. Mendel's work is now fundamental to genetics, illustrating the basic rules of heredity.
+INFO:     3.39.177.108:60834 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+INFO:     3.39.177.108:45618 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='The ultraviolet catastrophe, a paradox in classical physics, predicted an infinite amount of energy radiated by a black body at high frequencies, contradicting reality. Max Planck resolved this in 1900 by introducing energy quantization, suggesting energy is emitted in discrete packets or quanta, marking the birth of quantum mechanics. Albert Einstein further supported this in 1905 by explaining the photoelectric effect, proposing light is made of individual quanta, or photons. These developments highlighted the limitations of classical physics at the quantum scale.\r\n' problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.29s/it]
+{
+  "passage": "The ultraviotcatastrophe, a paradox in classical physics, predicted an infinite amount of energy radiated by a black body at high frequencies, contradicting reality. Max Planck resolved this in 1900 by introducing energy quantization, suggesting energy is emitted in discrete packets or quanta, marking the birth of quantum mechanics. Albert Einstein further supported this in 1905 by explaining the photoelectric effect, proposing light is made of individual quanta, or photons. These developments highlighted _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "the limitations of classical physics at the quantum scale.",
+  "distractors": ["the advantages of classical physics at the macroscale", "the disadvantages of quantum mechanics for black bodies", "the benefits of combining classical and quantum physics"]
+} 
+!!
+{
+  "passage": "The ultraviotcatastrophe, a paradox in classical physics, predicted an infinite amount of energy radiated by a black body at high frequencies, contradicting reality. Max Planck resolved this in 1900 by introducing energy quantization, suggesting energy is emitted in discrete packets or quanta, marking the birth of quantum mechanics. Albert Einstein further supported this in 1905 by explaining the photoelectric effect, proposing light is made of individual quanta, or photons. These developments highlighted _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "the limitations of classical physics at the quantum scale.",
+  "distractors": ["the advantages of classical physics at the macroscale", "the disadvantages of quantum mechanics for black bodies", "the benefits of combining classical and quantum physics"]
+}
+{'passage': 'The ultraviotcatastrophe, a paradox in classical physics, predicted an infinite amount of energy radiated by a black body at high frequencies, contradicting reality. Max Planck resolved this in 1900 by introducing energy quantization, suggesting energy is emitted in discrete packets or quanta, marking the birth of quantum mechanics. Albert Einstein further supported this in 1905 by explaining the photoelectric effect, proposing light is made of individual quanta, or photons. These developments highlighted _______', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'the limitations of classical physics at the quantum scale.', 'distractors': ['the advantages of classical physics at the macroscale', 'the disadvantages of quantum mechanics for black bodies', 'the benefits of combining classical and quantum physics']}
+[]
+highlighted the limitations of classical physics at the quantum scale.
+{'passage': 'The ultraviotcatastrophe, a paradox in classical physics, predicted an infinite amount of energy radiated by a black body at high frequencies, contradicting reality. Max Planck resolved this in 1900 by introducing energy quantization, suggesting energy is emitted in discrete packets or quanta, marking the birth of quantum mechanics. Albert Einstein further supported this in 1905 by explaining the photoelectric effect, proposing light is made of individual quanta, or photons. These developments highlighted _______', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['the advantages of classical physics at the macroscale', 'the benefits of combining classical and quantum physics', 'the disadvantages of quantum mechanics for black bodies', 'highlighted the limitations of classical physics at the quantum scale.'], 'answer': 'highlighted the limitations of classical physics at the quantum scale.'}
+{"passage": "The ultraviotcatastrophe, a paradox in classical physics, predicted an infinite amount of energy radiated by a black body at high frequencies, contradicting reality. Max Planck resolved this in 1900 by introducing energy quantization, suggesting energy is emitted in discrete packets or quanta, marking the birth of quantum mechanics. Albert Einstein further supported this in 1905 by explaining the photoelectric effect, proposing light is made of individual quanta, or photons. These developments highlighted _______", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["the advantages of classical physics at the macroscale", "the benefits of combining classical and quantum physics", "the disadvantages of quantum mechanics for black bodies", "highlighted the limitations of classical physics at the quantum scale."], "answer": "highlighted the limitations of classical physics at the quantum scale."}
+INFO:     3.39.177.108:45626 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     58.123.5.88:59220 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="In the 1970s, Latin American countries, facing current account deficits due to oil price shocks, borrowed heavily from US banks, with debt soaring from $29 billion in 1970 to $327 billion by 1982. The debt crisis peaked when Mexico announced its inability to service its $80 billion debt in 1982, leading to a cascade of similar declarations from other nations. The US Federal Reserve, alongside international institutions, orchestrated a response that included restructuring debt and implementing economic reforms in debtor nations. Despite these efforts, the crisis resulted in a 'lost decade' of economic stagnation and hardship for Latin America, while US banks delayed recognizing losses on loans, a practice that had long-term implications for financial market discipline." problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{"passage": "In the 1970s, Latin American countries, facing current account deficits due to oil price shocks, borrowed heavily from US banks, with debt soaring from $29 billion in 1970 to $327 billion by 1982. The debt crisis peaked when Mexico announced its inability to service its $80 billion debt in 1982, leading to a cascade of similar declarations from other nations. The US Federal Reserve, alongside international institutions, orchestrated a response that included restructuring debt and implementing economic reforms in debtor nations. Despite these efforts, the crisis resulted in a 'lost decade' of economic stagnation and hardship for Latin America, while US banks delayed recognizing losses on loans, a practice that had long-term implications for financial market discipline.", "question": "Which choice best states the main purpose of the text?", "choices": ["To explain how the crisis was caused by the interplay of economic and political factors", "To contrast the response to the crisis from US policymakers with that of Latin American governments", "To describe the consequences of the 1970s debt crisis in Latin America", "To explore the impact of the crisis on the relationship between the US and Latin America"], "answer": "To describe the consequences of the 1970s debt crisis in Latin America"}
+INFO:     58.123.5.88:59222 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.194.204:39710 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Chinua Achebe, in his novel 'Things Fall Apart,' uses English to convey African narratives, blending Igbo language, proverbs, and idioms to create a rich cultural tapestry. He introduces non-Igbo readers to the complexities of Igbo culture, using terms like 'chi' and 'ogbanje' to bridge cultural divides. Achebe's characters, universal in their emotions and motivations, allow readers to connect with the story despite cultural differences. His innovative use of language in a Western narrative structure redefines English fiction and broadens the scope of world literature." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.15s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.27s/it]
+{
+  "passage": "Chinua Achebe, in his novel 'Things Fall Apart,' uses English to convey African narratives, blending Igbo language, proverbs, and idioms to create a rich cultural tapestry. He introduces non-Igbo readers to the complexities of Igbo culture, using terms like 'chi' and 'ogbanje' to ______ cultural divides. Achebe's characters, universal in their emotions and motivations, allow readers to connect with the story despite cultural differences. His innovative use of language in a Western narrative structure redefines English fiction and broadens the scope of world literature.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "bridges",
+  "distractors": ["challenges", "illuminates", "replaces"]
+} 
+!!
+{
+  "passage": "Chinua Achebe, in his novel 'Things Fall Apart,' uses English to convey African narratives, blending Igbo language, proverbs, and idioms to create a rich cultural tapestry. He introduces non-Igbo readers to the complexities of Igbo culture, using terms like 'chi' and 'ogbanje' to ______ cultural divides. Achebe's characters, universal in their emotions and motivations, allow readers to connect with the story despite cultural differences. His innovative use of language in a Western narrative structure redefines English fiction and broadens the scope of world literature.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "bridges",
+  "distractors": ["challenges", "illuminates", "replaces"]
+}
+{'passage': "Chinua Achebe, in his novel 'Things Fall Apart,' uses English to convey African narratives, blending Igbo language, proverbs, and idioms to create a rich cultural tapestry. He introduces non-Igbo readers to the complexities of Igbo culture, using terms like 'chi' and 'ogbanje' to ______ cultural divides. Achebe's characters, universal in their emotions and motivations, allow readers to connect with the story despite cultural differences. His innovative use of language in a Western narrative structure redefines English fiction and broadens the scope of world literature.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'bridges', 'distractors': ['challenges', 'illuminates', 'replaces']}
+['cultural', 'divides.', "Achebe's", 'characters,', 'universal', 'in', 'their', 'emotions', 'and', 'motivations,', 'allow', 'readers', 'to', 'connect', 'with', 'the', 'story', 'despite', 'cultural', 'differences.', 'His', 'innovative', 'use', 'of', 'language', 'in', 'a', 'Western', 'narrative', 'structure', 'redefines', 'English', 'fiction', 'and', 'broadens', 'the', 'scope', 'of', 'world', 'literature.']
+bridge
+{'passage': "Chinua Achebe, in his novel 'Things Fall Apart,' uses English to convey African narratives, blending Igbo language, proverbs, and idioms to create a rich cultural tapestry. He introduces non-Igbo readers to the complexities of Igbo culture, using terms like 'chi' and 'ogbanje' to ______ cultural divides. Achebe's characters, universal in their emotions and motivations, allow readers to connect with the story despite cultural differences. His innovative use of language in a Western narrative structure redefines English fiction and broadens the scope of world literature.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['illuminates', 'bridge', 'replaces', 'challenges'], 'answer': 'bridge'}
+{"passage": "Chinua Achebe, in his novel 'Things Fall Apart,' uses English to convey African narratives, blending Igbo language, proverbs, and idioms to create a rich cultural tapestry. He introduces non-Igbo readers to the complexities of Igbo culture, using terms like 'chi' and 'ogbanje' to ______ cultural divides. Achebe's characters, universal in their emotions and motivations, allow readers to connect with the story despite cultural differences. His innovative use of language in a Western narrative structure redefines English fiction and broadens the scope of world literature.", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["illuminates", "bridge", "replaces", "challenges"], "answer": "bridge"}
+INFO:     3.38.194.204:55758 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.194.204:41220 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="In 1961, Norman Rockwell created 'The Connoisseur,' a painting that cleverly juxtaposed the abstract expressionism of Jackson Pollock with Rockwell's own realistic style, reflecting the art debates of the time. Critics like Clement Greenberg dismissed Rockwell's work as kitsch, yet Rockwell's visual storytelling and representational art held sway in American commercial art for decades. The painting not only defended Rockwell's approach but also humorously critiqued the abstract art movement, which had been dominating the art scene since the post-World War II era. This piece became a symbol of the ongoing discourse on the value and interpretation of realism versus abstraction in art." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "In 1961, Norman Rockwell created <em>The Connoisseur</em>, a painting that cleverly juxtaposed the abstract expressionism of Jackson Pollock with Rockwell's own realistic style, reflecting the art debates of the time. Critics like Clement Greenberg dismissed Rockwell's work as kitsch, yet Rockwell's visual storytelling and representational art held sway in American commercial art for decades. The painting not only defended Rockwell's approach but also humorously critiqued the abstract art movement, which had been dominating the art scene since the post-World War II era. This piece became a symbol of the ongoing discourse on the value and interpretation of realism versus abstraction in art.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "widespread",
+  "distractors": ["careful", "unintended", "infrequent"]
+} 
+!!
+{
+  "passage": "In 1961, Norman Rockwell created <em>The Connoisseur</em>, a painting that cleverly juxtaposed the abstract expressionism of Jackson Pollock with Rockwell's own realistic style, reflecting the art debates of the time. Critics like Clement Greenberg dismissed Rockwell's work as kitsch, yet Rockwell's visual storytelling and representational art held sway in American commercial art for decades. The painting not only defended Rockwell's approach but also humorously critiqued the abstract art movement, which had been dominating the art scene since the post-World War II era. This piece became a symbol of the ongoing discourse on the value and interpretation of realism versus abstraction in art.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "widespread",
+  "distractors": ["careful", "unintended", "infrequent"]
+}
+{'passage': "In 1961, Norman Rockwell created <em>The Connoisseur</em>, a painting that cleverly juxtaposed the abstract expressionism of Jackson Pollock with Rockwell's own realistic style, reflecting the art debates of the time. Critics like Clement Greenberg dismissed Rockwell's work as kitsch, yet Rockwell's visual storytelling and representational art held sway in American commercial art for decades. The painting not only defended Rockwell's approach but also humorously critiqued the abstract art movement, which had been dominating the art scene since the post-World War II era. This piece became a symbol of the ongoing discourse on the value and interpretation of realism versus abstraction in art.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'widespread', 'distractors': ['careful', 'unintended', 'infrequent']}
+widespread
+{'passage': "In 1961, Norman Rockwell created <em>The Connoisseur</em>, a painting that cleverly juxtaposed the abstract expressionism of Jackson Pollock with Rockwell's own realistic style, reflecting the art debates of the time. Critics like Clement Greenberg dismissed Rockwell's work as kitsch, yet Rockwell's visual storytelling and representational art held sway in American commercial art for decades. The painting not only defended Rockwell's approach but also humorously critiqued the abstract art movement, which had been dominating the art scene since the post-World War II era. This piece became a symbol of the ongoing discourse on the value and interpretation of realism versus abstraction in art.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['unintended', 'widespread', 'careful', 'infrequent'], 'answer': 'widespread'}
+{"passage": "In 1961, Norman Rockwell created <em>The Connoisseur</em>, a painting that cleverly juxtaposed the abstract expressionism of Jackson Pollock with Rockwell's own realistic style, reflecting the art debates of the time. Critics like Clement Greenberg dismissed Rockwell's work as kitsch, yet Rockwell's visual storytelling and representational art held sway in American commercial art for decades. The painting not only defended Rockwell's approach but also humorously critiqued the abstract art movement, which had been dominating the art scene since the post-World War II era. This piece became a symbol of the ongoing discourse on the value and interpretation of realism versus abstraction in art.", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["unintended", "widespread", "careful", "infrequent"], "answer": "widespread"}
+INFO:     3.38.194.204:41234 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.194.204:49850 - "POST /sat/passage HTTP/1.1" 200 OK
+INFO:     3.38.194.204:56934 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="In 1928, Alexander Fleming discovered penicillin at St. Mary's Hospital in London, marking the beginning of the antibiotic era. He noticed a mold, Penicillium notatum, had created a bacteria-free zone in a petri dish, leading to the identification of penicillin's bacterial inhibitory properties. However, it was during World War II that mass production of the drug was achieved, particularly in the U.S., using innovations like corn-steep liquor and deep-tank fermentation. By D-Day in 1944, penicillin was widely available, saving countless lives.\r\n" problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "In 1928, Alexander Fleming discovered penicillin at St. Mary’s Hospital in London, marking the beginning of the antibiotic era. He noticed a mold, Penicillium notatum, had created a bacteria-free ______ leading to the identification of penicillin’s bacterial inhibitory properties. However, it was during World War II that mass production of the drug was achieved, particularly in the U.S., using innovations like corn-steep liquor and deep-tank fermentation. By D-Day in 1944, penicillin was widely available, saving countless lives.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "bacteria-free zone in a petri dish,",
+  "distractors": ["bacteria-free zone in a petri dish.", "a bacteria-free zone in a petri dish.,", "the bacteria-free zone in a petri dish."]
+}
+{"passage": "In 1928, Alexander Fleming discovered penicillin at St. Mary's Hospital in London, marking the beginning of the antibiotic era. He noticed a mold, Penicillium notatum, had created a bacteria-free zone in a petri dish, leading to the identification of penicillin's bacterial inhibitory properties. However, it was during World War II that mass production of the drug was achieved, particularly in the U.S., using innovations like corn-steep liquor and deep-tank fermentation. By D-Day in 1944, penicillin was widely available, saving countless lives.\r\n", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["bacteria-free zone in a petri dish.", "the bacteria-free zone in a petri dish.", "bacteria-free zone in a petri dish,", "a bacteria-free zone in a petri dish.,"], "answer": "bacteria-free zone in a petri dish,"}
+INFO:     3.38.194.204:56940 - "POST /sat/problem HTTP/1.1" 200 OK
+passage="In 2013, Robert Shiller, a pioneer in behavioral economics, was awarded the Nobel Prize in Economic Sciences for his empirical analysis of asset prices. His work challenged the Efficient Market Hypothesis by incorporating psychological factors into economic and financial analysis. Shiller's insights into market volatility and the influence of human behavior on financial systems have significantly impacted the understanding of economics. His advocacy for a new financial order and the use of finance to address societal issues like inequality demonstrates his commitment to leveraging economic knowledge for the greater good." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "In 2013, Robert Shiller, a pioneer in behavioral economics, was awarded the Nobel Prize in Economic Sciences for his empirical analysis of asset prices. His work challenged the Efficient Market Hypothesis by incorporating psychological factors into economic and financial analysis. Shiller's insights into market volatility and the influence of human behavior on financial systems have significantly impacted _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "the understanding of economics",
+  "distractors": ["the understanding of financial systems", "the understanding of societal issues", "the understanding of the impact of human behavior on financial systems"]
+} 
+!!
+{
+  "passage": "In 2013, Robert Shiller, a pioneer in behavioral economics, was awarded the Nobel Prize in Economic Sciences for his empirical analysis of asset prices. His work challenged the Efficient Market Hypothesis by incorporating psychological factors into economic and financial analysis. Shiller's insights into market volatility and the influence of human behavior on financial systems have significantly impacted _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "the understanding of economics",
+  "distractors": ["the understanding of financial systems", "the understanding of societal issues", "the understanding of the impact of human behavior on financial systems"]
+}
+{'passage': "In 2013, Robert Shiller, a pioneer in behavioral economics, was awarded the Nobel Prize in Economic Sciences for his empirical analysis of asset prices. His work challenged the Efficient Market Hypothesis by incorporating psychological factors into economic and financial analysis. Shiller's insights into market volatility and the influence of human behavior on financial systems have significantly impacted _______", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'the understanding of economics', 'distractors': ['the understanding of financial systems', 'the understanding of societal issues', 'the understanding of the impact of human behavior on financial systems']}
+[]
+the understanding of economics. His advocacy for a new financial order and the use of finance to address societal issues like inequality demonstrates his commitment to leveraging economic knowledge for the greater good.
+INFO:     54.180.135.249:46854 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+INFO:     54.180.135.249:34670 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='Digital finance in China has been found to directly reduce air and water pollution, according to a study using the Environmental Kuznets Curve model. The study found that digital finance also indirectly reduces pollution by easing income inequality and promoting a green industrial structure. However, income growth may inadvertently increase pollution. The study suggests that digital finance could be key in promoting both social and environmental sustainability, particularly in eastern China where its development is more advanced.\n' problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "Digital finance in China has been found to directly reduce air and water pollution, according to a study using the Environmental Kuznets Curve model. The study found that digital finance also indirectly reduces pollution by easing income inequality and promoting a green industrial structure. However, _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "income growth may inadvertently increase pollution.",
+  "distractors": ["decreased economic activity may reduce pollution.", "increased industrialization may reduce pollution.", "reducing pollution may inadvertently decrease income growth."]
+} 
+!!
+{
+  "passage": "Digital finance in China has been found to directly reduce air and water pollution, according to a study using the Environmental Kuznets Curve model. The study found that digital finance also indirectly reduces pollution by easing income inequality and promoting a green industrial structure. However, _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "income growth may inadvertently increase pollution.",
+  "distractors": ["decreased economic activity may reduce pollution.", "increased industrialization may reduce pollution.", "reducing pollution may inadvertently decrease income growth."]
+}
+{'passage': 'Digital finance in China has been found to directly reduce air and water pollution, according to a study using the Environmental Kuznets Curve model. The study found that digital finance also indirectly reduces pollution by easing income inequality and promoting a green industrial structure. However, _______', 'question': 'Which choice most logically completes the text?', 'answer': 'income growth may inadvertently increase pollution.', 'distractors': ['decreased economic activity may reduce pollution.', 'increased industrialization may reduce pollution.', 'reducing pollution may inadvertently decrease income growth.']}
+[]
+income growth may inadvertently increase pollution. The study suggests that digital finance could be key in promoting both social and environmental sustainability, particularly in eastern China where its development is more advanced.
+INFO:     54.180.135.249:60644 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+INFO:     54.180.135.249:44186 - "POST /sat/passage HTTP/1.1" 200 OK
+INFO:     54.180.135.249:44190 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Peruvian economist Hernando de Soto has influenced the debate on urban informality in developing countries, advocating for large-scale regularization programs. His ideas suggest that formalizing informal assets can reduce poverty by integrating them into the formal economy. These proposals have inspired Latin American policies to recognize tenure security. However, critics argue that de Soto's approach oversimplifies market dynamics and ignores the social and environmental impacts of land legalization. Regularization programs may not guarantee sociospatial integration without addressing broader urban and socioeconomic conditions.\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "Peruvian economist Hernando de Soto has influenced the debate on urban informality in developing countries, advocating for large-scale regularization programs. His ideas suggest that formalizing informal assets can reduce poverty by integrating them into the formal economy. These proposals have inspired Latin American policies to recognize tenure security. However, _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "critics argue that de Soto’s approach oversimplifies market dynamics and ignores the social and environmental impacts of land legalization.",
+  "distractors": ["communities have developed innovative solutions to address the challenges of urban informality without relying on large-scale regularization programs.", "de Soto’s theories have been applied in many countries, but the effectiveness of his approach has not been consistently demonstrated.", "policymakers have prioritized tenure security over other considerations when implementing de Soto’s recommendations."]
+} 
+!!
+{
+  "passage": "Peruvian economist Hernando de Soto has influenced the debate on urban informality in developing countries, advocating for large-scale regularization programs. His ideas suggest that formalizing informal assets can reduce poverty by integrating them into the formal economy. These proposals have inspired Latin American policies to recognize tenure security. However, _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "critics argue that de Soto’s approach oversimplifies market dynamics and ignores the social and environmental impacts of land legalization.",
+  "distractors": ["communities have developed innovative solutions to address the challenges of urban informality without relying on large-scale regularization programs.", "de Soto’s theories have been applied in many countries, but the effectiveness of his approach has not been consistently demonstrated.", "policymakers have prioritized tenure security over other considerations when implementing de Soto’s recommendations."]
+}
+{'passage': 'Peruvian economist Hernando de Soto has influenced the debate on urban informality in developing countries, advocating for large-scale regularization programs. His ideas suggest that formalizing informal assets can reduce poverty by integrating them into the formal economy. These proposals have inspired Latin American policies to recognize tenure security. However, _______', 'question': 'Which choice most logically completes the text?', 'answer': 'critics argue that de Soto’s approach oversimplifies market dynamics and ignores the social and environmental impacts of land legalization.', 'distractors': ['communities have developed innovative solutions to address the challenges of urban informality without relying on large-scale regularization programs.', 'de Soto’s theories have been applied in many countries, but the effectiveness of his approach has not been consistently demonstrated.', 'policymakers have prioritized tenure security over other considerations when implementing de Soto’s recommendations.']}
+[]
+critics argue that de Soto's approach oversimplifies market dynamics and ignores the social and environmental impacts of land legalization. Regularization programs may not guarantee sociospatial integration without addressing broader urban and socioeconomic conditions.
+INFO:     54.180.135.249:44206 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+passage="In 'Development as Freedom,' Amartya Sen argues that economic development should be measured by the expansion of freedoms, not wealth accumulation. He believes poverty is about the lack of opportunity, not just low income. Sen emphasizes that development should enhance people's capabilities and choices through five types of freedoms: political, economic, social, transparency, and security. He also highlights the role of free markets, women's empowerment, and democracy in driving development.\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "In _______, Amartya Sen argues that economic development should be measured by the expansion of freedoms, not wealth accumulation. He believes poverty is about the lack of opportunity, not just low income. Sen emphasizes that development should enhance people's capabilities and choices through five types of freedoms: political, economic, social, transparency, and security. He also highlights the role of free markets, women’s empowerment, and democracy in driving development.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "Development as Freedom",
+  "distractors": ["The Impact of Economic Development on Political Freedom", "The Relationship Between Economic Growth and Social Freedom", "The Benefits of Economic Freedom for Women"]
+} 
+!!
+{
+  "passage": "In _______, Amartya Sen argues that economic development should be measured by the expansion of freedoms, not wealth accumulation. He believes poverty is about the lack of opportunity, not just low income. Sen emphasizes that development should enhance people's capabilities and choices through five types of freedoms: political, economic, social, transparency, and security. He also highlights the role of free markets, women’s empowerment, and democracy in driving development.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "Development as Freedom",
+  "distractors": ["The Impact of Economic Development on Political Freedom", "The Relationship Between Economic Growth and Social Freedom", "The Benefits of Economic Freedom for Women"]
+}
+{'passage': "In _______, Amartya Sen argues that economic development should be measured by the expansion of freedoms, not wealth accumulation. He believes poverty is about the lack of opportunity, not just low income. Sen emphasizes that development should enhance people's capabilities and choices through five types of freedoms: political, economic, social, transparency, and security. He also highlights the role of free markets, women’s empowerment, and democracy in driving development.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'Development as Freedom', 'distractors': ['The Impact of Economic Development on Political Freedom', 'The Relationship Between Economic Growth and Social Freedom', 'The Benefits of Economic Freedom for Women']}
+['Amartya', 'Sen', 'argues', 'that', 'economic', 'development', 'should', 'be', 'measured', 'by', 'the', 'expansion', 'of', 'freedoms,', 'not', 'wealth', 'accumulation.', 'He', 'believes', 'poverty', 'is', 'about', 'the', 'lack', 'of', 'opportunity,', 'not', 'just', 'low', 'income.', 'Sen', 'emphasizes', 'that', 'development', 'should', 'enhance', "people's", 'capabilities', 'and', 'choices', 'through', 'five', 'types', 'of', 'freedoms:', 'political,', 'economic,', 'social,', 'transparency,', 'and', 'security.', 'He', 'also', 'highlights', 'the', 'role', 'of', 'free', 'markets,', "women's", 'empowerment,', 'and', 'democracy', 'in', 'driving', 'development.']
+'Development as Freedom,'
+{'passage': "In _______, Amartya Sen argues that economic development should be measured by the expansion of freedoms, not wealth accumulation. He believes poverty is about the lack of opportunity, not just low income. Sen emphasizes that development should enhance people's capabilities and choices through five types of freedoms: political, economic, social, transparency, and security. He also highlights the role of free markets, women's empowerment, and democracy in driving development.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ["'Development as Freedom,'", 'The Benefits of Economic Freedom for Women', 'The Relationship Between Economic Growth and Social Freedom', 'The Impact of Economic Development on Political Freedom'], 'answer': "'Development as Freedom,'"}
+{"passage": "In _______, Amartya Sen argues that economic development should be measured by the expansion of freedoms, not wealth accumulation. He believes poverty is about the lack of opportunity, not just low income. Sen emphasizes that development should enhance people's capabilities and choices through five types of freedoms: political, economic, social, transparency, and security. He also highlights the role of free markets, women's empowerment, and democracy in driving development.", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["'Development as Freedom,'", "The Benefits of Economic Freedom for Women", "The Relationship Between Economic Growth and Social Freedom", "The Impact of Economic Development on Political Freedom"], "answer": "'Development as Freedom,'"}
+INFO:     3.38.194.204:37544 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     54.180.135.249:60546 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Katsushika Hokusai's iconic woodblock print, 'The Great Wave off Kanagawa,' created in late 1831, is renowned for its dynamic composition and use of Prussian blue. It depicts a towering wave threatening boats near Mount Fuji. As the first print in Hokusai's series 'Thirty-six Views of Mount Fuji,' it revolutionized Japanese printmaking through its blend of traditional Japanese art and European graphical perspective. This piece not only achieved immediate success in Japan but also profoundly influenced European Impressionists. The print's enduring legacy is evident in its presence in numerous museums worldwide and its status as one of the most reproduced images in art history." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "Katsushika Hokusai's iconic woodblock print, <em>The Great Wave off Kanagawa</em>, created in late 1831, is renowned for its dynamic composition and use of Prussian blue. It depicts a towering wave threatening boats near Mount Fuji. As the first print in Hokusai's series <em>Thirty-six Views of Mount Fuji</em>, it revolutionized Japanese printmaking through its blend of traditional Japanese art and European graphical perspective. This piece not only achieved immediate success in Japan but also profoundly influenced European Impressionists. The print’s enduring legacy is evident in its presence in numerous museums worldwide and its status as one of the most reproduced images in art history.",
+  "question": "Which choice most logically completes the text?",
+  "answer": "widespread",
+  "distractors": ["careful", "unintended", "infrequent"]
+} 
+!!
+{
+  "passage": "Katsushika Hokusai's iconic woodblock print, <em>The Great Wave off Kanagawa</em>, created in late 1831, is renowned for its dynamic composition and use of Prussian blue. It depicts a towering wave threatening boats near Mount Fuji. As the first print in Hokusai's series <em>Thirty-six Views of Mount Fuji</em>, it revolutionized Japanese printmaking through its blend of traditional Japanese art and European graphical perspective. This piece not only achieved immediate success in Japan but also profoundly influenced European Impressionists. The print’s enduring legacy is evident in its presence in numerous museums worldwide and its status as one of the most reproduced images in art history.",
+  "question": "Which choice most logically completes the text?",
+  "answer": "widespread",
+  "distractors": ["careful", "unintended", "infrequent"]
+}
+{'passage': "Katsushika Hokusai's iconic woodblock print, <em>The Great Wave off Kanagawa</em>, created in late 1831, is renowned for its dynamic composition and use of Prussian blue. It depicts a towering wave threatening boats near Mount Fuji. As the first print in Hokusai's series <em>Thirty-six Views of Mount Fuji</em>, it revolutionized Japanese printmaking through its blend of traditional Japanese art and European graphical perspective. This piece not only achieved immediate success in Japan but also profoundly influenced European Impressionists. The print’s enduring legacy is evident in its presence in numerous museums worldwide and its status as one of the most reproduced images in art history.", 'question': 'Which choice most logically completes the text?', 'answer': 'widespread', 'distractors': ['careful', 'unintended', 'infrequent']}
+widespread
+{'passage': "Katsushika Hokusai's iconic woodblock print, <em>The Great Wave off Kanagawa</em>, created in late 1831, is renowned for its dynamic composition and use of Prussian blue. It depicts a towering wave threatening boats near Mount Fuji. As the first print in Hokusai's series <em>Thirty-six Views of Mount Fuji</em>, it revolutionized Japanese printmaking through its blend of traditional Japanese art and European graphical perspective. This piece not only achieved immediate success in Japan but also profoundly influenced European Impressionists. The print's enduring legacy is evident in its presence in numerous museums worldwide and its status as one of the most reproduced images in art history.", 'question': 'Which choice most logically completes the text?', 'choices': ['unintended', 'careful', 'infrequent', 'widespread'], 'answer': 'widespread'}
+{"passage": "Katsushika Hokusai's iconic woodblock print, <em>The Great Wave off Kanagawa</em>, created in late 1831, is renowned for its dynamic composition and use of Prussian blue. It depicts a towering wave threatening boats near Mount Fuji. As the first print in Hokusai's series <em>Thirty-six Views of Mount Fuji</em>, it revolutionized Japanese printmaking through its blend of traditional Japanese art and European graphical perspective. This piece not only achieved immediate success in Japan but also profoundly influenced European Impressionists. The print's enduring legacy is evident in its presence in numerous museums worldwide and its status as one of the most reproduced images in art history.", "question": "Which choice most logically completes the text?", "choices": ["unintended", "careful", "infrequent", "widespread"], "answer": "widespread"}
+INFO:     54.180.135.249:57096 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     54.180.135.249:49104 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Akira Kurosawa was a seminal figure in cinema, known for his hands-on approach to filmmaking. He was involved in every aspect, from writing to editing, and his films were recognized for their innovative techniques. Kurosawa's themes included the master-disciple relationship, the heroic champion, and cycles of violence. His meticulous attention to detail extended to creating extensive character notes, as seen in 'Seven Samurai.' His use of long lenses, multiple cameras, and widescreen format in films like 'The Hidden Fortress' and 'Ran' showcased his commitment to the craft.\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "Akira Kurosawa was a seminal figure in cinema, known for his hands-on approach to filmmaking. He was involved in every aspect, from writing to editing, and his films were recognized for their ______ techniques. Kurosawa's themes included the master-disciple relationship, the heroic champion, and cycles of violence. His meticulous attention to detail extended to creating extensive character notes, as seen in 'Seven Samurai.' His use of long lenses, multiple cameras, and widescreen format in films like 'The Hidden Fortress' and 'Ran' showcased his commitment to the craft.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "innovative",
+  "distractors": ["revolutionary", "conventional", "obscure"]
+} 
+!!
+{
+  "passage": "Akira Kurosawa was a seminal figure in cinema, known for his hands-on approach to filmmaking. He was involved in every aspect, from writing to editing, and his films were recognized for their ______ techniques. Kurosawa's themes included the master-disciple relationship, the heroic champion, and cycles of violence. His meticulous attention to detail extended to creating extensive character notes, as seen in 'Seven Samurai.' His use of long lenses, multiple cameras, and widescreen format in films like 'The Hidden Fortress' and 'Ran' showcased his commitment to the craft.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "innovative",
+  "distractors": ["revolutionary", "conventional", "obscure"]
+}
+{'passage': "Akira Kurosawa was a seminal figure in cinema, known for his hands-on approach to filmmaking. He was involved in every aspect, from writing to editing, and his films were recognized for their ______ techniques. Kurosawa's themes included the master-disciple relationship, the heroic champion, and cycles of violence. His meticulous attention to detail extended to creating extensive character notes, as seen in 'Seven Samurai.' His use of long lenses, multiple cameras, and widescreen format in films like 'The Hidden Fortress' and 'Ran' showcased his commitment to the craft.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'innovative', 'distractors': ['revolutionary', 'conventional', 'obscure']}
+['techniques.', "Kurosawa's", 'themes', 'included', 'the', 'master-disciple', 'relationship,', 'the', 'heroic', 'champion,', 'and', 'cycles', 'of', 'violence.', 'His', 'meticulous', 'attention', 'to', 'detail', 'extended', 'to', 'creating', 'extensive', 'character', 'notes,', 'as', 'seen', 'in', "'Seven", "Samurai.'", 'His', 'use', 'of', 'long', 'lenses,', 'multiple', 'cameras,', 'and', 'widescreen', 'format', 'in', 'films', 'like', "'The", 'Hidden', "Fortress'", 'and', "'Ran'", 'showcased', 'his', 'commitment', 'to', 'the', 'craft.']
+innovative
+{'passage': "Akira Kurosawa was a seminal figure in cinema, known for his hands-on approach to filmmaking. He was involved in every aspect, from writing to editing, and his films were recognized for their ______ techniques. Kurosawa's themes included the master-disciple relationship, the heroic champion, and cycles of violence. His meticulous attention to detail extended to creating extensive character notes, as seen in 'Seven Samurai.' His use of long lenses, multiple cameras, and widescreen format in films like 'The Hidden Fortress' and 'Ran' showcased his commitment to the craft.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['conventional', 'revolutionary', 'obscure', 'innovative'], 'answer': 'innovative'}
+{"passage": "Akira Kurosawa was a seminal figure in cinema, known for his hands-on approach to filmmaking. He was involved in every aspect, from writing to editing, and his films were recognized for their ______ techniques. Kurosawa's themes included the master-disciple relationship, the heroic champion, and cycles of violence. His meticulous attention to detail extended to creating extensive character notes, as seen in 'Seven Samurai.' His use of long lenses, multiple cameras, and widescreen format in films like 'The Hidden Fortress' and 'Ran' showcased his commitment to the craft.", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["conventional", "revolutionary", "obscure", "innovative"], "answer": "innovative"}
+INFO:     54.180.135.249:48788 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.194.204:51326 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Thomas Piketty's 'Capital in the Twenty-First Century' delves into the dynamics of capital accumulation and its implications for economic inequality. Drawing on extensive data from 20 countries over centuries, Piketty argues that the rate of capital return in developed countries is persistently greater than the rate of economic growth. This disparity leads to wealth concentration and inequality, challenging the notion that capitalism naturally leads to equitable wealth distribution. Piketty suggests that without intervention, such as a global wealth tax, the trend towards oligarchy will continue, undermining democratic values and economic stability. His work has sparked widespread debate, reshaping discussions on wealth, inequality, and the structure of capitalist economies." problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{"passage": "Thomas Piketty's 'Capital in the Twenty-First Century' delves into the dynamics of capital accumulation and its implications for economic inequality. Drawing on extensive data from 20 countries over centuries, Piketty argues that the rate of capital return in developed countries is persistently greater than the rate of economic growth. This disparity leads to wealth concentration and inequality, challenging the notion that capitalism naturally leads to equitable wealth distribution. Piketty suggests that without intervention, such as a global wealth tax, the trend towards oligarchy will continue, undermining democratic values and economic stability. His work has sparked widespread debate, reshaping discussions on wealth, inequality, and the structure of capitalist economies.", "question": "Which choice best states the main purpose of the text?", "choices": ["To explore the relationship between technological advancements and wealth distribution", "To argue that capitalism\u2019s inherent flaws can be mitigated through policy interventions", "To demonstrate how capitalism\u2019s inherent dynamics lead to wealth inequality and undermine democratic values", "To examine the historical development of capitalism and its impact on economic growth"], "answer": "To demonstrate how capitalism\u2019s inherent dynamics lead to wealth inequality and undermine democratic values"}
+INFO:     43.203.112.69:37408 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     43.203.112.69:50136 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='George Balanchine, born in 1904 in Russia, was a pivotal figure in ballet, known for his neoclassical style. Trained at the Imperial Theater School of Ballet, he developed a unique blend of athleticism and musicality. His journey led him from Russia to Europe and eventually the United States, where he co-founded the School of American Ballet and the New York City Ballet. Despite his artistic genius, his legacy is complex due to his controversial treatment of dancers, particularly women, influencing body image standards in the ballet world.\n' problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "George Balanchine, born in 1904 in Russia, was a pivotal figure in ballet, known for his neoclassical style. Trained at the Imperial Theater School of Ballet, he developed a unique blend of athleticism and musicality. His journey led him from Russia to Europe and eventually the United States, where he _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "co-founded the School of American Ballet and the New York City Ballet",
+  "distractors": ["inspired many other choreographers", "influenced the development of the ballet in the United States", "was the first American dancer to perform in the Ballets Russes"]
+} 
+!!
+{
+  "passage": "George Balanchine, born in 1904 in Russia, was a pivotal figure in ballet, known for his neoclassical style. Trained at the Imperial Theater School of Ballet, he developed a unique blend of athleticism and musicality. His journey led him from Russia to Europe and eventually the United States, where he _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "co-founded the School of American Ballet and the New York City Ballet",
+  "distractors": ["inspired many other choreographers", "influenced the development of the ballet in the United States", "was the first American dancer to perform in the Ballets Russes"]
+}
+{'passage': 'George Balanchine, born in 1904 in Russia, was a pivotal figure in ballet, known for his neoclassical style. Trained at the Imperial Theater School of Ballet, he developed a unique blend of athleticism and musicality. His journey led him from Russia to Europe and eventually the United States, where he _______', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'co-founded the School of American Ballet and the New York City Ballet', 'distractors': ['inspired many other choreographers', 'influenced the development of the ballet in the United States', 'was the first American dancer to perform in the Ballets Russes']}
+[]
+co-founded the School of American Ballet and the New York City Ballet. Despite his artistic genius, his legacy is complex due to his controversial treatment of dancers, particularly women, influencing body image standards in the ballet world.
+INFO:     43.203.112.69:50150 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+INFO:     43.203.112.69:59632 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="In the early 20th century, French artist Andre Derain played a pivotal role in the Fauvist movement, known for its wild use of color and expressive brushwork. Derain's landscape 'Charing Cross Bridge' (1906) exemplifies Fauvism with its vibrant palette and bold interpretation of the London scene. The painting captures the essence of Edwardian London through intense hues and a misty atmosphere, with the iconic bridge and surrounding landmarks depicted in a fantastical manner. The use of color and light in the painting conveys a sense of the time and place, while also showcasing Derain's unique style that contributed to the development of both Fauvism and Cubism." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "In the early 20th century, French artist Andre Derain played a pivotal role in the Fauvist movement, known for its wild use of color and expressive brushwork. Derain's landscape 'Charing Cross Bridge' (1906) _______ Fauvism with its vibrant palette and bold interpretation of the London scene. The painting captures the essence of Edwardian London through intense hues and a misty atmosphere, with the iconic bridge and surrounding landmarks depicted in a fantastical manner. The use of color and light in the painting conveys a sense of the time and place, while also showcasing Derain’s unique style that contributed to the development of both Fauvism and Cubism.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "exemplifies",
+  "distractors": ["represented", "illustrated", "interpreted"]
+} 
+!!
+{
+  "passage": "In the early 20th century, French artist Andre Derain played a pivotal role in the Fauvist movement, known for its wild use of color and expressive brushwork. Derain's landscape 'Charing Cross Bridge' (1906) _______ Fauvism with its vibrant palette and bold interpretation of the London scene. The painting captures the essence of Edwardian London through intense hues and a misty atmosphere, with the iconic bridge and surrounding landmarks depicted in a fantastical manner. The use of color and light in the painting conveys a sense of the time and place, while also showcasing Derain’s unique style that contributed to the development of both Fauvism and Cubism.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "exemplifies",
+  "distractors": ["represented", "illustrated", "interpreted"]
+}
+{'passage': "In the early 20th century, French artist Andre Derain played a pivotal role in the Fauvist movement, known for its wild use of color and expressive brushwork. Derain's landscape 'Charing Cross Bridge' (1906) _______ Fauvism with its vibrant palette and bold interpretation of the London scene. The painting captures the essence of Edwardian London through intense hues and a misty atmosphere, with the iconic bridge and surrounding landmarks depicted in a fantastical manner. The use of color and light in the painting conveys a sense of the time and place, while also showcasing Derain’s unique style that contributed to the development of both Fauvism and Cubism.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'exemplifies', 'distractors': ['represented', 'illustrated', 'interpreted']}
+['Fauvism', 'with', 'its', 'vibrant', 'palette', 'and', 'bold', 'interpretation', 'of', 'the', 'London', 'scene.', 'The', 'painting', 'captures', 'the', 'essence', 'of', 'Edwardian', 'London', 'through', 'intense', 'hues', 'and', 'a', 'misty', 'atmosphere,', 'with', 'the', 'iconic', 'bridge', 'and', 'surrounding', 'landmarks', 'depicted', 'in', 'a', 'fantastical', 'manner.', 'The', 'use', 'of', 'color', 'and', 'light', 'in', 'the', 'painting', 'conveys', 'a', 'sense', 'of', 'the', 'time', 'and', 'place,', 'while', 'also', 'showcasing', "Derain's", 'unique', 'style', 'that', 'contributed', 'to', 'the', 'development', 'of', 'both', 'Fauvism', 'and', 'Cubism.']
+exemplifies
+{'passage': "In the early 20th century, French artist Andre Derain played a pivotal role in the Fauvist movement, known for its wild use of color and expressive brushwork. Derain's landscape 'Charing Cross Bridge' (1906) _______ Fauvism with its vibrant palette and bold interpretation of the London scene. The painting captures the essence of Edwardian London through intense hues and a misty atmosphere, with the iconic bridge and surrounding landmarks depicted in a fantastical manner. The use of color and light in the painting conveys a sense of the time and place, while also showcasing Derain's unique style that contributed to the development of both Fauvism and Cubism.", 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['illustrated', 'represented', 'interpreted', 'exemplifies'], 'answer': 'exemplifies'}
+{"passage": "In the early 20th century, French artist Andre Derain played a pivotal role in the Fauvist movement, known for its wild use of color and expressive brushwork. Derain's landscape 'Charing Cross Bridge' (1906) _______ Fauvism with its vibrant palette and bold interpretation of the London scene. The painting captures the essence of Edwardian London through intense hues and a misty atmosphere, with the iconic bridge and surrounding landmarks depicted in a fantastical manner. The use of color and light in the painting conveys a sense of the time and place, while also showcasing Derain's unique style that contributed to the development of both Fauvism and Cubism.", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["illustrated", "represented", "interpreted", "exemplifies"], "answer": "exemplifies"}
+INFO:     43.203.112.69:59634 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     43.202.114.32:45150 - "POST /sat/passage HTTP/1.1" 200 OK
+INFO:     43.202.114.32:34960 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily acknowledged her work as ground breaking; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought.' problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+{
+  "passage": "When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily acknowledged her work as _______; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "ground breaking",
+  "distractors": ["carefully crafted", "unintendedly misleading", "interestingly varied"]
+} 
+!!
+{
+  "passage": "When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily acknowledged her work as _______; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "ground breaking",
+  "distractors": ["carefully crafted", "unintendedly misleading", "interestingly varied"]
+}
+{'passage': 'When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily acknowledged her work as _______; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought.', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'ground breaking', 'distractors': ['carefully crafted', 'unintendedly misleading', 'interestingly varied']}
+['this', 'recognition', 'stemmed', 'from', 'her', 'convincing', 'demonstration', 'that', 'the', 'sculptures', 'were', 'much', 'older', 'than', 'had', 'previously', 'been', 'thought.']
+ground breaking;
+{'passage': 'When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily acknowledged her work as _______; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought.', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['interestingly varied', 'unintendedly misleading', 'ground breaking;', 'carefully crafted'], 'answer': 'ground breaking;'}
+{"passage": "When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily acknowledged her work as _______; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought.", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["interestingly varied", "unintendedly misleading", "ground breaking;", "carefully crafted"], "answer": "ground breaking;"}
+INFO:     43.202.114.32:33828 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:58488 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='Some economic historians surmised that late nineteenth- and early twentieth-century households in the United States experienced an economy of scale when it came to food purchases—they assumed that large households spent less on food per person than did small households. Economist Trevon Logan showed, however, that a close look at the available data disproves this supposition.' problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.22s/it]
+{"passage": "Some economic historians surmised that late nineteenth- and early twentieth-century households in the United States experienced an economy of scale when it came to food purchases\u2014they assumed that large households spent less on food per person than did small households. Economist Trevon Logan showed, however, that a close look at the available data disproves this supposition.", "question": "Which choice best states the main purpose of the text?", "choices": ["To compare the food budgets of different types of households", "To explore how changes in agricultural technology affected food production and consumption", "To examine the impact of household size on food prices in different regions", "To present evidence that contradicts a widely held belief about household food purchases"], "answer": "To present evidence that contradicts a widely held belief about household food purchases"}
+INFO:     3.38.44.236:57376 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:32790 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='In the early nineteenth century, some Euro-American farmers in the northeastern United States used agricultural techniques developed by the Haudenosaunee (Iroquois) people centuries earlier, but it seems that few of those farmers had actually seen Haudenosaunee farms firsthand. Barring the possibility of several farmers of the same era independently developing techniques that the Haudenosaunee people had already invented, these facts most strongly suggest that those farmers learned the techniques from other people who were more directly influenced by Haudenosaunee practices.' problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{"passage": "In the early nineteenth century, some Euro-American farmers in the northeastern United States used agricultural techniques developed by the Haudenosaunee (Iroquois) people centuries earlier, but it seems that few of those farmers had actually seen Haudenosaunee farms firsthand. Barring the possibility of several farmers of the same era independently developing techniques that the Haudenosaunee people had already invented, these facts most strongly suggest that those farmers learned the techniques from other people who were more directly influenced by Haudenosaunee practices.", "question": "Which choice best states the main purpose of the text?", "choices": ["To demonstrate how Euro-American farmers adopted and adapted Haudenosaunee agricultural techniques", "To contrast the farming techniques used by the Haudenosaunee people with those used by other groups in the region", "To explain why the Haudenosaunee people were successful farmers", "To describe how the Haudenosaunee people\u2019s farming practices were unique compared to those of other Native American groups"], "answer": "To demonstrate how Euro-American farmers adopted and adapted Haudenosaunee agricultural techniques"}
+INFO:     3.38.44.236:34014 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:56534 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='Ratified by more than 90 countries, the Nagoya Protocol is an international agreement ensuring that Indigenous communities are compensated when their agricultural resources and knowledge of wild plants and animals are utilized by agricultural corporations. However, the protocol has shortcomings. For example, it allows corporations to insist that their agreements with communities to conduct research on the commercial uses of the communities’ resources and knowledge remain confidential. Therefore, some Indigenous advocates express concern that the protocol may have the unintended effect of preventing independent observers from determining whether the agreements guarantee equitable compensation for Indigenous communities.' problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{"passage": "Ratified by more than 90 countries, the Nagoya Protocol is an international agreement ensuring that Indigenous communities are compensated when their agricultural resources and knowledge of wild plants and animals are utilized by agricultural corporations. However, the protocol has shortcomings. For example, it allows corporations to insist that their agreements with communities to conduct research on the commercial uses of the communities\u2019 resources and knowledge remain confidential. Therefore, some Indigenous advocates express concern that the protocol may have the unintended effect of preventing independent observers from determining whether the agreements guarantee equitable compensation for Indigenous communities.", "question": "Which choice best states the main purpose of the text?", "choices": ["To explain how the protocol has led to a power imbalance between corporations and Indigenous communities", "To describe the impact of the protocol on the preservation of traditional knowledge and resources", "To describe the limitations of the Nagoya Protocol in ensuring equitable compensation for Indigenous communities", "To argue that the protocol should be revised to address its shortcomings"], "answer": "To describe the limitations of the Nagoya Protocol in ensuring equitable compensation for Indigenous communities"}
+INFO:     3.38.44.236:45714 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:39502 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='Following the principles of community-based participatory research, tribal nations and research institutions are equal partners in health studies conducted on reservations. A collaboration between the Crow Tribe and Montana State University exemplifies this model: tribal citizens worked alongside scientists to design the methodology and continue to assist in data collection.' problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{"passage": "Following the principles of community-based participatory research, tribal nations and research institutions are equal partners in health studies conducted on reservations. A collaboration between the Crow Tribe and Montana State University exemplifies this model: tribal citizens worked alongside scientists to design the methodology and continue to assist in data collection.", "question": "Which choice best states the main purpose of the text?", "choices": ["To highlight the importance of tribal involvement in health studies conducted on reservations", "To contrast the collaboration between Crow Tribe and Montana State University with historical exploitation of Native American populations by researchers", "To describe the benefits of research conducted with tribal input", "To emphasize the value of intertribal collaboration in research"], "answer": "To highlight the importance of tribal involvement in health studies conducted on reservations"}
+INFO:     3.38.44.236:57060 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:52824 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='In documents called judicial opinions, judges explain the reasoning behind their legal rulings, and in those explanations they sometimes cite and discuss historical and contemporary philosophers. Legal scholar and philosopher Anita L. Allen argues that while judges are naturally inclined to mention philosophers whose views align with their own positions, the strongest judicial opinions consider and rebut potential objections; discussing philosophers whose views conflict with judges’ views could therefore help judges improve the arguments they put forward in their judicial opinions.' problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{"passage": "In documents called judicial opinions, judges explain the reasoning behind their legal rulings, and in those explanations they sometimes cite and discuss historical and contemporary philosophers. Legal scholar and philosopher Anita L. Allen argues that while judges are naturally inclined to mention philosophers whose views align with their own positions, the strongest judicial opinions consider and rebut potential objections; discussing philosophers whose views conflict with judges\u2019 views could therefore help judges improve the arguments they put forward in their judicial opinions.", "question": "Which choice best states the main purpose of the text?", "choices": ["To describe how judges\u2019 legal decisions are influenced by their personal beliefs", "To explain how judges\u2019 use of philosophers\u2019 ideas can enhance their arguments", "To highlight the significance of philosophers\u2019 contributions to legal reasoning", "To explain why judges should consider and rebut opposing viewpoints when crafting their legal opinions"], "answer": "To explain why judges should consider and rebut opposing viewpoints when crafting their legal opinions"}
+INFO:     3.38.44.236:39976 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:58602 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='Psychologists Dacher Keltner and Jonathan Haidt have argued that experiencing awe—a sensation of reverence and wonder typically brought on by perceiving something grand or powerful—can enable us to feel more connected to others and thereby inspire us to act more altruistically. Keltner, along with Paul K. Piff, Pia Dietze, and colleagues, claims to have found evidence for this effect in a recent study where participants were asked to either gaze up at exceptionally tall trees in a nearby grove (reported to be a universally awe-inspiring experience) or stare at the exterior of a nearby, nondescript building. After one minute, an experimenter deliberately spilled a box of pens nearby.' problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "Psychologists Dacher Keltner and Jonathan Haidt have argued that experiencing awe—a sensation of reverence and wonder typically brought on by perceiving something grand or powerful—can enable us to feel more connected to others and thereby inspire us to act more ________. Keltner, along with Paul K. Piff, Pia Dietze, and colleagues, claims to have found evidence for this effect in a recent study where participants were asked to either gaze up at exceptionally tall trees in a nearby grove (reported to be a universally awe-inspiring experience) or stare at the exterior of a nearby, nondescript building. After one minute, an experimenter deliberately spilled a box of pens nearby.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "altruistically",
+  "distractors": ["independently", "intermittently", "disinterestedly"]
+} 
+!!
+{
+  "passage": "Psychologists Dacher Keltner and Jonathan Haidt have argued that experiencing awe—a sensation of reverence and wonder typically brought on by perceiving something grand or powerful—can enable us to feel more connected to others and thereby inspire us to act more ________. Keltner, along with Paul K. Piff, Pia Dietze, and colleagues, claims to have found evidence for this effect in a recent study where participants were asked to either gaze up at exceptionally tall trees in a nearby grove (reported to be a universally awe-inspiring experience) or stare at the exterior of a nearby, nondescript building. After one minute, an experimenter deliberately spilled a box of pens nearby.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "altruistically",
+  "distractors": ["independently", "intermittently", "disinterestedly"]
+}
+{'passage': 'Psychologists Dacher Keltner and Jonathan Haidt have argued that experiencing awe—a sensation of reverence and wonder typically brought on by perceiving something grand or powerful—can enable us to feel more connected to others and thereby inspire us to act more ________. Keltner, along with Paul K. Piff, Pia Dietze, and colleagues, claims to have found evidence for this effect in a recent study where participants were asked to either gaze up at exceptionally tall trees in a nearby grove (reported to be a universally awe-inspiring experience) or stare at the exterior of a nearby, nondescript building. After one minute, an experimenter deliberately spilled a box of pens nearby.', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'altruistically', 'distractors': ['independently', 'intermittently', 'disinterestedly']}
+['Keltner,', 'along', 'with', 'Paul', 'K.', 'Piff,', 'Pia', 'Dietze,', 'and', 'colleagues,', 'claims', 'to', 'have', 'found', 'evidence', 'for', 'this', 'effect', 'in', 'a', 'recent', 'study', 'where', 'participants', 'were', 'asked', 'to', 'either', 'gaze', 'up', 'at', 'exceptionally', 'tall', 'trees', 'in', 'a', 'nearby', 'grove', '(reported', 'to', 'be', 'a', 'universally', 'awe-inspiring', 'experience)', 'or', 'stare', 'at', 'the', 'exterior', 'of', 'a', 'nearby,', 'nondescript', 'building.', 'After', 'one', 'minute,', 'an', 'experimenter', 'deliberately', 'spilled', 'a', 'box', 'of', 'pens', 'nearby.']
+altruistically.
+{'passage': 'Psychologists Dacher Keltner and Jonathan Haidt have argued that experiencing awe—a sensation of reverence and wonder typically brought on by perceiving something grand or powerful—can enable us to feel more connected to others and thereby inspire us to act more ________. Keltner, along with Paul K. Piff, Pia Dietze, and colleagues, claims to have found evidence for this effect in a recent study where participants were asked to either gaze up at exceptionally tall trees in a nearby grove (reported to be a universally awe-inspiring experience) or stare at the exterior of a nearby, nondescript building. After one minute, an experimenter deliberately spilled a box of pens nearby.', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'choices': ['intermittently', 'independently', 'disinterestedly', 'altruistically.'], 'answer': 'altruistically.'}
+{"passage": "Psychologists Dacher Keltner and Jonathan Haidt have argued that experiencing awe\u2014a sensation of reverence and wonder typically brought on by perceiving something grand or powerful\u2014can enable us to feel more connected to others and thereby inspire us to act more ________. Keltner, along with Paul K. Piff, Pia Dietze, and colleagues, claims to have found evidence for this effect in a recent study where participants were asked to either gaze up at exceptionally tall trees in a nearby grove (reported to be a universally awe-inspiring experience) or stare at the exterior of a nearby, nondescript building. After one minute, an experimenter deliberately spilled a box of pens nearby.", "question": "Which choice completes the text with the most logical and precise word or phrase?", "choices": ["intermittently", "independently", "disinterestedly", "altruistically."], "answer": "altruistically."}
+INFO:     3.38.44.236:51010 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:46408 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='Many archaeologists will tell you that categorizing excavated fragments of pottery by style, period,\nand what objects they belong to relies not only on standard criteria, but also on instinct developed\nover years of practice. In a recent study, however, researchers trained a deep-learning computer model on thousands of images of pottery fragments and found that it could categorize them as accurately as a team of expert archaeologists. Some archaeologists have expressed concern that they might be replaced by such computer models, but the researchers claim that outcome is highly unlikely.' problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{
+  "passage": "Many archaeologists will tell you that categorizing excavated fragments of pottery by style, period, and what objects they belong to relies not only on standard criteria, but also on instinct developed over years of practice. In a recent study, however, researchers trained a deep-learning computer model on thousands of images of pottery fragments and found that it could categorize them as accurately as a team of expert archaeologists. Some archaeologists have expressed concern that they might be replaced by such computer models, but the researchers claim that _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "outcome is highly unlikely.",
+  "distractors": ["replacement is not a concern for researchers.", "experts believe that computer models will eventually replace archaeologists.", "researchers believe that their models will replace archaeologists."]
+} 
+!!
+{
+  "passage": "Many archaeologists will tell you that categorizing excavated fragments of pottery by style, period, and what objects they belong to relies not only on standard criteria, but also on instinct developed over years of practice. In a recent study, however, researchers trained a deep-learning computer model on thousands of images of pottery fragments and found that it could categorize them as accurately as a team of expert archaeologists. Some archaeologists have expressed concern that they might be replaced by such computer models, but the researchers claim that _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "outcome is highly unlikely.",
+  "distractors": ["replacement is not a concern for researchers.", "experts believe that computer models will eventually replace archaeologists.", "researchers believe that their models will replace archaeologists."]
+}
+{'passage': 'Many archaeologists will tell you that categorizing excavated fragments of pottery by style, period, and what objects they belong to relies not only on standard criteria, but also on instinct developed over years of practice. In a recent study, however, researchers trained a deep-learning computer model on thousands of images of pottery fragments and found that it could categorize them as accurately as a team of expert archaeologists. Some archaeologists have expressed concern that they might be replaced by such computer models, but the researchers claim that _______', 'question': 'Which choice most logically completes the text?', 'answer': 'outcome is highly unlikely.', 'distractors': ['replacement is not a concern for researchers.', 'experts believe that computer models will eventually replace archaeologists.', 'researchers believe that their models will replace archaeologists.']}
+[]
+outcome is highly unlikely.
+{'passage': 'Many archaeologists will tell you that categorizing excavated fragments of pottery by style, period, and what objects they belong to relies not only on standard criteria, but also on instinct developed over years of practice. In a recent study, however, researchers trained a deep-learning computer model on thousands of images of pottery fragments and found that it could categorize them as accurately as a team of expert archaeologists. Some archaeologists have expressed concern that they might be replaced by such computer models, but the researchers claim that _______', 'question': 'Which choice most logically completes the text?', 'choices': ['experts believe that computer models will eventually replace archaeologists.', 'researchers believe that their models will replace archaeologists.', 'replacement is not a concern for researchers.', 'outcome is highly unlikely.'], 'answer': 'outcome is highly unlikely.'}
+{"passage": "Many archaeologists will tell you that categorizing excavated fragments of pottery by style, period, and what objects they belong to relies not only on standard criteria, but also on instinct developed over years of practice. In a recent study, however, researchers trained a deep-learning computer model on thousands of images of pottery fragments and found that it could categorize them as accurately as a team of expert archaeologists. Some archaeologists have expressed concern that they might be replaced by such computer models, but the researchers claim that _______", "question": "Which choice most logically completes the text?", "choices": ["experts believe that computer models will eventually replace archaeologists.", "researchers believe that their models will replace archaeologists.", "replacement is not a concern for researchers.", "outcome is highly unlikely."], "answer": "outcome is highly unlikely."}
+INFO:     3.38.44.236:46424 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:50890 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Lewis Carroll, known for his literary work 'Alice's Adventures in Wonderland,' introduced readers to a whimsical world where a young girl named Alice encounters peculiar characters like the White Rabbit and the Queen of Hearts. While the first novel centered around card games, it was the sequel, 'Through the Looking-Glass, and What Alice Found There,' where chess became the prevailing theme. In this follow-up, Alice traverses a mirror into a reversed world, embarking on a quest across a vast chessboard landscape with the goal of becoming a queen. Carroll's narrative intertwines with John Tenniel's iconic illustrations, creating a rich tapestry of fantasy that has inspired countless adaptations and reinterpretations in various forms of media, including comics, television, and film." problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{
+  "passage": "Lewis Carroll, known for his literary work ‘Alice’s Adventures in Wonderland,’ introduced readers to a whimsical world where a young girl named Alice encounters peculiar characters like the White Rabbit and the Queen of Hearts. While the first novel centered around card games, it was the sequel, ‘Through the Looking-Glass, and What Alice Found There,’ where chess became the prevailing theme. In this follow-up, Alice traverses a mirror into a reversed world, embarking on a quest across a vast chessboard landscape with the goal of becoming a queen. Carroll’s narrative intertwines with John Tenniel’s iconic illustrations, creating a rich tapestry of fantasy that has inspired countless adaptations and reinterpretations in various forms of media, including comics, television, and film.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "to be",
+  "distractors": ["are", "have been", "were"]
+}
+{"passage": "Lewis Carroll, known for his literary work 'Alice's Adventures in Wonderland,' introduced readers to a whimsical world where a young girl named Alice encounters peculiar characters like the White Rabbit and the Queen of Hearts. While the first novel centered around card games, it was the sequel, 'Through the Looking-Glass, and What Alice Found There,' where chess became the prevailing theme. In this follow-up, Alice traverses a mirror into a reversed world, embarking on a quest across a vast chessboard landscape with the goal of becoming a queen. Carroll's narrative intertwines with John Tenniel's iconic illustrations, creating a rich tapestry of fantasy that has inspired countless adaptations and reinterpretations in various forms of media, including comics, television, and film.", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["have been", "were", "are", "to be"], "answer": "to be"}
+INFO:     3.38.44.236:47550 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:58056 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Haruki Murakami, a renowned Japanese author, has captivated readers worldwide with his blend of magical realism and poignant storytelling. His works, often featuring solitary protagonists and surreal events, have been translated into 50 languages and have won numerous awards. Murakami's journey began as a jazz bar owner before he turned to writing, producing classics such as 'Norwegian Wood' and 'The Wind-Up Bird Chronicle.' Despite his global acclaim, Murakami's unique style has sparked debate among critics, with some labeling his work as un-Japanese. Yet, his literary contributions continue to influence and inspire, as seen in his latest novel, 'The City and Its Uncertain Walls,' which reflects on the divisions caused by global crises." problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "Haruki Murakami, a renowned Japanese author, has captivated readers worldwide with his blend of magical realism and poignant storytelling. His works, often featuring solitary protagonists and surreal events, _______ into 50 languages and have won numerous awards. Murakami’s journey began as a jazz bar owner before he turned to writing, producing classics such as <em>Norwegian Wood</em> and <em>The Wind-Up Bird Chronicle.</em> Despite his global acclaim, Murakami’s unique style has sparked debate among critics, with some labeling his work as un-Japanese. Yet, his literary contributions continue to influence and inspire, as seen in his latest novel, <em>The City and Its Uncertain Walls</em>, which reflects on the divisions caused by global crises.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "have been translated into",
+  "distractors": ["are translated into", "have been translated into", "translated into"]
+}
+{"passage": "Haruki Murakami, a renowned Japanese author, has captivated readers worldwide with his blend of magical realism and poignant storytelling. His works, often featuring solitary protagonists and surreal events, have been translated into 50 languages and have won numerous awards. Murakami's journey began as a jazz bar owner before he turned to writing, producing classics such as 'Norwegian Wood' and 'The Wind-Up Bird Chronicle.' Despite his global acclaim, Murakami's unique style has sparked debate among critics, with some labeling his work as un-Japanese. Yet, his literary contributions continue to influence and inspire, as seen in his latest novel, 'The City and Its Uncertain Walls,' which reflects on the divisions caused by global crises.", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["translated into", "have been translated into", "have been translated into", "are translated into"], "answer": "have been translated into"}
+INFO:     3.38.44.236:58550 - "POST /sat/problem HTTP/1.1" 200 OK

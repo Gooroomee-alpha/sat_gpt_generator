@@ -13,7 +13,7 @@ load_dotenv()
 
 
 def generate_find_subject_problem(passage: str):
-    raw_problem = generate_blank_raw_problem(passage)
+    raw_problem = generate_subject_raw_problem(passage)
     raw_problem_json = json.loads(
         raw_problem,
     )
@@ -32,7 +32,7 @@ def generate_find_subject_problem(passage: str):
     }
 
 
-def generate_blank_raw_problem(passage: str):
+def generate_subject_raw_problem(passage: str):
     model_path = "nyanxyz/find-the-subject-p10-l10-e10-0"
 
     tokenizer = AutoTokenizer.from_pretrained(model_path)
