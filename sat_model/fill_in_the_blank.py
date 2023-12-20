@@ -38,6 +38,11 @@ def generate_blank_problem(passage: str):
         raise ValueError("answer is already on distractors")
 
     choices = [blanked_phrase] + distractors
+
+    distractors_length = len(distractors[0].split(" "))
+    blanked_phrase_length = len(blanked_phrase.split(" "))
+    if blanked_phrase_length - distractors_length >= 7:
+        raise ValueError("Something went wrong")
     random.shuffle(choices)
 
     print(

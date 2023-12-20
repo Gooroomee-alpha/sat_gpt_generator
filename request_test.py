@@ -22,7 +22,7 @@ Step 3 - Creating Choices: Develop three incorrect choices that are contextually
 Step 4 - Output Format: Present the output in JSON format with the following structure:
 "passage": The original passage with the key word or sentence replaced by a blank indicated as ________.
 "question": The selected question format from step 2.
-"choices": The list of choices developed in step 3, formatted as "A) {choice1} B) {choice2} C) {choice3} D) {choice4}".
+"choices": The list of choices developed in step 3, formatted as "{choice1} {choice2} {choice3} {choice4}".
 "answer": The correct answer, corresponding to one of the choices A, B, C, or D, as identified in step 1.
 
 Example:
@@ -35,7 +35,7 @@ The response should be:
 {
   "passage": "In the early 1800s, the Cherokee scholar Sequoyah created the first script, or writing system, for an Indigenous language in the United States. Because it represented the sounds of spoken Cherokee so accurately, his script was easy to learn and thus quickly achieved ________ use: by 1830, over 90 percent of the Cherokee people could read and write it.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": "A) widespread B) careful C) unintended D) infrequent",
+  "choices": "widespread careful unintended infrequent",
   "answer": "widespread"
 }
 """,

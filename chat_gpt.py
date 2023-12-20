@@ -138,12 +138,12 @@ json.dumps({
   "passage":"When Mexican-American archaeologist Zelia Maria Magdalena Nuttall published her 1886 research paper on sculptures found at the ancient Indigenous city of Teotihuacan in present-day Mexico, other researchers readily _______ her work as ground breaking; this recognition stemmed from her convincing demonstration that the sculptures were much older than had previously been thought.",
   "problem":"Which choice completes the text with the most logical and precise word or phrase?",
   "choices":[
-     "A) acknowledged",
-     "B) ensured",
-     "C) denied",
-     "D) underestimated",
+     "acknowledged",
+     "ensured",
+     "denied",
+     "underestimated",
   ],
-  "answer":"B) ensured"  
+  "answer":"ensured"  
 })
 }
 
@@ -154,12 +154,12 @@ json.dumps({
     "passage":"In the early 1800s, the Cherokee scholar Sequoyah created the first script, or writing system, for an Indigenous language in the United States. Because it represented the sounds of spoken Cherokee so accurately, his script was easy to learn and thus quickly achieved _______ use: by 1830, over 90 percent of the Cherokee people could read and write it.",
     "problem":"Which choice completes the text with the most logical and precise word or phrase?",
     "choices":[
-        "A) widespread",
-        "B) careful",
-        "C) unintended",
-        "D) infrequent"
+        "widespread",
+        "careful",
+        "unintended",
+        "infrequent"
     ],
-    "answer":"A) widespread"
+    "answer":"widespread"
 })
 }
 
@@ -170,12 +170,12 @@ json.dumps({
     "passage":"Like other tribal nations, the Muscogee (Creek) Nation is self-governing; its National Council generates laws regulating aspects of community life such as land use and healthcare, while the principal chief and cabinet officials _______ those laws by devising policies and administering services in accordance with them.",
     "problem":"Which choice completes the text with the most logical and precise word or phrase?",
     "choices":[
-        "A) implement",
-        "B) presume",
-        "C) improvise",
-        "D) mimic"
+        "implement",
+        "presume",
+        "improvise",
+        "mimic"
     ],
-    "answer":"A) implement"
+    "answer":"implement"
 })
 }
 
@@ -204,12 +204,12 @@ Note:
         "passage":"In 2007, computer scientist Luis von Ahn was working on converting printed books into a digital format. He found that some words were distorted enough that digital scanners couldn’t recognize them, but most humans could easily read them. Based on that finding, von Ahn invented a simple security test to keep automated “bots” out of websites. The first version of the reCAPTCHA test asked users to type one known word and one of the many words scanners couldn’t recognize. Correct answers proved the users were humans and added data to the book-digitizing project.",
         "problem":"Which choice best states the main purpose of the text?",
         "choices":[
-            "A) To discuss von Ahn’s invention of reCAPTCHA",
-            "B) To explain how digital scanners work",
-            "C) To call attention to von Ahn’s book-digitizing project",
-            "D) To indicate how popular reCAPTCHA is"
+            "To discuss von Ahn’s invention of reCAPTCHA",
+            "To explain how digital scanners work",
+            "To call attention to von Ahn’s book-digitizing project",
+            "To indicate how popular reCAPTCHA is"
         ],
-        "answer":"A) To discuss von Ahn’s invention of reCAPTCHA"  
+        "answer":"To discuss von Ahn’s invention of reCAPTCHA"  
     })
 }
 
@@ -221,12 +221,12 @@ Note:
         "passage":"The following text is from Edith Wharton’s 1905 novel The House of Mirth. Lily Bart and a companion are walking through a park. Lily had no real intimacy with nature, but she had a passion for the appropriate and could be keenly sensitive to a scene which was the fitting background of her own sensations. (underlined sentence) The landscape outspread below her seemed an enlargement of her present mood, and she found something of herself in its calmness, its breadth, its long free reaches. On the nearer slopes the sugar-maples wavered like pyres of light; lower down was a massing of grey orchards, and here and there the lingering green of an oak-grove.",
         "problem":"Which choice best describes the function of the underlined sentence in the text as a whole?",
         "choices":[
-            "A) It creates a detailed image of the physical setting of the scene.",
-            "B) It establishes that a character is experiencing an internal conflict.",
-            "C) It makes an assertion that the next sentence then expands on.",
-            "D) It illustrates an idea that is introduced in the previous sentence."
+            "It creates a detailed image of the physical setting of the scene.",
+            "It establishes that a character is experiencing an internal conflict.",
+            "It makes an assertion that the next sentence then expands on.",
+            "It illustrates an idea that is introduced in the previous sentence."
         ],
-        "answer":"D) It illustrates an idea that is introduced in the previous sentence."
+        "answer":"It illustrates an idea that is introduced in the previous sentence."
     })
 }
 
@@ -237,13 +237,13 @@ Note:
         "passage": "The following text is from Maggie Pogue Johnson’s 1910 poem “Poet of Our Race.” In this poem, the speaker is addressing Paul Laurence Dunbar, a Black author. Thou, with stroke of mighty pen, Hast told of joy and mirth, And read the hearts and souls of men As cradled from their birth. The language of the flowers, Thou hast read them all, And e’en the little brook Responded to thy call.",
         "problem": "Which choice best states the main purpose of the text?",
         "choices": [
-            "A) To praise a certain writer for being especially perceptive regarding people and nature",
-            "B) To establish that a certain writer has read extensively about a variety of topics",
-            "C) To call attention to a certain writer’s careful and elaborately detailed writing process",
-            "D) To recount fond memories of an afternoon spent in nature with a certain writer"
+            "To praise a certain writer for being especially perceptive regarding people and nature",
+            "To establish that a certain writer has read extensively about a variety of topics",
+            "To call attention to a certain writer’s careful and elaborately detailed writing process",
+            "To recount fond memories of an afternoon spent in nature with a certain writer"
         ],
 
-        "answer": "A) To praise a certain writer for being especially perceptive regarding people and nature"
+        "answer": "To praise a certain writer for being especially perceptive regarding people and nature"
     })
 }
 
@@ -273,12 +273,12 @@ json.dumps({
     "passage":"In ancient Greece, an Epicurean was a follower of Epicurus, a philosopher whose beliefs revolved around the pursuit of pleasure. Epicurus defined pleasure as “the absence of pain in the body and of trouble in the _______ that all life’s virtues derived from this absence.",
     "problem":"Which choice completes the text so that it conforms to the conventions of Standard English?",
     "choices":[
-        "A) soul,” positing",
-        "B) soul”: positing",
-        "C) soul”; positing",
-        "D) soul.” Positing",
+        "soul,” positing",
+        "soul”: positing",
+        "soul”; positing",
+        "soul.” Positing",
     ],
-    "answer":"A) soul,” positing"
+    "answer":"soul,” positing"
 })
 }
 
@@ -288,12 +288,12 @@ json.dumps({
     "passage":"British scientists James Watson and Francis Crick won the Nobel Prize in part for their 1953 paper announcing the double helix structure of DNA, but it is misleading to say that Watson and Crick discovered the double helix. _______ findings were based on a famous X-ray image of DNA fibers, “Photo 51,” developed by X-ray crystallographer Rosalind Franklin and her graduate student Raymond Gosling.",
     "problem":"Which choice completes the text so that it conforms to the conventions of Standard English?",
     "choices":[
-        "A) They’re",
-        "B) It’s",
-        "C) Their",
-        "D) Its",
+        "They’re",
+        "It’s",
+        "Their",
+        "Its",
     ],
-    "answer":"C) Their"
+    "answer":"Their"
 
 })
 }
@@ -305,12 +305,12 @@ json.dumps({
     "passage":"In 1637, the price of tulips skyrocketed in Amsterdam, with single bulbs of rare varieties selling for up to the equivalent of $200,000 in today’s US dollars. Some historians _______ that this “tulip mania” was the first historical instance of an asset bubble, which occurs when investors drive prices to highs not supported by actual demand.",
     "problem":"Which choice completes the text so that it conforms to the conventions of Standard English?",
     "choices":[
-        "A) claim",
-        "B) claiming",
-        "C) having claimed",
-        "D) to claim",
+        "claim",
+        "claiming",
+        "having claimed",
+        "to claim",
     ],
-    "answer":"B) claim"
+    "answer":"claim"
 })
 }
 
@@ -340,12 +340,12 @@ json.dumps({
     "passage":"Although novels and poems are considered distinct literary forms, many authors have created hybrid works that incorporate elements of both. Bernardine Evaristo’s The Emperor's Babe, _______ is a verse novel, a book-length narrative complete with characters and a plot but conveyed in short, crisp lines of poetry rather than prose.",
     "problem":"Which choice completes the text with the most logical transition?",
     "choices":[
-        "A) by contrast,",
-        "B) consequently,",
-        "C) secondly,",
-        "D) for example,",
+        "by contrast,",
+        "consequently,",
+        "secondly,",
+        "for example,",
     ],
-    "answer":"D) for example,"
+    "answer":"for example,"
 })
 }
 
@@ -357,12 +357,12 @@ json.dumps({
     "passage":"At two weeks old, the time their critical socialization period begins, wolves can smell but cannot yet see or hear. Domesticated dogs, _______ can see, hear, and smell by the end of two weeks. This relative lack of sensory input may help explain why wolves behave so differently around humans than dogs do: from a very young age, wolves are more wary and less exploratory.",
     "problem":"Which choice completes the text with the most logical transition?",
     "choices":[
-        "A) in other words,",
-        "B) for instance,",
-        "C) by contrast,",
-        "D) accordingly",
+        "in other words,",
+        "for instance,",
+        "by contrast,",
+        "accordingly",
     ],
-    "answer":"C) by contrast,"
+    "answer":"by contrast,"
 })
 }
 
@@ -373,16 +373,17 @@ json.dumps({
     "passage":"Researchers Helena Mihaljević-Brandt, Lucía Santamaría, and Marco Tullney report that while mathematicians may have traditionally worked alone, evidence points to a shift in the opposite direction. Increasingly mathematicians are choosing to collaborate with their peers—a trend illustrated by a rise in the number of mathematics publications credited to multiple authors.",
     "problem":"Which choice completes the text with the most logical transition?",
     "choices":[
-        "A) Similarly,",
-        "B) For this reason,",
-        "C) Furthermore,",
-        "D) Increasingly,",
+        "Similarly,",
+        "For this reason,",
+        "Furthermore,",
+        "Increasingly,",
     ],
-    "answer":"D) Increasingly,"
+    "answer":"Increasingly,"
 })
 }
 
 input:{passage}
 """
+
 
 # print(generate_problem("find_subject","Logo design is a critical aspect of marketing and branding strategy. It visually encapsulates a company’s identity and mission, providing a symbol easily recognized by consumers. For example, according to Paul Rand, a pioneering figure in American graphic design, 'a logo does not sell, it identifies'. The careful blend of color, typography, and imagery in a logo can create a lasting impression and significantly influence consumer perceptions."))

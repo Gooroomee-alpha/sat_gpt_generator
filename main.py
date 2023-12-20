@@ -3,7 +3,7 @@ import json
 from fastapi import FastAPI
 import chat_gpt
 from generate_passage import generate_sat_passage
-from sat_model import conjunction, fill_in_the_blank, find_subject
+from sat_model import conjunction, fill_in_the_blank, find_subject, grammar
 from generate_sat_model import GeneratePassageModel, GenerateProblemModel
 
 app = FastAPI()
@@ -71,21 +71,21 @@ async def generate_passage(data: GeneratePassageModel):
 
 @app.post("/sat/problem")
 async def generate_problem(data: GenerateProblemModel):
-    try:
-        if data.problem_type == "blank":
-            response = json.dumps(
-                fill_in_the_blank.generate_blank_problem(data.passage)
-            )
-        elif data.problem_type == "conjunction":
-            response = json.dumps(conjunction.generate_conjunction(data.passage))
-        elif data.problem_type == "find_subject":
-            response = json.dumps(
-                find_subject.generate_find_subject_problem(data.passage)
-            )
-        else:
-            response = chat_gpt.generate_problem(data.problem_type, data.passage)
-    except:
+    print(data)
+    # try:
+    if data.problem_type == "blank":
+        response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+    elif data.problem_type == "conjunction":
+        response = json.dumps(conjunction.generate_conjunction(data.passage))
+    elif data.problem_type == "find_subject":
+        response = json.dumps(find_subject.generate_find_subject_problem(data.passage))
+    elif data.problem_type == "grammar":
+        print("!")
+        response = json.dumps(grammar.generate_grammar_problem(data.passage))
+    else:
         response = chat_gpt.generate_problem(data.problem_type, data.passage)
+    # except:
+    #     response = chat_gpt.generate_problem(data.problem_type, data.passage)
 
     print(response)
     response_json = json.loads(
