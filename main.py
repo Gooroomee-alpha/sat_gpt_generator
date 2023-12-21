@@ -72,20 +72,24 @@ async def generate_passage(data: GeneratePassageModel):
 @app.post("/sat/problem")
 async def generate_problem(data: GenerateProblemModel):
     print(data)
-    # try:
-    if data.problem_type == "blank":
-        response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
-    elif data.problem_type == "conjunction":
-        response = json.dumps(conjunction.generate_conjunction(data.passage))
-    elif data.problem_type == "find_subject":
-        response = json.dumps(find_subject.generate_find_subject_problem(data.passage))
-    elif data.problem_type == "grammar":
-        print("!")
-        response = json.dumps(grammar.generate_grammar_problem(data.passage))
-    else:
+    try:
+        if data.problem_type == "blank":
+            response = json.dumps(
+                fill_in_the_blank.generate_blank_problem(data.passage)
+            )
+        elif data.problem_type == "conjunction":
+            response = json.dumps(conjunction.generate_conjunction(data.passage))
+        elif data.problem_type == "find_subject":
+            response = json.dumps(
+                find_subject.generate_find_subject_problem(data.passage)
+            )
+        elif data.problem_type == "grammar":
+            print("!")
+            response = json.dumps(grammar.generate_grammar_problem(data.passage))
+        else:
+            response = chat_gpt.generate_problem(data.problem_type, data.passage)
+    except:
         response = chat_gpt.generate_problem(data.problem_type, data.passage)
-    # except:
-    #     response = chat_gpt.generate_problem(data.problem_type, data.passage)
 
     print(response)
     response_json = json.loads(

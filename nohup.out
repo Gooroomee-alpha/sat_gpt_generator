@@ -2992,3 +2992,1803 @@ passage="Haruki Murakami, a renowned Japanese author, has captivated readers wor
 }
 {"passage": "Haruki Murakami, a renowned Japanese author, has captivated readers worldwide with his blend of magical realism and poignant storytelling. His works, often featuring solitary protagonists and surreal events, have been translated into 50 languages and have won numerous awards. Murakami's journey began as a jazz bar owner before he turned to writing, producing classics such as 'Norwegian Wood' and 'The Wind-Up Bird Chronicle.' Despite his global acclaim, Murakami's unique style has sparked debate among critics, with some labeling his work as un-Japanese. Yet, his literary contributions continue to influence and inspire, as seen in his latest novel, 'The City and Its Uncertain Walls,' which reflects on the divisions caused by global crises.", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["translated into", "have been translated into", "have been translated into", "are translated into"], "answer": "have been translated into"}
 INFO:     3.38.44.236:58550 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:38860 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="The American Economic Association's professional climate survey revealed a stark satisfaction gap between genders within the field of economics, with only 20% of women and 40% of men expressing satisfaction. This disparity suggests a significant gender-related issue in the profession, highlighting the need for a deeper understanding of gender roles and diversity. The survey's 32.8% response rate among AEA members, notably higher than typical academic surveys, underscores the urgency of these concerns. The profession's credibility and policy influence hinge on addressing these gaps in knowledge and understanding, particularly as they relate to economic outcomes and the advancement of women in the field." problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{
+  "passage": "The American Economic Association's professional climate survey revealed a stark satisfaction gap between genders within the field of economics, with only 20% of women and 40% of men expressing satisfaction. This disparity suggests a significant gender-related issue in the profession, highlighting the need for a deeper understanding of gender roles and diversity. The survey’s 32.8% response rate among AEA members, notably higher than typical academic surveys, underscores the urgency of these concerns. The profession’s credibility and policy influence hinge on addressing these gaps in knowledge and understanding, particularly as they relate to economic outcomes and the advancement of women in the field.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "it",
+  "distractors": ["its", "them", "itself"]
+}
+{"passage": "The American Economic Association's professional climate survey revealed a stark satisfaction gap between genders within the field of economics, with only 20% of women and 40% of men expressing satisfaction. This disparity suggests a significant gender-related issue in the profession, highlighting the need for a deeper understanding of gender roles and diversity. The survey's 32.8% response rate among AEA members, notably higher than typical academic surveys, underscores the urgency of these concerns. The profession's credibility and policy influence hinge on addressing these gaps in knowledge and understanding, particularly as they relate to economic outcomes and the advancement of women in the field.", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["its", "it", "them", "itself"], "answer": "it"}
+INFO:     3.38.44.236:38874 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:59698 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="'Slaughterhouse-Five' by Kurt Vonnegut is a blend of science fiction and anti-war themes. It follows Billy Pilgrim, a World War II soldier who becomes 'unstuck in time', experiencing his life non-linearly, including his survival of the Dresden firebombing and abduction by aliens." problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{
+  "passage": "’Slaughterhouse-Five’ by Kurt Vonnegut is a blend of science fiction and anti-war themes. It follows Billy Pilgrim, a World War II soldier who becomes ‘unstuck in time’, experiencing his life non-linearly, including his survival of the Dresden firebombing and abduction by aliens.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "the Dresden firebombing and abduction by aliens.",
+  "distractors": ["the Dresden firebombing and abduction by aliens’", "the Dresden firebombing, abduction by aliens", "the firebombing at Dresden and abduction by aliens’"]. Each choice should not exceed 15 words."
+}
+INFO:     3.38.44.236:59596 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 84, in generate_problem
+    response = json.dumps(grammar.generate_grammar_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/grammar.py", line 18, in generate_grammar_problem
+    raw_problem_json = json.loads(
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 5 column 173 (char 644)
+INFO:     3.38.44.236:46456 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Within the historic fortified city of Padua, eight complexes of religious and secular buildings showcase a remarkable collection of fresco cycles painted between 1302 and 1397 by various artists for diverse patrons. Despite their different origins, these frescoes exhibit a consistent style and thematic unity. Among them is Giotto's cycle in the Scrovegni Chapel, marking a pivotal evolution in mural painting. Other notable artists include Guariento di Arpo, Giusto de’ Menabuoi, Altichiero da Zevio, Jacopo Avanzi, and Jacopo da Verona. Collectively, these works demonstrate a century's progression in fresco art, characterized by innovative creative impulses and a new understanding of spatial representation." problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+    "passage": "Within the historic fortified city of Padua, eight complexes of religious and secular buildings showcase a remarkable collection of fresco cycles painted between 1302 and 1397 by various artists for diverse patrons. Despite their different origins, these frescoes exhibit a consistent style and thematic unity. Among them is Giotto's cycle in the Scrovegni Chapel, marking a pivotal evolution in mural painting. Other notable artists ______",
+    "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "answer": "include, who",
+    "distractors": ["include, who,"]
+  }
+{"passage": "Within the historic fortified city of Padua, eight complexes of religious and secular buildings showcase a remarkable collection of fresco cycles painted between 1302 and 1397 by various artists for diverse patrons. Despite their different origins, these frescoes exhibit a consistent style and thematic unity. Among them is Giotto's cycle in the Scrovegni Chapel, marking a pivotal evolution in mural painting. Other notable artists include Guariento di Arpo, Giusto de\u2019 Menabuoi, Altichiero da Zevio, Jacopo Avanzi, and Jacopo da Verona. Collectively, these works demonstrate a century's progression in fresco art, characterized by innovative creative impulses and a new understanding of spatial representation.", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["include, who", "include, who,"], "answer": "include, who"}
+INFO:     3.38.44.236:52852 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.44.236:33656 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Walt Whitman, celebrated as America's world poet, is often compared to literary giants such as Homer and Shakespeare. His seminal work, 'Leaves of Grass,' first published in 1855 and revised until 1891-2, is a tribute to democracy, nature, love, and friendship. Whitman's poetry, which praised both the body and the soul, was revolutionary in its free verse style and candid discussions of sexuality, which unsettled many readers of his time. Despite facing criticism and even losing his government job due to the controversial nature of his work, Whitman's influence was profound, shaping the works of future poets and leaving an indelible mark on American literature." problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "Walt Whitman, celebrated as America’s world poet, is often compared to literary giants such as Homer and Shakespeare. His seminal work, ‘Leaves of Grass,’ first published in 1855 and revised until 1891-2, is a tribute to democracy, _______ friendship. Whitman’s poetry, which praised both the body and the soul, was revolutionary in its free verse style and candid discussions of sexuality, which unsettled many readers of his time.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "nature, love,",
+  "distractors": ["nature or love,", "love or nature,", "nature and love,"]
+}
+{"passage": "Walt Whitman, celebrated as America's world poet, is often compared to literary giants such as Homer and Shakespeare. His seminal work, 'Leaves of Grass,' first published in 1855 and revised until 1891-2, is a tribute to democracy, nature, love, and friendship. Whitman's poetry, which praised both the body and the soul, was revolutionary in its free verse style and candid discussions of sexuality, which unsettled many readers of his time. Despite facing criticism and even losing his government job due to the controversial nature of his work, Whitman's influence was profound, shaping the works of future poets and leaving an indelible mark on American literature.", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["nature, love,", "nature or love,", "love or nature,", "nature and love,"], "answer": "nature, love,"}
+INFO:     3.38.44.236:33664 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.117.202:34158 - "POST /sat/passage HTTP/1.1" 200 OK
+passage=' James Chadwick revolutionized the understanding of atomic structure by discovering the neutron' problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{
+  "passage": "James Chadwick revolutionized the understanding of atomic structure by discovering the neutron, which is a subatomic particle that resides in the nucleus of an atom along with protons.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "is",
+  "distractors": ["have been", "are", "were"]
+}
+{"passage": " James Chadwick revolutionized the understanding of atomic structure by discovering the neutron", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["is", "were", "are", "have been"], "answer": "is"}
+INFO:     3.38.117.202:60274 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     15.164.222.96:48736 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="William Wordsworth, a central figure in English Romanticism, was born on April 7, 1770, to John and Ann Cookson Wordsworth in Cockermouth, Cumberland. His poetry often explored the relationship between humans and nature, and he advocated for the use of common language in literary works. Wordsworth's formative years were spent in the Lake District, which profoundly influenced his writing. He began composing poetry in grammar school and later embarked on a walking tour of Europe, deepening his appreciation for nature and empathy for the common man. These themes were prominent in his most famous works, 'Lyrical Ballads,' co-authored with Samuel Taylor Coleridge, and the autobiographical epic 'The Prelude.'" problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.22s/it]
+{
+    "passage": "William Wordsworth, a central figure in English Romanticism, was born on April 7, 1770, to John and Ann Cookson Wordsworth in Cockermouth, Cumberland. His poetry often explored the relationship between ______ he advocated for the use of common language in literary works. Wordsworth's formative years were spent in the Lake District, which profoundly influenced his writing. He began composing poetry in grammar school and later embarked on a walking tour of Europe, deepening his appreciation for nature and empathy for the common man. These themes were prominent in his most famous works, 'Lyrical Ballads," co-authored with Samuel Taylor Coleridge, and the autobiographical epic 'The Prelude.",
+    "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "answer": "humans and nature?",
+    "distractors": ["humans, and nature?", "humans and, nature?", "humans; nature?"],
+  }
+INFO:     15.164.222.96:44904 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 84, in generate_problem
+    response = json.dumps(grammar.generate_grammar_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/grammar.py", line 18, in generate_grammar_problem
+    raw_problem_json = json.loads(
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 627 (char 628)
+INFO:     13.125.15.216:41722 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt's steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine's applications. Watt's legacy extends beyond his engineering feats; the unit of power, the watt (W), was named in his honor, recognizing his profound impact on technology and industry." problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{"passage": "James Watt, an 18th-century Scottish inventor, significantly improved the steam engine, a cornerstone of the Industrial Revolution. His enhancements included the separate condenser in 1765 and the parallel motion in 1784, which increased efficiency and reduced fuel costs. Watt's steam engines, developed with partner Matthew Boulton, were quickly adopted across various industries. His inventions, such as the sun-and-planet gear and the double-acting engine, enabled rotary motion, expanding the engine's applications. Watt's legacy extends beyond his engineering feats; the unit of power, the watt (W), was named in his honor, recognizing his profound impact on technology and industry.", "question": "Which choice best states the main purpose of the text?", "choices": ["To explore the significance of Watt\u2019s work in the context of the Industrial Revolution", "To explain how Watt\u2019s improvements to the steam engine contributed to the growth of factories", "To describe the development and impact of James Watt\u2019s steam engine innovations", "To contrast the steam engine\u2019s potential with its limitations"], "answer": "To describe the development and impact of James Watt\u2019s steam engine innovations"}
+INFO:     13.125.15.216:59880 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     43.200.191.105:54206 - "POST /sat/passage HTTP/1.1" 200 OK
+INFO:     3.38.217.188:47264 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='The International Monetary Fund (IMF) was established in 1944 to foster global monetary cooperation, secure financial stability, facilitate international trade, promote employment and economic growth, and reduce poverty. Governed by 190 member countries, the IMF provides financial assistance, technical aid, and policy advice. During the pandemic, it increased access to funds and extended zero interest rates on loans.' problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{"passage": "The International Monetary Fund (IMF) was established in 1944 to foster global monetary cooperation, secure financial stability, facilitate international trade, promote employment and economic growth, and reduce poverty. Governed by 190 member countries, the IMF provides financial assistance, technical aid, and policy advice. During the pandemic, it increased access to funds and extended zero interest rates on loans.", "question": "Which choice best states the main purpose of the text?", "choices": ["To explain how the pandemic has impacted the global economy", "To describe the role of the IMF in promoting global economic stability and growth", "To compare the IMF\u2019s activities to those of other international organizations", "To discuss the IMF\u2019s response to the pandemic"], "answer": "To describe the role of the IMF in promoting global economic stability and growth"}
+INFO:     3.38.217.188:47312 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     3.38.217.188:34666 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Robert Frost, born in San Francisco in 1874, moved to Massachusetts after his father's death. His poetry, deeply rooted in New England, began with the acceptance of 'My Butterfly' by the New York Independent in 1894. Despite a slow start, Frost's persistence led to success after publishing 'A Boy’s Will' and 'North of Boston' in England. His work, characterized by its New England setting, traditional meters, and colloquial language, earned him four Pulitzer Prizes." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "Robert Frost, born in San Francisco in 1874, moved to Massachusetts after his father's death. His poetry, deeply rooted in New England, began with the acceptance of 'My Butterfly' by the New York Independent in 1894. Despite a slow start, Frost’s persistence led to success after publishing ‘A Boy’s Will’ and ‘North of Boston’ in England. His work, characterized by its New England setting, traditional meters, and colloquial language, _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "earned him four Pulitzer Prizes.",
+  "distractors": ["improved its reception among readers of poetry.", "increased its circulation among libraries and bookstores.", "elicited more favorable reviews from critics."]
+} 
+!!
+{
+  "passage": "Robert Frost, born in San Francisco in 1874, moved to Massachusetts after his father's death. His poetry, deeply rooted in New England, began with the acceptance of 'My Butterfly' by the New York Independent in 1894. Despite a slow start, Frost’s persistence led to success after publishing ‘A Boy’s Will’ and ‘North of Boston’ in England. His work, characterized by its New England setting, traditional meters, and colloquial language, _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "earned him four Pulitzer Prizes.",
+  "distractors": ["improved its reception among readers of poetry.", "increased its circulation among libraries and bookstores.", "elicited more favorable reviews from critics."]
+}
+{'passage': "Robert Frost, born in San Francisco in 1874, moved to Massachusetts after his father's death. His poetry, deeply rooted in New England, began with the acceptance of 'My Butterfly' by the New York Independent in 1894. Despite a slow start, Frost’s persistence led to success after publishing ‘A Boy’s Will’ and ‘North of Boston’ in England. His work, characterized by its New England setting, traditional meters, and colloquial language, _______", 'question': 'Which choice most logically completes the text?', 'answer': 'earned him four Pulitzer Prizes.', 'distractors': ['improved its reception among readers of poetry.', 'increased its circulation among libraries and bookstores.', 'elicited more favorable reviews from critics.']}
+[]
+earned him four Pulitzer Prizes.
+{'passage': "Robert Frost, born in San Francisco in 1874, moved to Massachusetts after his father's death. His poetry, deeply rooted in New England, began with the acceptance of 'My Butterfly' by the New York Independent in 1894. Despite a slow start, Frost's persistence led to success after publishing ‘A Boy's Will' and ‘North of Boston' in England. His work, characterized by its New England setting, traditional meters, and colloquial language, _______", 'question': 'Which choice most logically completes the text?', 'choices': ['elicited more favorable reviews from critics.', 'improved its reception among readers of poetry.', 'increased its circulation among libraries and bookstores.', 'earned him four Pulitzer Prizes.'], 'answer': 'earned him four Pulitzer Prizes.'}
+{"passage": "Robert Frost, born in San Francisco in 1874, moved to Massachusetts after his father's death. His poetry, deeply rooted in New England, began with the acceptance of 'My Butterfly' by the New York Independent in 1894. Despite a slow start, Frost's persistence led to success after publishing \u2018A Boy's Will' and \u2018North of Boston' in England. His work, characterized by its New England setting, traditional meters, and colloquial language, _______", "question": "Which choice most logically completes the text?", "choices": ["elicited more favorable reviews from critics.", "improved its reception among readers of poetry.", "increased its circulation among libraries and bookstores.", "earned him four Pulitzer Prizes."], "answer": "earned him four Pulitzer Prizes."}
+INFO:     3.38.217.188:49784 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     43.201.86.130:56772 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Gabriel García Márquez, a luminary of 20th-century literature, would have turned 91 today, celebrated through a Google Doodle. His masterpieces, '100 Years of Solitude' and 'Love in the Time of Cholera,' along with a Nobel Prize, solidified his status. His native Colombia revered him as the greatest Colombian to have ever lived. García Márquez's legacy is deeply intertwined with magical realism, a genre where the miraculous is commonplace. His narratives weave the fantastical seamlessly with the mundane, a reflection of Latin America's surreal reality, where the extraordinary is normalized and the magical enhances the truth of the human experience." problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{
+  "passage": "Gabriel García Márquez, a luminary of 20th-century literature, would have turned 91 today, celebrated through a Google Doodle. His masterpieces, ‘100 Years of Solitude’ and ‘Love in the Time of Cholera,’ along with a Nobel Prize, solidified his status. His native Colombia revered him as the greatest Colombian to have ever lived. García Márquez’s legacy is deeply intertwined with _______ narratives weave the fantastical seamlessly with the mundane, a reflection of Latin America’s surreal reality, where the extraordinary is normalized and the magical enhances the truth of the human experience.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "magical realism, a genre where the miraculous is commonplace.",
+  "distractors": ["magical realism: a genre where the miraculous is commonplace.", "magical realism and a genre where the miraculous is commonplace.", "magical realism: a genre, where the miraculous is commonplace."],"
+}
+INFO:     43.201.86.130:37218 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 84, in generate_problem
+    response = json.dumps(grammar.generate_grammar_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/grammar.py", line 18, in generate_grammar_problem
+    raw_problem_json = json.loads(
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 5 column 219 (char 1021)
+INFO:     43.201.86.130:43220 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="In 'The Joy Luck Club' by Amy Tan, characters struggle with cultural and linguistic barriers between Chinese and American societies. The mothers use storytelling to impart wisdom, express love, and preserve their Chinese heritage while navigating American culture. The novel explores the complexities of cultural identity, suggesting that identity is a blend of diverse influences rather than a dichotomy of opposing cultures.\r\n" problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.22s/it]
+{
+  "passage": "In ‘The Joy Luck Club’ by Amy Tan, characters struggle with cultural and linguistic barriers between Chinese and American societies. The mothers use storytelling to impart wisdom, express love, and ______ preserving their Chinese heritage while navigating American culture. The novel explores the complexities of cultural identity, suggesting that identity is a blend of diverse influences rather than a dichotomy of opposing cultures.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "preserving",
+  "distractors": ["preserve", "having preserved", "to preserve"]
+}
+{"passage": "In 'The Joy Luck Club' by Amy Tan, characters struggle with cultural and linguistic barriers between Chinese and American societies. The mothers use storytelling to impart wisdom, express love, and preserve their Chinese heritage while navigating American culture. The novel explores the complexities of cultural identity, suggesting that identity is a blend of diverse influences rather than a dichotomy of opposing cultures.\r\n", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["preserve", "preserving", "having preserved", "to preserve"], "answer": "preserving"}
+INFO:     43.201.86.130:56118 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     43.201.86.130:49076 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="In Herman Melville's 1851 novel 'Moby-Dick; or, The Whale,' the vengeful Captain Ahab is consumed by his pursuit of the eponymous white whale. Having lost his leg to the creature on a previous voyage, Ahab's obsession with Moby Dick is all-consuming, leading him to risk his life, his ship, and his crew in his quest for revenge. The novel, a complex mosaic of adventure, philosophy, and symbolism, explores themes of fate, free will, and the existence of God, while also providing a detailed account of the 19th-century whaling industry. Despite its initial mixed reviews and commercial failure, 'Moby-Dick' eventually gained recognition as a masterpiece of American literature." problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+    "passage": "In Herman Melville’s 1851 novel ‘Moby-Dick; or, The Whale,’ the vengeful Captain Ahab is consumed by his pursuit of the eponymous white whale. Having lost his leg to the creature on a previous voyage, Ahab’s obsession with Moby Dick is all-consuming, leading him to risk his life, his ship, and his crew in his quest for _______ The novel, a complex mosaic of adventure, philosophy, and symbolism, explores themes of fate, free will, and the existence of God, while also providing a detailed account of the 19th-century whaling industry.",
+    "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "answer": "revenge. The",
+    "distractors": ["revenge, the", "revenge, which", "revenue, the"],
+  }
+INFO:     43.201.86.130:35408 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 84, in generate_problem
+    response = json.dumps(grammar.generate_grammar_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/grammar.py", line 18, in generate_grammar_problem
+    raw_problem_json = json.loads(
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 6 column 3 (char 772)
+INFO:     43.201.86.130:48478 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="The Higgs boson is an elementary particle in the Standard Model of particle physics, produced by the quantum excitation of the Higgs field. It is a massive scalar boson with zero spin and no electric or color charge. The Higgs field gives mass to many particles through the Higgs mechanism. The existence of the Higgs boson was confirmed in 2012 by the ATLAS and CMS experiments at CERN's Large Hadron Collider, marking a pivotal moment in particle physics and providing evidence for the Standard Model's explanation of mass generation.\r\n" problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+{
+  "passage": "The Higgs boson is an elementary particle in the Standard Model of particle physics, produced by the quantum excitation of the Higgs field. It is a massive scalar boson with zero spin and no electric or color charge. The Higgs field ______ many particles through the Higgs mechanism. The existence of the Higgs boson was confirmed in 2012 by the ATLAS and CMS experiments at CERN’s Large Hadron Collider, marking a pivotal moment in particle physics and providing evidence for the Standard Model’s explanation of mass generation.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "gives",
+  "distractors": ["gave", "gives", "having given"]
+}
+{"passage": "The Higgs boson is an elementary particle in the Standard Model of particle physics, produced by the quantum excitation of the Higgs field. It is a massive scalar boson with zero spin and no electric or color charge. The Higgs field gives mass to many particles through the Higgs mechanism. The existence of the Higgs boson was confirmed in 2012 by the ATLAS and CMS experiments at CERN's Large Hadron Collider, marking a pivotal moment in particle physics and providing evidence for the Standard Model's explanation of mass generation.\r\n", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["gives", "gave", "gives", "having given"], "answer": "gives"}
+INFO:     43.201.86.130:48480 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     43.201.86.130:39432 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="'The Garden of Earthly Delights' is a triptych oil painting by Hieronymus Bosch, created between 1490 and 1510. Housed in Madrid's Museo del Prado, the work is known for its intricate imagery, depicting a narrative from Eden's innocence to earthly pleasures and Hell's horrors. Bosch's intentions are debated, with interpretations ranging from a moral warning to a portrayal of paradise lost. The central panel, filled with nude figures, is particularly enigmatic. The outer panels, when closed, show a grisaille painting of the world's creation.\n" problem_type='grammar'
+!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "’The Garden of Earthly Delights’ is a triptych oil painting by Hieronymus Bosch, created between 1490 and 1510. Housed in Madrid's Museo del Prado, the work is known for its intricate imagery, depicting a narrative from Eden’s innocence to earthly pleasures and Hell’s horrors. Bosch’s intentions are debated, with interpretations ranging from a moral warning to a portrayal of paradise lost. The central panel, filled with nude figures, is particularly enigmatic. The outer panels, when closed, show a grisaille painting of the world’s creation.",
+  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "answer": "the world’s creation.",
+  "distractors": ["creation of the world.", "creation of the world’s.", "creation, the world’s."]
+}
+{"passage": "'The Garden of Earthly Delights' is a triptych oil painting by Hieronymus Bosch, created between 1490 and 1510. Housed in Madrid's Museo del Prado, the work is known for its intricate imagery, depicting a narrative from Eden's innocence to earthly pleasures and Hell's horrors. Bosch's intentions are debated, with interpretations ranging from a moral warning to a portrayal of paradise lost. The central panel, filled with nude figures, is particularly enigmatic. The outer panels, when closed, show a grisaille painting of the world's creation.\n", "question": "Which choice completes the text so that it conforms to the conventions of Standard English?", "choices": ["creation of the world.", "creation of the world\u2019s.", "the world\u2019s creation.", "creation, the world\u2019s."], "answer": "the world\u2019s creation."}
+INFO:     43.201.86.130:39448 - "POST /sat/problem HTTP/1.1" 200 OK
+INFO:     167.94.146.57:36860 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.146.57:54870 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.146.57:47740 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     43.201.105.97:60122 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Joseph Conrad's 'Heart of Darkness' delves into the complexities of imperialism and the human psyche. Marlow's journey up the Congo River exposes the darkness within man and the horrors of colonial exploitation. The novel's portrayal of European colonialists as blind light bearers, claiming to civilize the 'savage' lands while committing atrocities, challenges the dominant narrative of benevolent colonialism. Conrad's use of symbolism, such as the grove of death and the pervasive whisper of 'ivory,' underscores the insidious greed and moral decay at the heart of imperialism. The narrative confronts the reader with the stark reality of colonialism's brutal impact on both the land and its people, reflecting the profound psychological scars left by such encounters." problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{"passage": "Joseph Conrad's 'Heart of Darkness' delves into the complexities of imperialism and the human psyche. Marlow's journey up the Congo River exposes the darkness within man and the horrors of colonial exploitation. The novel's portrayal of European colonialists as blind light bearers, claiming to civilize the 'savage' lands while committing atrocities, challenges the dominant narrative of benevolent colonialism. Conrad's use of symbolism, such as the grove of death and the pervasive whisper of 'ivory,' underscores the insidious greed and moral decay at the heart of imperialism. The narrative confronts the reader with the stark reality of colonialism's brutal impact on both the land and its people, reflecting the profound psychological scars left by such encounters.", "question": "Which choice best states the main purpose of the text?", "choices": ["To explore the psychological effects of colonialism on the individuals involved", "To critique the destructive nature of imperialism and its impact on both people and land", "To examine the ways in which colonialism shapes the cultural identities of the colonized", "To contrast the perceived civilizing influence of colonialism with its actual destructive impact"], "answer": "To critique the destructive nature of imperialism and its impact on both people and land"}
+INFO:     43.201.105.97:54090 - "POST /sat/problem HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.35:42376 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.138.35:55454 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.35:52224 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     159.223.236.212:58642 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     65.49.1.54:38211 - "GET / HTTP/1.1" 200 OK
+INFO:     65.49.1.54:11135 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.1.57:28301 - "GET /?format=json HTTP/1.1" 200 OK
+WARNING:  Unsupported upgrade request.
+WARNING:  No supported WebSocket library detected. Please use "pip install 'uvicorn[standard]'", or install 'websockets' or 'wsproto' manually.
+WARNING:  Invalid HTTP request received.
+INFO:     20.165.50.90:62052 - "GET / HTTP/1.0" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     20.165.50.90:62073 - "GET /nice%20ports%2C/Trinity.txt.bak HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     20.165.50.90:62102 - "OPTIONS / HTTP/1.0" 405 Method Not Allowed
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     20.165.50.90:51649 - "GET /sdk/../../../../../../../etc/vmware/hostd/vmInventory.xml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51656 - "GET /sdk/../../../../../../../etc/vmware/hostd/vmInventory.xml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51665 - "GET /../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51671 - "GET /../../../../../../../../../../boot.ini HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "GET / HTTP/1.1" 200 OK
+INFO:     20.165.50.90:51682 - "HEAD /blog/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /weblog/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /weblogs/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /wordpress/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /wiki/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /mediawiki/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /wiki/Main_Page HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /tikiwiki/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /cgi-bin/mj_wwwusr HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /majordomo/mj_wwwusr HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /j2ee/examples/servlets/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /j2ee/examples/jsp/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /dsc/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /reg_1.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /adr.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /line_login.htm?l=1 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /tbook.csv HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /globalSIPsettings.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /SIPsettingsLine1.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /websvn/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "GET /repos/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "GET /repo/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "GET /svn/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "GET /cvs/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "GET /archiva/index.action HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "GET /index.action HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /login.stm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /tools_admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /bsc_lan.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /Manage.tri HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /logo_t.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD //system.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /main_configure.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /OvCgi/Toolbar.exe HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /frontend/x3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /awstatstotals/awstatstotals.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /awstats/awstatstotals.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /awstatstotals.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51682 - "HEAD /awstats/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /awstatstotals/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /egroupware/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /calendar/cal_search.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /cal_search.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /a_viewusers.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /aphpkb/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /webedition/we/include/we_modules/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /webedition/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /Examples/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /LightNEasy.php?do=login HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /channel_detail.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /cgi-bin/vcs HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /ocsreports/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /vbseo.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /forum/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /forums/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /smf/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /phpbb/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /manager/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /admin/admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /administrator/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /moderator/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /webadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /adminarea/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /bb-admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /adminLogin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /admin_area/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /panel-administracion/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /instadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /memberadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /administratorlogin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /adm/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /admin/account.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /admin/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /admin/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /admin/admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /joomla/administrator HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51698 - "HEAD /login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin_area/admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin_area/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /siteadmin/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /siteadmin/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /siteadmin/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin_area/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /bb-admin/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /bb-admin/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /bb-admin/admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/home.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin_area/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin_area/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/controlpanel.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admincp/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admincp/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admincp/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admincp/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/account.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /adminpanel.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /webadmin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /webadmin/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /webadmin/admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /webadmin/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/admin_login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin_login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /panel-administracion/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/cp.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /cp.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /administrator/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /administrator/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /nsw/admin/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /webadmin/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin/admin_login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin_login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /administrator/account.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /administrator.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51709 - "HEAD /admin_area/admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /pages/admin/admin-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin/admin-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /bb-admin/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /bb-admin/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /bb-admin/admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin/home.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /modelsearch/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /moderator.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /moderator/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /moderator/admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /account.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /pages/admin/admin-login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin/admin-login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin-login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /controlpanel.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admincontrol.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin/adminLogin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /adminLogin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /home.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /rcjakar/admin/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /adminarea/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /adminarea/admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /webadmin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /webadmin/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /webadmin/admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin/controlpanel.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /admin/cp.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /cp.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /adminpanel.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /moderator.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /administrator/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /administrator/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /user.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /administrator/account.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /administrator.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /modelsearch/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51723 - "HEAD /moderator/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adminarea/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /panel-administracion/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /panel-administracion/admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /modelsearch/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /modelsearch/admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admincontrol/login.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adm/index.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adm.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /moderator/admin.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /user.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /account.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /controlpanel.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admincontrol.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /panel-administracion/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /wp-json HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adminLogin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admin/adminLogin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adminarea/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adminarea/admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adminarea/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /panel-administracion/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /panel-administracion/admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /modelsearch/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /modelsearch/admin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admincontrol/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adm/admloginuser.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admloginuser.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admin2.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admin2/login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admin2/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adm/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adm.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /affiliate.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /adm_auth.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /memberadmin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /administratorlogin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /account.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admin/account.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51736 - "HEAD /admin/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin/admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin/admin_login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin_login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /adminpanel.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin/controlpanel.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admincontrol.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /panel-administracion/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin/cp.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /pages/admin/admin-login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admincp/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admincp/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin_area/admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin_area/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /moderator/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /administrator/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /moderator.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /modelsearch/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /panel-administracion/admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /adm/admloginuser.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /adm.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /adm_auth.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /administratorlogin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /webadmin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /webadmin/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /modelsearch/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /administrator.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /administrator/account.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /adminLogin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /siteadmin/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin2/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /adm/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /admin_area/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /bb-admin/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /bb-admin/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /bb-admin/admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /siteadmin/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51749 - "HEAD /memberadmin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin2/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admloginuser.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admincontrol/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /administrator/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /modelsearch/admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /panel-administracion/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /adminarea/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /adminarea/admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /adminarea/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/adminLogin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /webadmin/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /webadmin/admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /user.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /controlpanel.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /moderator/admin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /cp.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin-login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/admin-login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/home.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /adm1n/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /4dm1n/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /account.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/account.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin_area/admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin_area/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin_area/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /bb-admin/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /bb-admin/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /bb-admin/admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/home.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/controlpanel.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /pages/admin/admin-login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/admin-login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin-login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /admin/cp.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51758 - "HEAD /cp.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /administrator/account.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /administrator.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /modelsearch/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /moderator.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /moderator/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /administrator/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /moderator/admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /controlpanel.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /user.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admincp/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admincontrol.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adminpanel.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /webadmin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /webadmin/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /webadmin/admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /webadmin/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admin/admin_login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admin_login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /panel-administracion/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adminLogin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admin/adminLogin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /home.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adminarea/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adminarea/admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adminarea/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /panel-administracion/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /panel-administracion/admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /modelsearch/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /modelsearch/admin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /administrator/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admincontrol/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adm/admloginuser.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admloginuser.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admin2.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admin2/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /admin2/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adm/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adm.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51773 - "HEAD /adm_auth.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /memberadmin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /administratorlogin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /siteadmin/login.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /siteadmin/index.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /account.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin/account.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin/admin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin_area/admin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin_area/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin_area/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /bb-admin/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /bb-admin/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /bb-admin/admin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin/home.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin/controlpanel.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /pages/admin/admin-login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin/admin-login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin-login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admin/cp.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /cp.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /administrator/account.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /administrator.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /modelsearch/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /moderator.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /moderator/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /administrator/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /moderator/admin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /controlpanel.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /user.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admincp/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admincp/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /admincontrol.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /adminpanel.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /webadmin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /webadmin/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51785 - "HEAD /webadmin/admin.aspx HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     20.165.50.90:51801 - "HEAD /webadmin/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin/admin_login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin_login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /panel-administracion/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /adminLogin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin/adminLogin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /home.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /adminarea/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /adminarea/admin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /adminarea/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /panel-administracion/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /panel-administracion/admin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /modelsearch/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /modelsearch/admin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /administrator/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admincontrol/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /adm/admloginuser.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admloginuser.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin2.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin2/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin2/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /adm/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /adm.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /adm_auth.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /memberadmin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /administratorlogin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /siteadmin/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /siteadmin/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /account.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin/admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin_area/admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin_area/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin_area/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /bb-admin/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /bb-admin/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /bb-admin/admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin/home.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51801 - "HEAD /admin/controlpanel.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /pages/admin/admin-login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admin/admin-login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admin-login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admin/cp.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /cp.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /administrator/account.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /administrator.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /modelsearch/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /moderator.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /moderator/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /administrator/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /moderator/admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /controlpanel.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /user.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admincp/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admincp/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admincontrol.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admin/account.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /adminpanel.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /webadmin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /webadmin/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /webadmin/admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /webadmin/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admin/admin_login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admin_login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /panel-administracion/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /adminLogin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admin/adminLogin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /home.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /adminarea/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /adminarea/admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /adminarea/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /panel-administracion/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /panel-administracion/admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /modelsearch/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /modelsearch/admin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /administrator/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51818 - "HEAD /admincontrol/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51820 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /adm/admloginuser.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admloginuser.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admin2.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admin2/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admin2/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /adm/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /adm.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /adm_auth.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /memberadmin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administratorlogin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /siteadmin/login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /siteadmin/index.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admin1.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administr8.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administr8.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administr8.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administr8.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administr8.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administr8/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administer/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracao.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracao.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracao.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracao.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracao.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracion.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracion.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracion.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracion.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administracion.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /administrators/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /adminpro/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admins/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admins.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admins.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admins.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admins.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /admins.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /maintenance/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51829 - "HEAD /Lotus_Domino_Admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /hpwebjetadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_administrator/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_administrador/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_admins/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_administrators/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_administradores/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_administracion/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_4dm1n/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_adm1n/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_Admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /system_administration/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /system-administration/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /system-admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /system-admins/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /system-administrators/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /administracion-sistema/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /Administracion/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /Admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /Administrator/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /Manager/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /Adm/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /systemadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /AdminLogin.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /AdminLogin.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /AdminLogin.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /AdminLogin.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /AdminLogin.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /admin108/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /pec_admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /system/admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /plog-admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /ESAdmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /axis2-admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /_sys/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /admin_cp.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /sitecore/admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "HEAD /sitecore/login/admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "GET /backup/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51842 - "GET /backup HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /backup.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /backup.sql.gz HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /backup.sql.bz2 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /backup.zip HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /backups/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /bak/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /back/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /cache/backup/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /admin/backup/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /dbbackup.txt HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /b.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /db.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /ddb.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /users.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /database.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /mysql.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /dump.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /respaldo.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /data.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /old.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /usuarios.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /bdb.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /1.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /admin/download/backup.sql HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /clientaccesspolicy.xml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /atom/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /atom.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /atom.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /atom.xml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /atom.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /rss/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /rss.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /rss.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /rss.xml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "HEAD /rss.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /etc/passwd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /boot.ini HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /example/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /examples/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51859 - "GET /iissamples/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "GET /j2eeexamples/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "GET /j2eeexamplesjsp/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "GET /sample/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "GET /ncsample/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "GET /fpsample/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "GET /cmsample/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "GET /samples/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "GET /mono/1.1/index.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /login/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /login.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /test.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /test.class HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /test/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /test.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /test.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /test.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /test.txt HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /webmail/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /mail/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /log/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /log.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /log.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /log.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /log.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /log.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /logs/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /logs.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /logs.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /logs.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /logs.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /logs.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /wwwlog/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /wwwlogs/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /mail_log_files/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /images/rails.png HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /mono/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /robots.txt HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /crossdomain.xml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51875 - "HEAD /css/cake.generic.css HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /img/cake.icon.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /img/cake.icon.png HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /js/vendors.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /cgi-bin/ffileman.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /fshow.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /admin/upload.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /upload_multiple_js.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /uploadtester.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /info.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /phpinfo.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /kusabax/manage_page.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /plus/lurking.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /adm/barra/assetmanager/assetmanager.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /eyeos/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /NETWARE.HTM HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /setup.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /debug.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /ehcp/?op=applyforftpaccount HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /ehcp/?op=applyforaccount HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /ehcp/?op=applyfordomainaccount HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /vhosts/ehcp/?op=applyforftpaccount HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /vhosts/ehcp/?op=applyforaccount HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /vhosts/ehcp/?op=applyfordomainaccount HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /tools_admin.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /level/15 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /exec/show/log/CR HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /level/15/exec/-/configure/http HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /level/15/exec/- HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /appServer/jvmReport.jsf?instanceName=server&pageTitle=JVM%20Report HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /common/appServer/jvmReport.jsf?pageTitle=JVM%20Report HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /common/appServer/jvmReport.jsf?reportType=summary&instanceName=server HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /console/login/loginForm.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /login_img.jpg HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /cirronetlogo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /browserId/wizardForm.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /webline/html/forms/callback.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /webline/html/forms/callbackICM.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /webline/html/agent/AgentFrame.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /webline/html/agent/default/badlogin.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51891 - "HEAD /callme/callForm.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /webline/html/multichatui/nowDefunctWindow.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /browserId/wizard.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /admin/CiscoAdmin.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /msccallme/mscCallForm.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /webline/html/admin/wcs/LoginPage.jhtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /restoreinfo.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /confirminvite.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /sourcebans/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /swfupload/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /mymarket/shopping/index.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /myshop_start.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /piranha/secure/passwd.php3 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cgi-bin/ck/mimencode HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cgi-bin/masterCGI HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /tiny_mce/plugins/filemanager/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /upload/scp/ajax.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cgi-mod/view_help.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cgi-mod/smtp_test.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /TopToolArea.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /switchSystem.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /intruvert/jsp/module/Login.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /ajaxfilemanager/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /upload/data/settings.cdb HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /fm.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /nagios3/cgi-bin/statuswml.cgi HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /nagios3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /test/logon.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cal_cat.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /calendar/cal_cat.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cal/cal_cat.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /private/sdc.tgz HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cacti/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /cgi-bin/awstats.pl HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /wiki/rankings.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /reqdetails.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /shared/help.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /seti.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /imc/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51905 - "HEAD /imcws/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /partymgr/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /Base/upload.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /Base/example_1.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /YUI-upload/html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /tools/filemanager/skins/mobile/admin1.template.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /Uploadify/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /syssite/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /updown.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /modules/docmanager/doctypetemplates/myuploadedfile HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /ReqWebHelp/advanced/workingSet.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /dhost/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /engine/api/api.class.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /jsft_resource.jsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /scales_static_resource.jsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /setup/password_required.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /zp-core/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /amember/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /.hgignore HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /.gitignore HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /.bzrignore HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "GET /debug.seam HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "GET /CSS/Miniweb.css HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "GET /S7Web.css HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "GET /Portal0000.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /arcsight/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /arcsight/images/logo-login-arcsight.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /arcsight/images/navbar-icon-logout-on.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /images/logo-arcsight.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /logger/monitor.ftl HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /beef/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /BEEF/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /beef/images/beef.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /gfx/form_top_left_corner.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /gfx/logout_24.png HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /gfx/new_logo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /javascript/sorttable.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /images/btn_help_nml.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /images/hdr_icon_homeG.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /spControl.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51917 - "HEAD /images/isslogo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /deploymentmanager/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /i18n/EN/css/foundstone.css HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /i18n/EN/images/external_nav_square.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /officescan/console/html/cgi/cgiChkMasterPwd.exe HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /officescan/console/html/ClientInstall/officescannt.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /officescan/console/html/images/icon_refresh.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /picts/BC_bwlogorev.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /picts/menu_leaf.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /theme/images/en/login1.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET / HTTP/1.1" 200 OK
+INFO:     20.165.50.90:51930 - "HEAD /NessusClient.swf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /dotDefender/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /hop.php?/12345 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /CSCOSSLC/config-auth HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /actuator/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /auditevents/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /autoconfig/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /beans/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /configprops/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /env/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /flyway/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /health/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /healthcheck/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /healthchecks/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /loggers/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /liquibase/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /metrics/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /mappings/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /trace/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /heapdump/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "GET /jolokia/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /vmware/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /vmware/imx/vmware_boxes-16x16.png HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /ui/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /ui/imx/vmwareLogo-16x16.png HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /ui/imx/vmwarePaperBagLogo-16x16.png HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /ui/vManage.do HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /client/VMware-viclient.exe HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /en/welcomeRes.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51930 - "HEAD /citrix/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /Citrix/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /Citrix/MetaFrame/auth/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /images/ctxHeader01.jpg HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /images/Safeword_Token.jpg HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /sw/auth/login.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /vpn/images/AccessGateway.ico HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /citrix/AccessPlatform/auth/clientscripts/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /AccessPlatform/auth/clientscripts/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /Citrix//AccessPlatform/auth/clientscripts/cookies.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /Citrix/AccessPlatform/auth/clientscripts/login.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /Citrix/PNAgent/config.xml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /cgi-bin/image/shikaku2.png HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /config/public/usergrp.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /pictures/buttons/file_view_mark.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /cpqlogin.htm?RedirectUrl=/&RedirectQueryString= HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /hplogo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /ie_index.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /ilo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /images/icon_server_connected.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /mxhtml/images/signin_logo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /mxhtml/images/status_critical_15.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /mxportal/home/en_US/servicetools.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /mxportal/home/MxPortalFrames.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /xymon/menu/menu.css HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /rrc.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /manager/html/upload HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /manager/html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /axis2/axis2-web/HappyAxis.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /axis2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /happyaxis.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /web-console/ServerInfo.jsp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /web-console/Invoker HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /invoker/JMXInvokerServlet HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /invoker/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /jmx-console/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /admin-console/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /CFIDE/administrator/enter.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /CFIDE/administrator/entman/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /cfide/install.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51949 - "HEAD /CFIDE/administrator/archives/index.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /CFIDE/wizards/common/_logintowizard.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /CFIDE/componentutils/login.cfm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /CFIDE/Administrator/startstop.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /common/help/en/go/login_ts.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /system/login/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /system/login/reset?next=%2Fsystem%2Flogin&set-lang=en HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /common/images/logos/img_logoMain.jpg HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /Dashboard/Dashboard.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /flexfm/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /lib/usermanagement/userInfo.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /security/xamppsecurity.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /system/console HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /dm-albums/dm-albums.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /ibm/console/logon.jsp?action=OK HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /console/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /console/portal/0/Welcome HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /jira/rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /secure/rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /rest/servicedeskapi/info HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /jira/rest/servicedeskapi/info HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /secure/rest/servicedeskapi/info HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /confluence/rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /wiki/rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /bitbucket/rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /bamboo/rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "GET /crowd/rest/applinks/1.0/manifest HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /x_logo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /gif/hp.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /gif/hp_invent_logo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /gif/printer.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /hp/device/this.LCDispatcher HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /hp/device/webAccess/index.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /PageSelector.class HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /images/lexbold.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51960 - "HEAD /images/lexlogo.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /images/printer.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /printer/image HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /images/mute_alloff.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /images/pic_bri.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /scanweb/images/scanwebtm.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /view/index.shtml HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpmyadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /PHPMyAdmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /PMA/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /pma/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /dbadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /myadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /php-my-admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.2.3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.2.6/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.4/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.5-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.5-rc2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.5/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.5-pl1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.6-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.6-rc2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.6/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.7/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.5.7-pl1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-alpha/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-alpha2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-beta1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-beta2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-rc2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-rc3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-pl1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-pl2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51975 - "HEAD /phpMyAdmin-2.6.0-pl3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.1-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.1-rc2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.1-pl1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.1-pl2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.1-pl3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.2-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.2-beta1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.2-pl1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.3-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.3-pl1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.4-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.4-pl1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.4-pl2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.4-pl3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.4-pl4/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.6.4/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.7.0-beta1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.7.0-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.7.0-pl1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.7.0-pl2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.7.0/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.0-beta1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.0-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.0-rc2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.0/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.0.1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.0.2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.0.3/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.0.4/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.1-rc1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpMyAdmin-2.8.2/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /sqlmanager/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /php-myadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /phpmy-admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /mysqladmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:51988 - "HEAD /mysql-admin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /websql/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /_phpmyadmin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /footer1.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /homepage.nsf/homePage.gif?OpenImageResource HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /icons/ecblank.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /852566C90012664F HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /admin4.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /admin5.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /admin.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /agentrunner.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /alog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /a_domlog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /bookmark.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /busytime.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /catalog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /certa.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /certlog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /certsrv.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /chatlog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /clbusy.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /cldbdir.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /clusta4.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /collect4.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /da.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /dba4.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /dclf.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /DEASAppDesign.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /DEASLog01.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /DEASLog02.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /DEASLog03.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /DEASLog04.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /DEASLog05.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /DEASLog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /decsadm.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /decslog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /DEESAdmin.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /dirassist.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /doladmin.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /domadmin.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52000 - "HEAD /domcfg.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /domguide.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /domlog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /dspug.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /events4.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /events5.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /events.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /event.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /homepage.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /iNotes/Forms5.nsf/%24DefaultNav HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /jotter.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /leiadm.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /leilog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /leivlt.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /log4a.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /log.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /l_domlog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mab.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail10.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail1.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail2.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail3.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail4.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail5.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail6.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail7.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail8.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail9.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mail.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /msdwda.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mtatbls.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /mtstore.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /names.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /nntppost.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /nntp/nd000001.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /nntp/nd000002.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /nntp/nd000003.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /ntsync45.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /perweb.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /qpadmin.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52020 - "HEAD /quickplace/quickplace/main.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /reports.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /sample/siregw46.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /schema50.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /setupweb.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /setup.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smbcfg.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smconf.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smency.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smhelp.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smmsg.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smquar.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smsolar.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smtime.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smtpibwq.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smtpobwq.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smtp.box HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smtp.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /smvlog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /srvnam.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /statmail.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /statrep.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /stauths.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /stautht.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /stconfig.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /stconf.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /stdnaset.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /stdomino.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /stlog.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /streg.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /stsrc.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /userreg.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /vpuserinfo.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /webadmin.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /web.nsf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /.nsf/../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /icons/ecblank.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "GET /_api/version HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /_layouts/images/helpicon.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /Pages/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52038 - "HEAD /PublishingImages/NewsArticleImage.jpg HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /_admin/operations.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /_app_bin HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /_controltemplates HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /_layouts HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /_layouts/viewlsts.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /forms/allitems.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /forms/webfldr.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /forms/mod-view.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /forms/my-sub.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /pages/categoryresults.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /categories/viewcategory.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /sitedirectory HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /editdocs.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /workflowtasks/allitems.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/tasks/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /categories/allcategories.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /categories/SOMEOTHERDIR/allcategories.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /mycategories.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/allitems.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/default.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/allposts.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/archive.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/byauthor.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/calendar.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/mod-view.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/myposts.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/my-sub.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/allcomments.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /lists/mycomments.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /_layouts/userdisp.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /_layouts/help.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /_layouts/download.aspx HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /projectserver/Home/HomePage.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /projectserver/images/branding.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /projectserver/images/pgHome.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /projectserver/images/pgTask.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /projectserver/Tasks/Taskspage.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /exchweb/bin/auth/owalogon.asp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52055 - "HEAD /images/outlook.jpg HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /owa/8.1.375.2/themes/base/lgntopl.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /owa/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /tsweb/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /reportserver/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET / HTTP/1.1" 200 OK
+INFO:     20.165.50.90:52074 - "HEAD /HW_logo.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /icons/icon_set_up_2701XX_01.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /icons/icon_homeportal_2701XX.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /es/images/nav_sl_home_network_01.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /en/images/nav_sl_home_network_01.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /images/stxx__xl.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "HEAD /images/bbc__xl.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /HNAP1/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /.htaccess HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /.htpasswd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_cnf/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_log/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_txt/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /postinfo.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/_vti_aut/author.dll HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/_vti_aut/author.exe HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/_vti_aut/dvwssr.dll HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/_vti_adm/admin.dll HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/_vti_adm/admin.exe HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/fpcount.exe?Page=default.asp|Image=3 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/shtml.dll HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_bin/shtml.exe HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/_x_todo.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/_x_todoh.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/access.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/administrator.pwd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/administrators.pwd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/authors.pwd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/bots.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/botinfs.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/deptodoc.btr HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/doctodep.btr HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52074 - "GET /_vti_pvt/frontpg.lck HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     20.165.50.90:52086 - "GET /_vti_pvt/linkinfo.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52097 - "GET /_vti_pvt/service.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52107 - "GET /_vti_pvt/service.grp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52122 - "GET /_vti_pvt/service.lck HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52135 - "GET /_vti_pvt/service.pwd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52147 - "GET /_vti_pvt/Service.stp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52155 - "GET /_vti_pvt/services.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52165 - "GET /_vti_pvt/services.org HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52175 - "GET /_vti_pvt/structure.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52185 - "GET /_vti_pvt/svcacl.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52195 - "GET /_vti_pvt/users.pwd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52208 - "GET /_vti_pvt/uniqueperm.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52215 - "GET /_vti_pvt/writeto.cnf HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52226 - "GET /.svn/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52235 - "GET /.svn/text-base/.htaccess.svn-base HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52246 - "GET /.svn/text-base/.htpasswd.svn-base HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52255 - "GET /.svn/text-base/Web.config.svn-base HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52267 - "GET /.git/HEAD HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52277 - "GET /.hg/requires HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52288 - "GET /.bzr/README HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52296 - "GET /downloadFile.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52307 - "GET /BackupConfig.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52317 - "GET /cwhp/auditLog.do?file=..\..\..\..\..\..\..\boot.ini HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52329 - "GET /cwhp/auditLog.do?file=..\..\..\..\..\..\..\Program%20Files\CSCOpx\MDC\Tomcat\webapps\triveni\WEB-INF\classes\schedule.properties HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52334 - "GET /cwhp/auditLog.do?file=..\..\..\..\..\..\..\Program%20Files\CSCOpx\lib\classpath\com\cisco\nm\cmf\dbservice2\DBServer.properties HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52346 - "GET /cwhp/auditLog.do?file=..\..\..\..\..\..\..\Program%20Files\CSCOpx\log\dbpwdChange.log HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     20.165.50.90:52369 - "GET /Info.live.htm HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52378 - "GET /CuteSoft_Client/CuteEditor/Load.ashx?type=image&file=../../../web.config HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52390 - "GET /plugins/PluginController.php?path=..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fwindows%2fwin.ini%00 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52395 - "GET /tiki-listmovies.php?movie=../../../../../../etc/passwd%001234 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52407 - "GET /index.php?option=com_jce&task=plugin&plugin=imgmanager&file=imgmanager&version=1576&cid=20 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52415 - "GET /d41d8cd98f00b204e9800998ecf8427e.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52427 - "GET /bsc_lan.php?NO_NEED_AUTH=1&AUTH_GROUP=0 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52432 - "GET /rom-0 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52445 - "GET /Telerik.Web.UI.DialogHandler.aspx?dp=//// HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52453 - "GET /Telerik.Web.UI.DialogHandler.ashx?dp=//// HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52463 - "GET /DesktopModules/Admin/RadEditorProvider/DialogHandler.aspx?dp=//// HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52472 - "GET /uir//etc/passwd HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52482 - "GET /uir//tmp/csman/0 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52486 - "GET /cgi-bin/export_debug_msg.exp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52495 - "GET /cgi-bin/config.exp HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52507 - "GET / HTTP/1.1" 200 OK
+INFO:     20.165.50.90:52519 - "GET /readme.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52530 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     20.165.50.90:52572 - "GET /feed HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52582 - "GET /feed/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52593 - "GET /feed/rss HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52604 - "GET /feed/rss2 HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52620 - "GET /feed/atom HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52629 - "GET /wp-includes/images/rss.png HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52633 - "GET /wp-includes/js/scriptaculous/sound.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52643 - "GET /wp-includes/js/jquery/suggest.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52653 - "GET /wp-includes/images/blank.gif HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52662 - "GET /wp-includes/js/comment-reply.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52672 - "GET /wp-includes/js/codepress/codepress.js HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52676 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52685 - "GET /wordpress/wp-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52697 - "GET /blog/wp-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52703 - "GET /administrator/wp-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52711 - "GET /weblog/wp-login.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52717 - "GET /wp-admin/upgrade.php HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52726 - "GET /docs/ HTTP/1.1" 307 Temporary Redirect
+INFO:     20.165.50.90:52735 - "GET /store/docs/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52743 - "GET /zencart/docs/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52753 - "GET /cart/docs/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52761 - "GET /docs/CHANGELOG.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52770 - "GET /forum/docs/CHANGELOG.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52776 - "GET /forums/docs/CHANGELOG.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52788 - "GET /board/docs/CHANGELOG.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52794 - "GET /boards/docs/CHANGELOG.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52805 - "GET /changelog.txt HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52813 - "GET /tinymce/changelog.txt HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52825 - "GET /readme.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52834 - "GET /pligg/readme.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52845 - "GET /digg/readme.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52855 - "GET /news/readme.html HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52865 - "GET / HTTP/1.1" 200 OK
+INFO:     20.165.50.90:52876 - "GET /forum/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52889 - "GET /site/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52901 - "GET /website/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52913 - "GET /store/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52921 - "GET /webstore/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52935 - "GET /comic/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52949 - "GET /wiki/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52959 - "GET /mediawiki/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52971 - "GET /Mediawiki/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52984 - "GET /MediaWiki/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:52994 - "GET /wordpress/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:53005 - "GET /blog/ HTTP/1.1" 404 Not Found
+INFO:     20.165.50.90:53016 - "GET /cms/ HTTP/1.1" 404 Not Found
+INFO:     198.235.24.159:62208 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.38:57732 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     43.201.53.76:41468 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Charles Darwin, a British naturalist, developed the groundbreaking theory of evolution through natural selection after his five-year voyage on the HMS Beagle. His observations and experiences during this voyage led him to formulate his theory, which he kept within a close circle of scientist friends for over 20 years. It wasn't until Alfred Russel Wallace, another British naturalist, independently proposed a similar theory that Darwin decided to publish his research. His book, On the Origin of Species, sparked controversy and challenged long-held scientific and religious beliefs. Despite initial opposition, Darwin's ideas gained acceptance over time, and he is now considered one of the greatest scientists of his age." problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "Charles Darwin, a British naturalist, developed the groundbreaking theory of evolution through natural selection after his five-year voyage on the HMS Beagle. His observations and experiences during this voyage led him to formulate his theory, which he kept within a close circle of scientist friends for over 20 years. It wasn’t until Alfred Russel Wallace, another British naturalist, independently proposed a similar theory that Darwin decided to publish his research. His book, On the Origin of Species, sparked controversy and challenged long-held scientific and religious beliefs. Despite initial opposition, Darwin’s ideas _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "gained acceptance over time",
+  "distractors": ["were expected to gain acceptance", "were expected to lose acceptance", "maintained their initial acceptance"]
+} 
+!!
+{
+  "passage": "Charles Darwin, a British naturalist, developed the groundbreaking theory of evolution through natural selection after his five-year voyage on the HMS Beagle. His observations and experiences during this voyage led him to formulate his theory, which he kept within a close circle of scientist friends for over 20 years. It wasn’t until Alfred Russel Wallace, another British naturalist, independently proposed a similar theory that Darwin decided to publish his research. His book, On the Origin of Species, sparked controversy and challenged long-held scientific and religious beliefs. Despite initial opposition, Darwin’s ideas _______",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "gained acceptance over time",
+  "distractors": ["were expected to gain acceptance", "were expected to lose acceptance", "maintained their initial acceptance"]
+}
+{'passage': 'Charles Darwin, a British naturalist, developed the groundbreaking theory of evolution through natural selection after his five-year voyage on the HMS Beagle. His observations and experiences during this voyage led him to formulate his theory, which he kept within a close circle of scientist friends for over 20 years. It wasn’t until Alfred Russel Wallace, another British naturalist, independently proposed a similar theory that Darwin decided to publish his research. His book, On the Origin of Species, sparked controversy and challenged long-held scientific and religious beliefs. Despite initial opposition, Darwin’s ideas _______', 'question': 'Which choice completes the text with the most logical and precise word or phrase?', 'answer': 'gained acceptance over time', 'distractors': ['were expected to gain acceptance', 'were expected to lose acceptance', 'maintained their initial acceptance']}
+[]
+gained acceptance over time, and he is now considered one of the greatest scientists of his age.
+INFO:     43.201.53.76:56598 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+INFO:     222.186.13.132:49214 - "GET / HTTP/1.0" 200 OK
+INFO:     222.186.13.132:49224 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     222.186.13.132:49236 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     222.186.13.132:49246 - "GET /.well-known/security.txt HTTP/1.1" 404 Not Found
+WARNING:  Unsupported upgrade request.
+WARNING:  No supported WebSocket library detected. Please use "pip install 'uvicorn[standard]'", or install 'websockets' or 'wsproto' manually.
+WARNING:  Invalid HTTP request received.
+INFO:     3.38.147.219:56390 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="The Sack of Rome in 1527 prompted the Catholic Church's Counter-Reformation, leading to the emergence of Baroque art. This style, characterized by grandeur and drama, was pioneered by artists like Caravaggio and Bernini. It spread across Europe, with variations in Spain, France, and the Netherlands. The Baroque era concluded with the Rococo style, but its influence persisted, impacting later movements such as Romanticism and Impressionism.\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "passage": "The Sack of Rome in 1527 prompted the Catholic Church's Counter-Reformation, leading to the emergence of Baroque art. This style, characterized by grandeur and drama, was pioneered by artists like Caravaggio and Bernini. It spread across Europe, with variations in Spain, France, and the Netherlands. The Baroque era _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "concluded with the Rococo style",
+  "distractors": ["developed in the Netherlands", "inspired Impressionism", "influenced Romanticism"]
+} 
+!!
+{
+  "passage": "The Sack of Rome in 1527 prompted the Catholic Church's Counter-Reformation, leading to the emergence of Baroque art. This style, characterized by grandeur and drama, was pioneered by artists like Caravaggio and Bernini. It spread across Europe, with variations in Spain, France, and the Netherlands. The Baroque era _______",
+  "question": "Which choice most logically completes the text?",
+  "answer": "concluded with the Rococo style",
+  "distractors": ["developed in the Netherlands", "inspired Impressionism", "influenced Romanticism"]
+}
+{'passage': "The Sack of Rome in 1527 prompted the Catholic Church's Counter-Reformation, leading to the emergence of Baroque art. This style, characterized by grandeur and drama, was pioneered by artists like Caravaggio and Bernini. It spread across Europe, with variations in Spain, France, and the Netherlands. The Baroque era _______", 'question': 'Which choice most logically completes the text?', 'answer': 'concluded with the Rococo style', 'distractors': ['developed in the Netherlands', 'inspired Impressionism', 'influenced Romanticism']}
+[]
+concluded with the Rococo style, but its influence persisted, impacting later movements such as Romanticism and Impressionism.
+INFO:     3.38.147.219:37360 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 45, in generate_blank_problem
+    raise ValueError("Something went wrong")
+ValueError: Something went wrong
+INFO:     3.38.147.219:45402 - "POST /sat/passage HTTP/1.1" 200 OK
+passage="Cormac McCarthy's 'The Road' is a departure from his earlier works, exploring a post-apocalyptic America through the journey of a father and son. The novel's suspenseful focus on survival and the unusual ending suggest a shift in McCarthy's themes and style. Despite this, it retains his commitment to American themes and values. The sparse language and desolate settings reflect a world stripped of its referents, where the father-son bond is a beacon of hope in a world on the brink of oblivion.\r\n" problem_type='blank'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{
+  "passage": "Cormac McCarthy's _______', The Road', is a departure from his earlier works, exploring a post-apocalyptic America through the journey of a father and son. The novel's suspenseful focus on survival and the unusual ending suggest a shift in McCarthy’s themes and style. Despite this, it retains his commitment to American themes and values. The sparse language and desolate settings reflect a world stripped of its referents, where the father-son bond is a beacon of hope in a world on the brink of oblivion.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "Cormac McCarthy's the Road",
+  "distractors": ["Cormac McCarthy’s the Road", "Cormac McCarthy’s the ______", "Cormac McCarthy’s the sЉ"]
+}
+
+<</SYS>>
+
+The art of the goldsmith was highly valued in ancient Egypt, and the craftsman Shed pure gold for the golden statue of the sun god Ra. [/inst] {
+  "passage": "The art of the ______ was highly valued in ancient Egypt, and the craftsman Shed pure gold for the golden statue of the sun god Ra.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "goldsmith",
+  "distractors": ["scientist", "philosopher", "teacher"]
+} 
+!!
+{
+  "passage": "Cormac McCarthy's _______', The Road', is a departure from his earlier works, exploring a post-apocalyptic America through the journey of a father and son. The novel's suspenseful focus on survival and the unusual ending suggest a shift in McCarthy’s themes and style. Despite this, it retains his commitment to American themes and values. The sparse language and desolate settings reflect a world stripped of its referents, where the father-son bond is a beacon of hope in a world on the brink of oblivion.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "Cormac McCarthy's the Road",
+  "distractors": ["Cormac McCarthy’s the Road", "Cormac McCarthy’s the ______", "Cormac McCarthy’s the sЉ"]
+}
+
+<</SYS>>
+
+The art of the goldsmith was highly valued in ancient Egypt, and the craftsman Shed pure gold for the golden statue of the sun god Ra. [/inst] {
+  "passage": "The art of the ______ was highly valued in ancient Egypt, and the craftsman Shed pure gold for the golden statue of the sun god Ra.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "answer": "goldsmith",
+  "distractors": ["scientist", "philosopher", "teacher"]
+}
+INFO:     3.38.147.219:44062 - "POST /sat/problem HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+  File "/home/seouluniv/.local/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/seouluniv/sat_gpt_generator/main.py", line 77, in generate_problem
+    response = json.dumps(fill_in_the_blank.generate_blank_problem(data.passage))
+  File "/home/seouluniv/sat_gpt_generator/sat_model/fill_in_the_blank.py", line 19, in generate_blank_problem
+    raw_problem_json = json.loads(
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 8 column 1 (char 778)
+INFO:     3.38.147.219:54796 - "POST /sat/passage HTTP/1.1" 200 OK
+passage='Abstract expressionism, originating in 1940s-1950s America, was pioneered by artists like Jackson Pollock and Mark Rothko. Characterized by spontaneous, gestural brushstrokes, it marked a shift towards abstract, emotionally expressive art. Influenced by surrealism and automatism, the movement centered in New York City, advocated for art from the unconscious mind. It encompassed two main styles: action painting, focusing on the act of painting, and color field painting, featuring large, flat, monochromatic areas. This represented a radical departure from traditional art forms.\n' problem_type='find_subject'
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+{"passage": "Abstract expressionism, originating in 1940s-1950s America, was pioneered by artists like Jackson Pollock and Mark Rothko. Characterized by spontaneous, gestural brushstrokes, it marked a shift towards abstract, emotionally expressive art. Influenced by surrealism and automatism, the movement centered in New York City, advocated for art from the unconscious mind. It encompassed two main styles: action painting, focusing on the act of painting, and color field painting, featuring large, flat, monochromatic areas. This represented a radical departure from traditional art forms.\n", "question": "Which choice best states the main purpose of the text?", "choices": ["To explore the relationship between abstract expressionism and the human experience", "To compare abstract expressionism to other art movements", "To describe the development and characteristics of abstract expressionism", "To analyze the impact of abstract expressionism on the art world"], "answer": "To describe the development and characteristics of abstract expressionism"}
+INFO:     3.38.147.219:54808 - "POST /sat/problem HTTP/1.1" 200 OK
